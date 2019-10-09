@@ -15,9 +15,7 @@ import withAsyncActions from "./mixins/withAsyncActions";
 
 export default {
   name: "Map",
-
   mixins: [withWatchers, withAsyncActions, withPrivateMethods, withEvents],
-
   props: {
     mapboxGl: {
       type: Object,

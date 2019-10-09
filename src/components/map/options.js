@@ -5,8 +5,13 @@ export default {
       return `map-${("" + Math.random()).split(".")[1]}`;
     }
   },
-  accessToken: {
+  mapboxAccessToken: {
     type: String,
+    default: undefined
+  },
+  apiKey: {
+    type: String,
+    required: true,
     default: undefined
   },
   minZoom: {
