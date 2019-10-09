@@ -381,6 +381,25 @@
         /***/
       },
 
+      /***/ "15d7": /***/ function(
+        module,
+        __webpack_exports__,
+        __webpack_require__
+      ) {
+        "use strict";
+        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Map_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+          "33d1"
+        );
+        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Map_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/ __webpack_require__.n(
+          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Map_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__
+        );
+        /* unused harmony reexport * */
+        /* unused harmony default export */ var _unused_webpack_default_export =
+          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Map_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a;
+
+        /***/
+      },
+
       /***/ "1991": /***/ function(module, exports, __webpack_require__) {
         var ctx = __webpack_require__("9b43");
         var invoke = __webpack_require__("31f4");
@@ -923,6 +942,11 @@
           );
         };
 
+        /***/
+      },
+
+      /***/ "33d1": /***/ function(module, exports, __webpack_require__) {
+        // extracted by mini-css-extract-plugin
         /***/
       },
 
@@ -1706,11 +1730,6 @@
         /***/
       },
 
-      /***/ "74f8": /***/ function(module, exports, __webpack_require__) {
-        // extracted by mini-css-extract-plugin
-        /***/
-      },
-
       /***/ "7726": /***/ function(module, exports) {
         // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
         var global = (module.exports =
@@ -2052,25 +2071,6 @@
             }).a != 7
           );
         });
-
-        /***/
-      },
-
-      /***/ a23d: /***/ function(
-        module,
-        __webpack_exports__,
-        __webpack_require__
-      ) {
-        "use strict";
-        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GlMap_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-          "74f8"
-        );
-        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GlMap_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/ __webpack_require__.n(
-          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GlMap_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__
-        );
-        /* unused harmony reexport * */
-        /* unused harmony default export */ var _unused_webpack_default_export =
-          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GlMap_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a;
 
         /***/
       },
@@ -2652,7 +2652,7 @@
         // Indicate to webpack that this file can be concatenated
         /* harmony default export */ var setPublicPath = null;
 
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/GlMap.vue?vue&type=template&id=b8a4f864&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=34630601&
         var render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
@@ -2676,7 +2676,7 @@
           }
         ];
 
-        // CONCATENATED MODULE: ./src/components/map/GlMap.vue?vue&type=template&id=b8a4f864&
+        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=34630601&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
         var web_dom_iterable = __webpack_require__("ac6a");
@@ -2941,7 +2941,8 @@
           },
           mapStyle: {
             type: [String, Object],
-            required: true
+            required: false,
+            default: "https://map.ir/vector/styles/main/main_mobile_style.json"
           },
           hash: {
             type: Boolean,
@@ -3045,11 +3046,13 @@
           },
           center: {
             type: [Object, Array],
-            default: undefined
+            default: function _default() {
+              return [51.450691, 35.723521];
+            }
           },
           zoom: {
             type: Number,
-            default: 0
+            default: 9
           },
           bearing: {
             type: Number,
@@ -3059,8 +3062,12 @@
             type: Number,
             default: 0
           },
-          initialBounds: {
+          bounds: {
             type: [Object, Array],
+            default: undefined
+          },
+          fitBoundsOptions: {
+            type: Object,
             default: undefined
           },
           renderWorldCopies: {
@@ -3069,7 +3076,8 @@
           },
           RTLTextPluginUrl: {
             type: String,
-            default: undefined
+            default:
+              "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js"
           },
           light: {
             type: Object,
@@ -3341,7 +3349,7 @@
             }
           }
         };
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/GlMap.vue?vue&type=script&lang=js&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=script&lang=js&
 
         //
         //
@@ -3351,8 +3359,8 @@
         //
         //
 
-        /* harmony default export */ var GlMapvue_type_script_lang_js_ = {
-          name: "GlMap",
+        /* harmony default export */ var Mapvue_type_script_lang_js_ = {
+          name: "Map",
           mixins: [
             withWatchers,
             withAsyncActions,
@@ -3396,10 +3404,6 @@
             },
             version: function version() {
               return this.map ? this.map.version : null;
-            },
-            // TODO: make 'bounds' synced prop
-            bounds: function bounds() {
-              return this.map ? this.map.getBounds() : null;
             },
             isStyleLoaded: function isStyleLoaded() {
               return this.map ? this.map.isStyleLoaded() : false;
@@ -3467,10 +3471,10 @@
             });
           }
         };
-        // CONCATENATED MODULE: ./src/components/map/GlMap.vue?vue&type=script&lang=js&
-        /* harmony default export */ var map_GlMapvue_type_script_lang_js_ = GlMapvue_type_script_lang_js_;
-        // EXTERNAL MODULE: ./src/components/map/GlMap.vue?vue&type=style&index=0&lang=css&
-        var GlMapvue_type_style_index_0_lang_css_ = __webpack_require__("a23d");
+        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=script&lang=js&
+        /* harmony default export */ var map_Mapvue_type_script_lang_js_ = Mapvue_type_script_lang_js_;
+        // EXTERNAL MODULE: ./src/components/map/Map.vue?vue&type=style&index=0&lang=css&
+        var Mapvue_type_style_index_0_lang_css_ = __webpack_require__("15d7");
 
         // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
         /* globals __VUE_SSR_CONTEXT__ */
@@ -3573,12 +3577,12 @@
           };
         }
 
-        // CONCATENATED MODULE: ./src/components/map/GlMap.vue
+        // CONCATENATED MODULE: ./src/components/map/Map.vue
 
         /* normalize component */
 
         var component = normalizeComponent(
-          map_GlMapvue_type_script_lang_js_,
+          map_Mapvue_type_script_lang_js_,
           render,
           staticRenderFns,
           false,
@@ -3587,8 +3591,8 @@
           null
         );
 
-        component.options.__file = "GlMap.vue";
-        /* harmony default export */ var GlMap = component.exports;
+        component.options.__file = "Map.vue";
+        /* harmony default export */ var Map = component.exports;
         // CONCATENATED MODULE: ./src/components/UI/withSelfEvents.js
 
         /* harmony default export */ var withSelfEvents = {
@@ -3988,8 +3992,8 @@
 
         Marker_component.options.__file = "Marker.vue";
         /* harmony default export */ var Marker = Marker_component.exports;
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Popup.vue?vue&type=template&id=6e79a273&
-        var Popupvue_type_template_id_6e79a273_render = function() {
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Popup.vue?vue&type=template&id=bdbffbcc&
+        var Popupvue_type_template_id_bdbffbcc_render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
           var _c = _vm._self._c || _h;
@@ -4000,9 +4004,9 @@
             2
           );
         };
-        var Popupvue_type_template_id_6e79a273_staticRenderFns = [];
+        var Popupvue_type_template_id_bdbffbcc_staticRenderFns = [];
 
-        // CONCATENATED MODULE: ./src/components/UI/Popup.vue?vue&type=template&id=6e79a273&
+        // CONCATENATED MODULE: ./src/components/UI/Popup.vue?vue&type=template&id=bdbffbcc&
 
         // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Popup.vue?vue&type=script&lang=js&
 
@@ -4128,7 +4132,7 @@
               },
               set: function set(value) {
                 if (this.map && this.popup) {
-                  if (value) {
+                  if (!value) {
                     this.popup.remove();
                   } else {
                     this.popup.addTo(this.map);
@@ -4225,8 +4229,8 @@
 
         var Popup_component = normalizeComponent(
           UI_Popupvue_type_script_lang_js_,
-          Popupvue_type_template_id_6e79a273_render,
-          Popupvue_type_template_id_6e79a273_staticRenderFns,
+          Popupvue_type_template_id_bdbffbcc_render,
+          Popupvue_type_template_id_bdbffbcc_staticRenderFns,
           false,
           null,
           null,
@@ -5179,21 +5183,21 @@
           asControl: controlMixin,
           asLayer: layerMixin
         };
-        var MglMap = GlMap;
-        var MglNavigationControl = NavigationControl;
-        var MglGeolocateControl = GeolocateControl;
-        var MglFullscreenControl = FullscreenControl;
-        var MglAttributionControl = AttributionControl;
-        var MglScaleControl = ScaleControl;
-        var MglGeojsonLayer = GeojsonLayer;
-        var MglImageLayer = ImageLayer;
-        var MglCanvasLayer = CanvasLayer;
-        var MglVideoLayer = VideoLayer;
-        var MglVectorLayer = VectorLayer;
-        var MglRasterLayer = RasterLayer;
-        var MglMarker = Marker;
-        var MglPopup = Popup;
-        /* harmony default export */ var main = GlMap;
+        var mapir = Map;
+        var mapNavigationControl = NavigationControl;
+        var mapGeolocateControl = GeolocateControl;
+        var mapFullscreenControl = FullscreenControl;
+        var mapAttributionControl = AttributionControl;
+        var mapScaleControl = ScaleControl;
+        var mapGeojsonLayer = GeojsonLayer;
+        var mapImageLayer = ImageLayer;
+        var mapCanvasLayer = CanvasLayer;
+        var mapVideoLayer = VideoLayer;
+        var mapVectorLayer = VectorLayer;
+        var mapRasterLayer = RasterLayer;
+        var mapMarker = Marker;
+        var mapPopup = Popup;
+        /* harmony default export */ var main = mapir;
         // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
         /* concated harmony reexport withEvents */ __webpack_require__.d(
           __webpack_exports__,
@@ -5230,102 +5234,102 @@
             return $helpers;
           }
         );
-        /* concated harmony reexport MglMap */ __webpack_require__.d(
+        /* concated harmony reexport mapir */ __webpack_require__.d(
           __webpack_exports__,
-          "MglMap",
+          "mapir",
           function() {
-            return MglMap;
+            return mapir;
           }
         );
-        /* concated harmony reexport MglNavigationControl */ __webpack_require__.d(
+        /* concated harmony reexport mapNavigationControl */ __webpack_require__.d(
           __webpack_exports__,
-          "MglNavigationControl",
+          "mapNavigationControl",
           function() {
-            return MglNavigationControl;
+            return mapNavigationControl;
           }
         );
-        /* concated harmony reexport MglGeolocateControl */ __webpack_require__.d(
+        /* concated harmony reexport mapGeolocateControl */ __webpack_require__.d(
           __webpack_exports__,
-          "MglGeolocateControl",
+          "mapGeolocateControl",
           function() {
-            return MglGeolocateControl;
+            return mapGeolocateControl;
           }
         );
-        /* concated harmony reexport MglFullscreenControl */ __webpack_require__.d(
+        /* concated harmony reexport mapFullscreenControl */ __webpack_require__.d(
           __webpack_exports__,
-          "MglFullscreenControl",
+          "mapFullscreenControl",
           function() {
-            return MglFullscreenControl;
+            return mapFullscreenControl;
           }
         );
-        /* concated harmony reexport MglAttributionControl */ __webpack_require__.d(
+        /* concated harmony reexport mapAttributionControl */ __webpack_require__.d(
           __webpack_exports__,
-          "MglAttributionControl",
+          "mapAttributionControl",
           function() {
-            return MglAttributionControl;
+            return mapAttributionControl;
           }
         );
-        /* concated harmony reexport MglScaleControl */ __webpack_require__.d(
+        /* concated harmony reexport mapScaleControl */ __webpack_require__.d(
           __webpack_exports__,
-          "MglScaleControl",
+          "mapScaleControl",
           function() {
-            return MglScaleControl;
+            return mapScaleControl;
           }
         );
-        /* concated harmony reexport MglGeojsonLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapGeojsonLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglGeojsonLayer",
+          "mapGeojsonLayer",
           function() {
-            return MglGeojsonLayer;
+            return mapGeojsonLayer;
           }
         );
-        /* concated harmony reexport MglImageLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapImageLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglImageLayer",
+          "mapImageLayer",
           function() {
-            return MglImageLayer;
+            return mapImageLayer;
           }
         );
-        /* concated harmony reexport MglCanvasLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapCanvasLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglCanvasLayer",
+          "mapCanvasLayer",
           function() {
-            return MglCanvasLayer;
+            return mapCanvasLayer;
           }
         );
-        /* concated harmony reexport MglVideoLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapVideoLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglVideoLayer",
+          "mapVideoLayer",
           function() {
-            return MglVideoLayer;
+            return mapVideoLayer;
           }
         );
-        /* concated harmony reexport MglVectorLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapVectorLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglVectorLayer",
+          "mapVectorLayer",
           function() {
-            return MglVectorLayer;
+            return mapVectorLayer;
           }
         );
-        /* concated harmony reexport MglRasterLayer */ __webpack_require__.d(
+        /* concated harmony reexport mapRasterLayer */ __webpack_require__.d(
           __webpack_exports__,
-          "MglRasterLayer",
+          "mapRasterLayer",
           function() {
-            return MglRasterLayer;
+            return mapRasterLayer;
           }
         );
-        /* concated harmony reexport MglMarker */ __webpack_require__.d(
+        /* concated harmony reexport mapMarker */ __webpack_require__.d(
           __webpack_exports__,
-          "MglMarker",
+          "mapMarker",
           function() {
-            return MglMarker;
+            return mapMarker;
           }
         );
-        /* concated harmony reexport MglPopup */ __webpack_require__.d(
+        /* concated harmony reexport mapPopup */ __webpack_require__.d(
           __webpack_exports__,
-          "MglPopup",
+          "mapPopup",
           function() {
-            return MglPopup;
+            return mapPopup;
           }
         );
 

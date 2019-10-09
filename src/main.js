@@ -1,4 +1,4 @@
-import GlMap from "./components/map/GlMap.vue";
+import Map from "./components/map/Map.vue";
 
 import NavigationControl from "./components/UI/controls/NavigationControl";
 import GeolocateControl from "./components/UI/controls/GeolocateControl";
@@ -32,22 +32,22 @@ export const $helpers = {
   asLayer: layerMixin
 };
 
-export const MglMap = GlMap;
+export const mapir = Map;
 
-export const MglNavigationControl = NavigationControl;
-export const MglGeolocateControl = GeolocateControl;
-export const MglFullscreenControl = FullscreenControl;
-export const MglAttributionControl = AttributionControl;
-export const MglScaleControl = ScaleControl;
+export const mapNavigationControl = NavigationControl;
+export const mapGeolocateControl = GeolocateControl;
+export const mapFullscreenControl = FullscreenControl;
+export const mapAttributionControl = AttributionControl;
+export const mapScaleControl = ScaleControl;
 
-export const MglGeojsonLayer = GeojsonLayer;
-export const MglImageLayer = ImageLayer;
-export const MglCanvasLayer = CanvasLayer;
-export const MglVideoLayer = VideoLayer;
-export const MglVectorLayer = VectorLayer;
-export const MglRasterLayer = RasterLayer;
+export const mapGeojsonLayer = GeojsonLayer;
+export const mapImageLayer = ImageLayer;
+export const mapCanvasLayer = CanvasLayer;
+export const mapVideoLayer = VideoLayer;
+export const mapVectorLayer = VectorLayer;
+export const mapRasterLayer = RasterLayer;
 
-export const MglMarker = Marker;
-export const MglPopup = Popup;
+export const mapMarker = Marker;
+export const mapPopup = Popup;
 
-export default GlMap;
+export default mapir;

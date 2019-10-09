@@ -14,7 +14,7 @@ import withPrivateMethods from "./mixins/withPrivateMethods";
 import withAsyncActions from "./mixins/withAsyncActions";
 
 export default {
-  name: "GlMap",
+  name: "Map",
 
   mixins: [withWatchers, withAsyncActions, withPrivateMethods, withEvents],
 

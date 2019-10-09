@@ -19,7 +19,8 @@ export default {
   },
   mapStyle: {
     type: [String, Object],
-    required: true
+    required: false,
+    default: "https://map.ir/vector/styles/main/main_mobile_style.json"
   },
   hash: {
     type: Boolean,
@@ -117,11 +118,11 @@ export default {
   },
   center: {
     type: [Object, Array],
-    default: undefined
+    default: () => [51.450691, 35.723521]
   },
   zoom: {
     type: Number,
-    default: 0
+    default: 9
   },
   bearing: {
     type: Number,
@@ -145,7 +146,8 @@ export default {
   },
   RTLTextPluginUrl: {
     type: String,
-    default: undefined
+    default:
+      "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js"
   },
   light: {
     type: Object,
