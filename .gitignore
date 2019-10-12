@@ -48,7 +48,7 @@ jspm_packages
 
 *.map*
 *.DS_Store
-vue-mapbox-demo
+mapir-vue-demo
 checklist.txt
 .flowconfig
 docs_source/.vuepress/dist

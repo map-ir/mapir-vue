@@ -1,22 +1,22 @@
 {
-  "name": "vue-mapbox",
-  "version": "0.4.1",
+  "name": "mapir-vue",
+  "version": "0.1.1",
   "author": {
-    "name": "soal",
-    "email": "sorrrow.about.alice@gmail.com",
+    "name": "Mohammad H. Sattarian",
+    "email": "mh_sattarian@outlook.com",
     "url": "https://github.com/soal"
   },
-  "homepage": "https://soal.github.io/vue-mapbox",
+  "homepage": "https://github.com/map-ir/mapir-vue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/soal/vue-mapbox.git"
+    "url": "https://github.com/map-ir/mapir-vue.git"
   },
   "private": false,
-  "main": "dist/vue-mapbox.umd.js",
+  "main": "dist/mapir-vue.umd.js",
   "module": "src/main.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name vue-mapbox src/main.js",
-    "serve": "vue-cli-service build --target lib --name vue-mapbox src/main.js --watch",
+    "build": "vue-cli-service build --target lib --name mapir-vue src/main.js",
+    "serve": "vue-cli-service build --target lib --name mapir-vue src/main.js --watch",
     "lint": "vue-cli-service lint",
     "docs:serve": "vuepress dev docs_source",
     "docs:build": "vuepress build docs_source"

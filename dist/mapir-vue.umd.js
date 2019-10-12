@@ -4,11 +4,11 @@
   else if (typeof define === "function" && define.amd)
     define(["map-promisified", "mapbox-gl"], factory);
   else if (typeof exports === "object")
-    exports["vue-mapbox"] = factory(
+    exports["mapir-vue"] = factory(
       require("map-promisified"),
       require("mapbox-gl")
     );
-  else root["vue-mapbox"] = factory(root["map-promisified"], root["mapbox-gl"]);
+  else root["mapir-vue"] = factory(root["map-promisified"], root["mapbox-gl"]);
 })(typeof self !== "undefined" ? self : this, function(
   __WEBPACK_EXTERNAL_MODULE__2191__,
   __WEBPACK_EXTERNAL_MODULE__2ff6__
@@ -66,7 +66,7 @@
     /******/ /******/ function jsonpScriptSrc(chunkId) {
       /******/ return (
         __webpack_require__.p +
-        "vue-mapbox.umd." +
+        "mapir-vue.umd." +
         ({}[chunkId] || chunkId) +
         ".js"
       );
@@ -185,9 +185,9 @@
     };
     /******/
     /******/ var jsonpArray = ((typeof self !== "undefined" ? self : this)[
-      "webpackJsonpvue_mapbox"
+      "webpackJsonpmapir_vue"
     ] =
-      (typeof self !== "undefined" ? self : this)["webpackJsonpvue_mapbox"] ||
+      (typeof self !== "undefined" ? self : this)["webpackJsonpmapir_vue"] ||
       []);
     /******/ var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
     /******/ jsonpArray.push = webpackJsonpCallback;
@@ -332,6 +332,11 @@
             return $keys(O, enumBugKeys);
           };
 
+        /***/
+      },
+
+      /***/ "0fb8": /***/ function(module, exports, __webpack_require__) {
+        // extracted by mini-css-extract-plugin
         /***/
       },
 
@@ -1730,6 +1735,25 @@
         /***/
       },
 
+      /***/ "71f5": /***/ function(
+        module,
+        __webpack_exports__,
+        __webpack_require__
+      ) {
+        "use strict";
+        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Marker_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+          "0fb8"
+        );
+        /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Marker_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/ __webpack_require__.n(
+          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Marker_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__
+        );
+        /* unused harmony reexport * */
+        /* unused harmony default export */ var _unused_webpack_default_export =
+          _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Marker_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a;
+
+        /***/
+      },
+
       /***/ "7726": /***/ function(module, exports) {
         // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
         var global = (module.exports =
@@ -2652,14 +2676,14 @@
         // Indicate to webpack that this file can be concatenated
         /* harmony default export */ var setPublicPath = null;
 
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=34630601&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=10c60b9f&
         var render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
           var _c = _vm._self._c || _h;
           return _c(
             "div",
-            { staticClass: "mgl-map-wrapper" },
+            { staticClass: "map-wrapper" },
             [_vm._m(0), _vm.initialized ? _vm._t("default") : _vm._e()],
             2
           );
@@ -2676,7 +2700,7 @@
           }
         ];
 
-        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=34630601&
+        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=10c60b9f&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
         var web_dom_iterable = __webpack_require__("ac6a");
@@ -2781,6 +2805,7 @@
         };
         // CONCATENATED MODULE: ./src/components/map/events.js
         /* eslint-disable key-spacing */
+        // Map events
         /* harmony default export */ var events = {
           resize: {
             name: "resize"
@@ -2927,8 +2952,13 @@
               return "map-".concat(("" + Math.random()).split(".")[1]);
             }
           },
-          accessToken: {
+          mapboxAccessToken: {
             type: String,
+            default: undefined
+          },
+          apiKey: {
+            type: String,
+            required: true,
             default: undefined
           },
           minZoom: {
@@ -3136,6 +3166,7 @@
             this.map.setMaxZoom(next);
           },
           mapStyle: function mapStyle(next) {
+            next = "".concat(next, "?x-api-key=").concat(this.apiKey);
             this.map.setStyle(next);
           },
           // TODO: make 'bounds' synced prop
@@ -3269,12 +3300,15 @@
               return this.mapboxPromise.then(function(mapbox) {
                 _this3.mapbox = mapbox.default ? mapbox.default : mapbox;
                 return new Promise(function(resolve) {
-                  if (_this3.accessToken)
-                    _this3.mapbox.accessToken = _this3.accessToken;
+                  if (_this3.mapboxAccessToken)
+                    _this3.mapbox.accessToken = _this3.mapboxAccessToken;
+                  var mapStyle = ""
+                    .concat(_this3.mapStyle, "?x-api-key=")
+                    .concat(_this3.apiKey);
                   var map = new _this3.mapbox.Map(
                     _objectSpread({}, _this3._props, {
                       container: _this3.$refs.container,
-                      style: _this3.mapStyle
+                      style: mapStyle
                     })
                   );
                   map.on("load", function() {
@@ -3456,6 +3490,15 @@
 
               _this.initial = false;
               _this.initialized = true;
+              var holder = document.createElement("div");
+              holder.className = "holder-logo";
+              var link = document.createElement("a");
+              link.href = "http://corp.map.ir/";
+              link.target = "_blank";
+              link.className = "map-logo";
+              holder.appendChild(link);
+
+              _this.$refs.container.appendChild(holder);
 
               _this.$emit("load", {
                 map: map,
@@ -3810,8 +3853,8 @@
             this.$_addControl();
           }
         };
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=63af2177&
-        var Markervue_type_template_id_63af2177_render = function() {
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
+        var Markervue_type_template_id_bab09942_render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
           var _c = _vm._self._c || _h;
@@ -3822,9 +3865,9 @@
             2
           );
         };
-        var Markervue_type_template_id_63af2177_staticRenderFns = [];
+        var Markervue_type_template_id_bab09942_staticRenderFns = [];
 
-        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=63af2177&
+        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.values.js
         var es7_object_values = __webpack_require__("8615");
@@ -3876,7 +3919,8 @@
               required: true
             },
             color: {
-              type: String
+              type: String,
+              default: "red"
             },
             anchor: {
               type: String,
@@ -3885,6 +3929,10 @@
             draggable: {
               type: Boolean,
               default: false
+            },
+            kind: {
+              type: String,
+              default: "normal" // can be 'circle' for a white circle marker
             }
           },
           data: function data() {
@@ -3906,7 +3954,17 @@
           mounted: function mounted() {
             var _this = this;
 
-            var markerOptions = _objectSpread({}, this.$props);
+            var markerElement = document.createElement("div");
+            markerElement.className = "map-marker "
+              .concat(this.$props.color, " ")
+              .concat(this.$props.kind || "");
+
+            var markerOptions = _objectSpread(
+              {
+                element: markerElement
+              },
+              this.$props
+            );
 
             if (this.$slots.marker) {
               markerOptions.element = this.$slots.marker[0].elm;
@@ -3976,14 +4034,19 @@
         };
         // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=script&lang=js&
         /* harmony default export */ var UI_Markervue_type_script_lang_js_ = Markervue_type_script_lang_js_;
+        // EXTERNAL MODULE: ./src/components/UI/Marker.vue?vue&type=style&index=0&lang=css&
+        var Markervue_type_style_index_0_lang_css_ = __webpack_require__(
+          "71f5"
+        );
+
         // CONCATENATED MODULE: ./src/components/UI/Marker.vue
 
         /* normalize component */
 
         var Marker_component = normalizeComponent(
           UI_Markervue_type_script_lang_js_,
-          Markervue_type_template_id_63af2177_render,
-          Markervue_type_template_id_63af2177_staticRenderFns,
+          Markervue_type_template_id_bab09942_render,
+          Markervue_type_template_id_bab09942_staticRenderFns,
           false,
           null,
           null,
