@@ -49,7 +49,8 @@ export default {
       required: true
     },
     color: {
-      type: String
+      type: String,
+      default: 'red'
     },
     anchor: {
       type: String,
@@ -58,6 +59,10 @@ export default {
     draggable: {
       type: Boolean,
       default: false
+    },
+    kind: {
+      type: String,
+      default: 'normal' // can be 'circle' for a white circle marker
     }
   },
 
@@ -80,7 +85,11 @@ export default {
   },
 
   mounted() {
+    var markerElement = document.createElement("div");
+    markerElement.className = `map-marker ${this.$props.color} ${this.$props.kind || ''}`;
+
     const markerOptions = {
+      element: markerElement,
       ...this.$props
     };
     if (this.$slots.marker) {
@@ -145,3 +154,26 @@ export default {
   }
 };
 </script>
+
+<style>
+.map-marker {
+  background-image: url('~./assets/marker-default-blue.svg');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.map-marker.blue {
+  background-image: url('~./assets/marker-default-blue.svg');
+}
+.map-marker.red {
+  background-image: url('~./assets/marker-default-red.svg');
+}
+.map-marker.green {
+  background-image: url('~./assets/marker-default-green.svg');
+}
+.map-marker.circle {
+  background-image: url('~./assets/marker-circle-white.svg');
+}
+</style>
