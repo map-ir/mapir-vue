@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [18],
   {
-    164: function(t, a, s) {
+    156: function(t, a, s) {
       "use strict";
       s.r(a);
       var n = s(17),
@@ -56,7 +56,7 @@
                 t._v(" "),
                 s("p", [
                   t._v(
-                    "You can install vue-mapbox via npm. Take note that you need to install mapbox-gl as peer dependency:"
+                    "You can install mapir-vue via npm. Take note that you need to install mapbox-gl as peer dependency:"
                   )
                 ]),
                 t._v(" "),
@@ -74,7 +74,7 @@
                         { pre: !0, attrs: { class: "token function" } },
                         [t._v("install")]
                       ),
-                      t._v(" --save vue-mapbox mapbox-gl\n")
+                      t._v(" --save mapir-vue mapbox-gl\n")
                     ])
                   ])
                 ]),
@@ -213,7 +213,7 @@
                 ]),
                 t._v(" "),
                 s("p", [
-                  t._v("Add Vue, MapboxGL and Vue-mapbox scripts on your page:")
+                  t._v("Add Vue, MapboxGL and mapir-vue scripts on your page:")
                 ]),
                 t._v(" "),
                 s("div", { staticClass: "language-html extra-class" }, [
@@ -365,7 +365,7 @@
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token comment" } },
-                        [t._v("\x3c!-- Vue-mapbox CSS --\x3e")]
+                        [t._v("\x3c!-- mapir-vue CSS --\x3e")]
                       ),
                       t._v("\n    "),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
@@ -404,7 +404,7 @@
                               [t._v('"')]
                             ),
                             t._v(
-                              "https://cdn.jsdelivr.net/npm/vue-mapbox@latest/dist/vue-mapbox.css"
+                              "https://cdn.jsdelivr.net/npm/mapir-vue@latest/dist/mapir-vue.css"
                             ),
                             s(
                               "span",
@@ -624,7 +624,7 @@
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token comment" } },
-                        [t._v("\x3c!-- Vue-mapbox --\x3e")]
+                        [t._v("\x3c!-- mapir-vue --\x3e")]
                       ),
                       t._v("\n    "),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
@@ -700,7 +700,7 @@
                               [t._v('"')]
                             ),
                             t._v(
-                              "https://cdn.jsdelivr.net/npm/vue-mapbox@latest/dist/vue-mapbox.min.js"
+                              "https://cdn.jsdelivr.net/npm/mapir-vue@latest/dist/mapir-vue.min.js"
                             ),
                             s(
                               "span",
@@ -782,9 +782,9 @@
                 ]),
                 s("p", [
                   t._v(
-                    "All components will be placed in global VueMapbox object ("
+                    "All components will be placed in global MapirVue object ("
                   ),
-                  s("code", [t._v("VueMapbox.MglMap")]),
+                  s("code", [t._v("MapirVue.mapir")]),
                   t._v(" etc.)")
                 ]),
                 t._v(" "),
@@ -806,7 +806,7 @@
                 s("p", [
                   t._v("In version "),
                   s("code", [t._v("0.2")]),
-                  t._v(" you don't need to register VueMapbox as Vue plugin.")
+                  t._v(" you don't need to register MapirVue as Vue plugin.")
                 ]),
                 t._v(" "),
                 s("p", [t._v("So you don't need this code anymore:")]),
@@ -819,7 +819,7 @@
                         { pre: !0, attrs: { class: "token keyword" } },
                         [t._v("import")]
                       ),
-                      t._v(" VueMapbox "),
+                      t._v(" MapirVue "),
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token keyword" } },
@@ -827,35 +827,14 @@
                       ),
                       t._v(" "),
                       s("span", { pre: !0, attrs: { class: "token string" } }, [
-                        t._v('"vue-mapbox"')
+                        t._v('"mapir-vue"')
                       ]),
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(";")]
                       ),
-                      t._v("\n"),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token keyword" } },
-                        [t._v("import")]
-                      ),
-                      t._v(" Mapbox "),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token keyword" } },
-                        [t._v("from")]
-                      ),
-                      t._v(" "),
-                      s("span", { pre: !0, attrs: { class: "token string" } }, [
-                        t._v('"mapbox-gl"')
-                      ]),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(";")]
-                      ),
-                      t._v("\n\nVue"),
+                      t._v("\n\n\nVue"),
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },

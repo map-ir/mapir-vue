@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [25],
   {
-    154: function(t, s, a) {
+    163: function(t, s, a) {
       "use strict";
       a.r(s);
       var n = a(17),
@@ -44,7 +44,7 @@
                 t._v(" "),
                 a("p", [
                   t._v(
-                    "The purpose VueMapbox is to wrap up Mapbox Gl JS library. Any other functions are out of scope. However, there are some plugins for Mapbox Gl JS, that provides additional capabilities, and it where plugin components come into play."
+                    "The purpose MapirVue is to wrap up Mapbox Gl JS library. Any other functions are out of scope. However, there are some plugins for Mapbox Gl JS, that provides additional capabilities, and it where plugin components come into play."
                   )
                 ]),
                 t._v(" "),
@@ -56,7 +56,7 @@
                   t._v(" and "),
                   a("code", [t._v("map")]),
                   t._v(" objects provided by basic "),
-                  a("code", [t._v("MglMap")]),
+                  a("code", [t._v("mapir")]),
                   t._v(".")
                 ]),
                 t._v(" "),
@@ -64,7 +64,7 @@
                   "p",
                   [
                     t._v(
-                      "VueMapbox internally use dependency injection mechanism of Vue ("
+                      "MapirVue internally use dependency injection mechanism of Vue ("
                     ),
                     a(
                       "a",
@@ -79,7 +79,7 @@
                       1
                     ),
                     t._v(" in Vue docs).\nWhen "),
-                    a("code", [t._v("MglMap")]),
+                    a("code", [t._v("mapir")]),
                     t._v(
                       " created, it waits for map loads and initializes then renders it's child components, and provide them "
                     ),
@@ -165,13 +165,13 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         t._v(" "),
                         a(
                           "span",
                           { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":accessToken")]
+                          [t._v(":apiKey")]
                         ),
                         a(
                           "span",
@@ -193,57 +193,7 @@
                               },
                               [t._v('"')]
                             ),
-                            t._v("accessToken"),
-                            a(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v(" "),
-                        a(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":map")]
-                        ),
-                        a(
-                          "span",
-                          {
-                            pre: !0,
-                            attrs: { class: "token style-attr language-css" }
-                          },
-                          [
-                            a(
-                              "span",
-                              { pre: !0, attrs: { class: "token attr-name" } },
-                              [
-                                a(
-                                  "span",
-                                  {
-                                    pre: !0,
-                                    attrs: { class: "token attr-name" }
-                                  },
-                                  [t._v("Style")]
-                                )
-                              ]
-                            ),
-                            a(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('="')]
-                            ),
-                            a(
-                              "span",
-                              { pre: !0, attrs: { class: "token attr-value" } },
-                              [t._v("mapStyle")]
-                            ),
+                            t._v("apiKey"),
                             a(
                               "span",
                               {
@@ -285,7 +235,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("</")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         a(
                           "span",
@@ -332,30 +282,7 @@
                           attrs: { class: "token script language-javascript" }
                         },
                         [
-                          t._v("\n"),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("import")]
-                          ),
-                          t._v(" Mapbox "),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("from")]
-                          ),
-                          t._v(" "),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"mapbox-gl"')]
-                          ),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n"),
+                          t._v("\n\n"),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token keyword" } },
@@ -367,7 +294,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v(" MglMap "),
+                          t._v(" mapir "),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -383,7 +310,7 @@
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"vue-mapbox"')]
+                            [t._v('"mapir-vue"')]
                           ),
                           a(
                             "span",
@@ -420,7 +347,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n    MglMap\n  "),
+                          t._v("\n    mapir\n  "),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -465,7 +392,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n      accessToken"),
+                          t._v("\n      apiKey"),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -476,23 +403,6 @@
                             "span",
                             { pre: !0, attrs: { class: "token constant" } },
                             [t._v("ACCESS_TOKEN")]
-                          ),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n      mapStyle"),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(":")]
-                          ),
-                          t._v(" "),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token constant" } },
-                            [t._v("MAP_STYLE")]
                           ),
                           t._v("\n    "),
                           a(
@@ -706,30 +616,7 @@
                           attrs: { class: "token script language-javascript" }
                         },
                         [
-                          t._v("\n"),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("import")]
-                          ),
-                          t._v(" Mapbox "),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("from")]
-                          ),
-                          t._v(" "),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"mapbox-gl"')]
-                          ),
-                          a(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n"),
+                          t._v("\n\n"),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token keyword" } },
@@ -741,7 +628,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v(" MglMap "),
+                          t._v(" mapir "),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -757,7 +644,7 @@
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"vue-mapbox"')]
+                            [t._v('"mapir-vue"')]
                           ),
                           a(
                             "span",
@@ -1213,20 +1100,20 @@
                 ]),
                 a(
                   "h2",
-                  { attrs: { id: "vuemapbox-helpers" } },
+                  { attrs: { id: "mapirvue-helpers" } },
                   [
                     a(
                       "a",
                       {
                         staticClass: "header-anchor",
                         attrs: {
-                          href: "#vuemapbox-helpers",
+                          href: "#mapirvue-helpers",
                           "aria-hidden": "true"
                         }
                       },
                       [t._v("#")]
                     ),
-                    t._v(" VueMapbox helpers "),
+                    t._v(" MapirVue helpers "),
                     a("Badge", {
                       attrs: { text: "experimental", type: "warn" }
                     })
@@ -1241,14 +1128,14 @@
                   t._v(" "),
                   a("p", [
                     t._v(
-                      "Helpers are experimenatal feature and will change in future, but we will try keep backward compatibility for a long time and provide deprecation warnings.\nFor now they just mixins that used in VueMapbox internal implementation."
+                      "Helpers are experimenatal feature and will change in future, but we will try keep backward compatibility for a long time and provide deprecation warnings.\nFor now they just mixins that used in MapirVue internal implementation."
                     )
                   ])
                 ]),
                 t._v(" "),
                 a("p", [
                   t._v(
-                    "Beside providing base objects, VueMapbox give some useful helper mixins, that can be used in plugin components.\nYou can access to them via "
+                    "Beside providing base objects, MapirVue give some useful helper mixins, that can be used in plugin components.\nYou can access to them via "
                   ),
                   a("code", [t._v("$helpers")]),
                   t._v(" named export:")
@@ -1282,7 +1169,7 @@
                       ),
                       t._v(" "),
                       a("span", { pre: !0, attrs: { class: "token string" } }, [
-                        t._v('"vue-mapbox"')
+                        t._v('"mapir-vue"')
                       ]),
                       a(
                         "span",
@@ -1360,7 +1247,7 @@
                     {
                       attrs: {
                         href:
-                          "https://github.com/soal/vue-mapbox/blob/master/src/lib/withEvents.js",
+                          "https://github.com/map-ir/mapir-vue/blob/master/src/lib/withEvents.js",
                         target: "_blank",
                         rel: "noopener noreferrer"
                       }
@@ -1374,7 +1261,7 @@
                   a("code", [t._v("$_emitEvent")]),
                   t._v(" and "),
                   a("code", [t._v("$_emitMapEvent")]),
-                  t._v(" methods to emit events in VueMapbox style.")
+                  t._v(" methods to emit events in MapirVue style.")
                 ]),
                 t._v(" "),
                 a("h3", { attrs: { id: "withselfevents" } }, [
@@ -1396,7 +1283,7 @@
                     {
                       attrs: {
                         href:
-                          "https://github.com/soal/vue-mapbox/blob/master/src/components/UI/withSelfEvents.js",
+                          "https://github.com/map-ir/mapir-vue/blob/master/src/components/UI/withSelfEvents.js",
                         target: "_blank",
                         rel: "noopener noreferrer"
                       }
@@ -1437,7 +1324,7 @@
                     {
                       attrs: {
                         href:
-                          "https://github.com/soal/vue-mapbox/blob/master/src/components/UI/controls/controlMixin.js",
+                          "https://github.com/map-ir/mapir-vue/blob/master/src/components/UI/controls/controlMixin.js",
                         target: "_blank",
                         rel: "noopener noreferrer"
                       }
@@ -1469,7 +1356,7 @@
                     {
                       attrs: {
                         href:
-                          "https://github.com/soal/vue-mapbox/blob/master/src/components/layer/layerMixin.js",
+                          "https://github.com/map-ir/mapir-vue/blob/master/src/components/layer/layerMixin.js",
                         target: "_blank",
                         rel: "noopener noreferrer"
                       }
@@ -1520,7 +1407,7 @@
                       "a",
                       {
                         attrs: {
-                          href: "https://github.com/soal/vue-mapbox-geocoder",
+                          href: "https://github.com/map-ir/mapir-vue-geocoder",
                           target: "_blank",
                           rel: "noopener noreferrer"
                         }
@@ -1604,7 +1491,7 @@
                       ),
                       t._v(" "),
                       a("span", { pre: !0, attrs: { class: "token string" } }, [
-                        t._v('"vue-mapbox"')
+                        t._v('"mapir-vue"')
                       ]),
                       a(
                         "span",
@@ -1615,7 +1502,7 @@
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token comment" } },
-                        [t._v("// Get $helpers from VueMapbox")]
+                        [t._v("// Get $helpers from MapirVue")]
                       ),
                       t._v("\n\n"),
                       a(
@@ -1832,7 +1719,7 @@
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token comment" } },
-                        [t._v("// Here we inject objects provided by MglMap")]
+                        [t._v("// Here we inject objects provided by mapir")]
                       ),
                       t._v("\n\n  props"),
                       a(
@@ -1852,7 +1739,7 @@
                         { pre: !0, attrs: { class: "token comment" } },
                         [t._v("// MapboxGeocoder requires access token")]
                       ),
-                      t._v("\n    accessToken"),
+                      t._v("\n    apiKey"),
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },
@@ -2488,7 +2375,7 @@
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(".")]
                       ),
-                      t._v("accessToken "),
+                      t._v("apiKey "),
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token operator" } },
@@ -2516,7 +2403,7 @@
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(".")]
                       ),
-                      t._v("accessToken"),
+                      t._v("apiKey"),
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },
@@ -2545,7 +2432,7 @@
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(".")]
                       ),
-                      t._v("accessToken "),
+                      t._v("apiKey "),
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token operator" } },
@@ -2562,7 +2449,7 @@
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(".")]
                       ),
-                      t._v("accessToken"),
+                      t._v("apiKey"),
                       a(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },
@@ -2894,7 +2781,7 @@
                         { pre: !0, attrs: { class: "token comment" } },
                         [
                           t._v(
-                            "// Because this component placed in MglMap sub-tree, map already initialized and injected above"
+                            "// Because this component placed in mapir sub-tree, map already initialized and injected above"
                           )
                         ]
                       ),
@@ -3512,7 +3399,7 @@
                         { pre: !0, attrs: { class: "token comment" } },
                         [
                           t._v(
-                            "// Process event to line up with VueMapbox events format"
+                            "// Process event to line up with MapirVue events format"
                           )
                         ]
                       ),

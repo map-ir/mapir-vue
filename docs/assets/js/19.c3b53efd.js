@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [19],
   {
-    150: function(t, a, s) {
+    157: function(t, a, s) {
       "use strict";
       s.r(a);
       var n = s(17),
@@ -106,13 +106,13 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         t._v(" "),
                         s(
                           "span",
                           { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":accessToken")]
+                          [t._v(":apiKey")]
                         ),
                         s(
                           "span",
@@ -134,57 +134,7 @@
                               },
                               [t._v('"')]
                             ),
-                            t._v("accessToken"),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v(" "),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":map")]
-                        ),
-                        s(
-                          "span",
-                          {
-                            pre: !0,
-                            attrs: { class: "token style-attr language-css" }
-                          },
-                          [
-                            s(
-                              "span",
-                              { pre: !0, attrs: { class: "token attr-name" } },
-                              [
-                                s(
-                                  "span",
-                                  {
-                                    pre: !0,
-                                    attrs: { class: "token attr-name" }
-                                  },
-                                  [t._v("Style")]
-                                )
-                              ]
-                            ),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('="')]
-                            ),
-                            s(
-                              "span",
-                              { pre: !0, attrs: { class: "token attr-value" } },
-                              [t._v("mapStyle")]
-                            ),
+                            t._v("apiKey"),
                             s(
                               "span",
                               {
@@ -241,30 +191,7 @@
                           attrs: { class: "token script language-javascript" }
                         },
                         [
-                          t._v("\n"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("import")]
-                          ),
-                          t._v(" Mapbox "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("from")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"mapbox-gl"')]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n"),
+                          t._v("\n\n"),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token keyword" } },
@@ -276,7 +203,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v(" MglMap "),
+                          t._v(" mapir "),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -292,7 +219,7 @@
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"vue-mapbox"')]
+                            [t._v('"mapir-vue"')]
                           ),
                           s(
                             "span",
@@ -329,7 +256,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n    MglMap\n  "),
+                          t._v("\n    mapir\n  "),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -374,7 +301,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n      accessToken"),
+                          t._v("\n      apiKey"),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -401,25 +328,7 @@
                               )
                             ]
                           ),
-                          t._v("\n      mapStyle"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(":")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token constant" } },
-                            [t._v("MAP_STYLE")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token comment" } },
-                            [t._v("// your map style")]
-                          ),
-                          t._v("\n    "),
+                          t._v("\n     \n    "),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -585,7 +494,7 @@
                                 },
                                 [t._v("<")]
                               ),
-                              t._v("MglMap")
+                              t._v("mapir")
                             ]
                           ),
                           t._v("\n    "),
@@ -629,7 +538,7 @@
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token attr-name" } },
-                            [t._v(":accessToken")]
+                            [t._v(":apiKey")]
                           ),
                           s(
                             "span",
@@ -651,44 +560,7 @@
                                 },
                                 [t._v('"')]
                               ),
-                              t._v("accessToken"),
-                              s(
-                                "span",
-                                {
-                                  pre: !0,
-                                  attrs: { class: "token punctuation" }
-                                },
-                                [t._v('"')]
-                              )
-                            ]
-                          ),
-                          t._v("\n    "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token attr-name" } },
-                            [t._v(":mapStyle.sync")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token attr-value" } },
-                            [
-                              s(
-                                "span",
-                                {
-                                  pre: !0,
-                                  attrs: { class: "token punctuation" }
-                                },
-                                [t._v("=")]
-                              ),
-                              s(
-                                "span",
-                                {
-                                  pre: !0,
-                                  attrs: { class: "token punctuation" }
-                                },
-                                [t._v('"')]
-                              ),
-                              t._v("mapStyle"),
+                              t._v("apiKey"),
                               s(
                                 "span",
                                 {
@@ -772,7 +644,7 @@
                   ]),
                   s("p", [
                     t._v(
-                      "If none is passed, VueMapbox imports Mapbox-gl internally."
+                      "If none is passed, MapirVue imports Mapbox-gl internally."
                     )
                   ])
                 ]),
@@ -780,7 +652,7 @@
                 s(
                   "h3",
                   {
-                    attrs: { id: "interact-with-map-properties-as-glmap-props" }
+                    attrs: { id: "interact-with-map-properties-as-map-props" }
                   },
                   [
                     s(
@@ -788,13 +660,13 @@
                       {
                         staticClass: "header-anchor",
                         attrs: {
-                          href: "#interact-with-map-properties-as-glmap-props",
+                          href: "#interact-with-map-properties-as-map-props",
                           "aria-hidden": "true"
                         }
                       },
                       [t._v("#")]
                     ),
-                    t._v(" Interact with map properties as GlMap props")
+                    t._v(" Interact with map properties as Map props")
                   ]
                 ),
                 t._v(" "),
@@ -858,13 +730,13 @@
                 t._v(" "),
                 s("p", [
                   t._v("When map loads, "),
-                  s("code", [t._v("MglMap")]),
+                  s("code", [t._v("mapir")]),
                   t._v(" component emits "),
                   s("code", [t._v("load")]),
                   t._v(" event. Payload of the event contains Mapbox GL JS "),
                   s("code", [t._v("Map")]),
                   t._v(" object.\nAll components placed under "),
-                  s("code", [t._v("MglMap")]),
+                  s("code", [t._v("mapir")]),
                   t._v(" will be rendered only after map fully loaded.")
                 ]),
                 t._v(" "),
@@ -916,13 +788,13 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         t._v("\n    "),
                         s(
                           "span",
                           { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":accessToken")]
+                          [t._v(":apiKey")]
                         ),
                         s(
                           "span",
@@ -944,44 +816,7 @@
                               },
                               [t._v('"')]
                             ),
-                            t._v("accessToken"),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v("\n    "),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":mapStyle.sync")]
-                        ),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-value" } },
-                          [
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v("=")]
-                            ),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            ),
-                            t._v("mapStyle"),
+                            t._v("apiKey"),
                             s(
                               "span",
                               {
@@ -1334,7 +1169,7 @@
                 t._v(" "),
                 s("p", [
                   t._v(
-                    "Asynchronous map methods exposed at MglMap component in "
+                    "Asynchronous map methods exposed at mapir component in "
                   ),
                   s("code", [t._v("actions")]),
                   t._v(" property. They returns "),

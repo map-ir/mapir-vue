@@ -25,7 +25,7 @@ export default {
   mapStyle: {
     type: [String, Object],
     required: false,
-    default: "https://map.ir/vector/styles/main/main_mobile_style.json"
+    default: "https://map.ir/vector/styles/main/mapir-xyz-style.json"
   },
   hash: {
     type: Boolean,

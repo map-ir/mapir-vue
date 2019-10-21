@@ -1,4 +1,4 @@
-# GlMap
+# Map
 
 ## Props
 
@@ -6,7 +6,7 @@
 
 - **Type**: `Object`
 - **Default:** `null`
-- - **Description:** Mapboxgl-js implementation. Useful for lazy-loading. If omitted, VueMapbox imports Mapbox-gl-js dynamically.
+- - **Description:** Mapboxgl-js implementation. Useful for lazy-loading. If omitted, MapirVue imports Mapbox-gl-js dynamically.
 
 ### `mapStyle`
 
@@ -24,13 +24,13 @@
 - **Description:** The HTML element in which Mapbox GL JS will render the map
 - **See:** `options.container` in [Map](https://docs.mapbox.com/mapbox-gl-js/api/#map)
 
-### `accessToken`
+### `apiKey`
 
 - **Type:** `String`
 - **Default:** `undefined`
 - **Non-Synced**
 - **Description:** Token for access Mapbox map
-- **See:** [accessToken](https://docs.mapbox.com/mapbox-gl-js/api/#accesstoken)
+- **See:** [apiKey](https://docs.mapbox.com/mapbox-gl-js/api/#apiKey)
 
 ### `minZoom`
 
@@ -296,10 +296,10 @@
 
 ## Actions
 
-Asynchronous actions exposed via `GlMap.actions`
+Asynchronous actions exposed via `Map.actions`
 
 ::: tip
-[Map-promisified](https://github.com/soal/map-promisified) is used as wrapper around Mapbox GL JS methods. That library can be used independently from VueMapbox.
+[Map-promisified](https://github.com/soal/map-promisified) is used as wrapper around Mapbox GL JS methods. That library can be used independently from MapirVue.
 :::
 
 ### `.stop(eventData?)`
@@ -473,6 +473,6 @@ Payload of events contains object with properties:
 ### `@load`
 
 - **Description:** Fires after map fully loaded
-- **Payload** `{ map, component }` `map` is Mapbox Gl JS Map object, `component` is instance of GlMap component
+- **Payload** `{ map, component }` `map` is Mapbox Gl JS Map object, `component` is instance of Map component
 
-GlMap passes all Mapbox GL JS Map events. Full list of map events see [here](https://docs.mapbox.com/mapbox-gl-js/api/#map.event:resize)
+Map passes all Mapbox GL JS Map events. Full list of map events see [here](https://docs.mapbox.com/mapbox-gl-js/api/#map.event:resize)

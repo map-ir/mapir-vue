@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [14],
   {
-    151: function(e, o, t) {
+    164: function(e, o, t) {
       "use strict";
       t.r(o);
       var a = t(17),
@@ -15,16 +15,16 @@
               "ContentSlotsDistributor",
               { attrs: { "slot-key": e.$parent.slotKey } },
               [
-                t("h1", { attrs: { id: "glmap" } }, [
+                t("h1", { attrs: { id: "map" } }, [
                   t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#glmap", "aria-hidden": "true" }
+                      attrs: { href: "#map", "aria-hidden": "true" }
                     },
                     [e._v("#")]
                   ),
-                  e._v(" GlMap")
+                  e._v(" Map")
                 ]),
                 e._v(" "),
                 t("h2", { attrs: { id: "props" } }, [
@@ -70,7 +70,7 @@
                       t("li", [
                         t("strong", [e._v("Description:")]),
                         e._v(
-                          " Mapboxgl-js implementation. Useful for lazy-loading. If omitted, VueMapbox imports Mapbox-gl-js dynamically."
+                          " Mapboxgl-js implementation. Useful for lazy-loading. If omitted, MapirVue imports Mapbox-gl-js dynamically."
                         )
                       ])
                     ])
@@ -187,17 +187,17 @@
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "accesstoken" } }, [
+                t("h3", { attrs: { id: "apikey" } }, [
                   t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#accesstoken", "aria-hidden": "true" }
+                      attrs: { href: "#apikey", "aria-hidden": "true" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("accessToken")])
+                  t("code", [e._v("apiKey")])
                 ]),
                 e._v(" "),
                 t("ul", [
@@ -228,12 +228,12 @@
                       {
                         attrs: {
                           href:
-                            "https://docs.mapbox.com/mapbox-gl-js/api/#accesstoken",
+                            "https://docs.mapbox.com/mapbox-gl-js/api/#apiKey",
                           target: "_blank",
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("accessToken"), t("OutboundLink")],
+                      [e._v("apiKey"), t("OutboundLink")],
                       1
                     )
                   ])
@@ -1984,6 +1984,123 @@
                   ])
                 ]),
                 e._v(" "),
+                t("h3", { attrs: { id: "bounds" } }, [
+                  t(
+                    "a",
+                    {
+                      staticClass: "header-anchor",
+                      attrs: { href: "#bounds", "aria-hidden": "true" }
+                    },
+                    [e._v("#")]
+                  ),
+                  e._v(" "),
+                  t("code", [e._v("bounds")])
+                ]),
+                e._v(" "),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type:")]),
+                    e._v(" "),
+                    t("code", [e._v("Array")]),
+                    e._v(", "),
+                    t("code", [e._v("LngLatBoundsLike object")])
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("Default:")]),
+                    e._v(" "),
+                    t("code", [e._v("undefined")])
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
+                    e._v(
+                      " The initial bounds of the map. If set, it overrides "
+                    ),
+                    t("code", [e._v("center")]),
+                    e._v(" and "),
+                    t("code", [e._v("zoom")]),
+                    e._v(" construction options")
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("See:")]),
+                    e._v(" "),
+                    t("code", [e._v("options.bounds")]),
+                    e._v(" in "),
+                    t(
+                      "a",
+                      {
+                        attrs: {
+                          href: "https://docs.mapbox.com/mapbox-gl-js/api/#map",
+                          target: "_blank",
+                          rel: "noopener noreferrer"
+                        }
+                      },
+                      [e._v("Map"), t("OutboundLink")],
+                      1
+                    )
+                  ])
+                ]),
+                e._v(" "),
+                t("h3", { attrs: { id: "fitboundsoptions" } }, [
+                  t(
+                    "a",
+                    {
+                      staticClass: "header-anchor",
+                      attrs: {
+                        href: "#fitboundsoptions",
+                        "aria-hidden": "true"
+                      }
+                    },
+                    [e._v("#")]
+                  ),
+                  e._v(" "),
+                  t("code", [e._v("fitBoundsOptions")])
+                ]),
+                e._v(" "),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type:")]),
+                    e._v(" "),
+                    t("code", [e._v("fitBounds object")])
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("Default:")]),
+                    e._v(" "),
+                    t("code", [e._v("undefined")])
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
+                    e._v(" A "),
+                    t("code", [e._v("fitBounds")]),
+                    e._v(" object to use only when fitting the initial "),
+                    t("code", [e._v("bounds")]),
+                    e._v(" provided above")
+                  ]),
+                  e._v(" "),
+                  t("li", [
+                    t("strong", [e._v("See:")]),
+                    e._v(" "),
+                    t("code", [e._v("options.fitBoundsOptions")]),
+                    e._v(" in "),
+                    t(
+                      "a",
+                      {
+                        attrs: {
+                          href: "https://docs.mapbox.com/mapbox-gl-js/api/#map",
+                          target: "_blank",
+                          rel: "noopener noreferrer"
+                        }
+                      },
+                      [e._v("Map"), t("OutboundLink")],
+                      1
+                    )
+                  ])
+                ]),
+                e._v(" "),
                 t("h2", { attrs: { id: "actions" } }, [
                   t(
                     "a",
@@ -1998,7 +2115,7 @@
                 e._v(" "),
                 t("p", [
                   e._v("Asynchronous actions exposed via "),
-                  t("code", [e._v("GlMap.actions")])
+                  t("code", [e._v("Map.actions")])
                 ]),
                 e._v(" "),
                 t("div", { staticClass: "tip custom-block" }, [
@@ -2018,7 +2135,7 @@
                       1
                     ),
                     e._v(
-                      " is used as wrapper around Mapbox GL JS methods. That library can be used independently from VueMapbox."
+                      " is used as wrapper around Mapbox GL JS methods. That library can be used independently from MapirVue."
                     )
                   ])
                 ]),
@@ -3487,13 +3604,13 @@
                     t("code", [e._v("map")]),
                     e._v(" is Mapbox Gl JS Map object, "),
                     t("code", [e._v("component")]),
-                    e._v(" is instance of GlMap component")
+                    e._v(" is instance of Map component")
                   ])
                 ]),
                 e._v(" "),
                 t("p", [
                   e._v(
-                    "GlMap passes all Mapbox GL JS Map events. Full list of map events see "
+                    "Map passes all Mapbox GL JS Map events. Full list of map events see "
                   ),
                   t(
                     "a",

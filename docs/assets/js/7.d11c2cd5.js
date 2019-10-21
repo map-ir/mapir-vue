@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [7],
   {
-    161: function(e, r, t) {
+    146: function(e, r, t) {
       "use strict";
       t.r(r);
       var a = t(17),
@@ -350,19 +350,19 @@
                   ])
                 ]),
                 e._v(" "),
-                t("h4", { attrs: { id: "props-for-vue-mapbox-component" } }, [
+                t("h4", { attrs: { id: "props-for-mapir-vue-component" } }, [
                   t(
                     "a",
                     {
                       staticClass: "header-anchor",
                       attrs: {
-                        href: "#props-for-vue-mapbox-component",
+                        href: "#props-for-mapir-vue-component",
                         "aria-hidden": "true"
                       }
                     },
                     [e._v("#")]
                   ),
-                  e._v(" Props for Vue-Mapbox component")
+                  e._v(" Props for mapir-vue component")
                 ]),
                 e._v(" "),
                 t("h3", { attrs: { id: "clearsource" } }, [

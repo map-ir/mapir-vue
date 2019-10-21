@@ -14,47 +14,47 @@ features:
 footer: MIT Licensed
 ---
 
-If you like long story, check out [blog post](https://soal.red/reasoning-behind-vue-mapbox/)
+If you like long story, check out [blog post](https://soal.red/reasoning-behind-mapir-vue/)
 
 ```vue
 <template>
-  <MglMap
+  <mapir
     container="map-test"
     :center.sync="center"
-    :accessToken="accessToken"
+    :apiKey="apiKey"
     :mapStyle="mapStyle"
   >
-    <MglMarker
+    <mapMarker
       :coordinates.sync="markerCoordinates"
       color='green'
     />
-    <MglGeojsonLayer
+    <mapGeojsonLayer
       type="fill"
       :sourceId="sourceId"
       :layerId="layerId"
       :source="geojson"
       @click="handleClick"
     />
-  </MglMap>
+  </mapir>
 </temaplate>
 
 <script>
 import {
-  MglMap,
-  MglMarker,
-  MglGeojsonLayer
-} from 'vue-mapbox'
+  mapir,
+  mapMarker,
+  mapGeojsonLayer
+} from 'mapir-vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      accessToken: 'some_token',
+      apiKey: 'some_token',
       mapStyle: 'mapbox://map_style',
-      geojson: { /* … some geojson */}
+      geojson: { /* … some geojson */},
       layerId: 'firstLayer',
       sourceId: 'firstSource',
-      markerCoordinates='[50, 50]'
+      markerCoordinates: '[50, 50]'
     }
   }
 }

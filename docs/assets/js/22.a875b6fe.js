@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [22],
   {
-    147: function(t, a, e) {
+    160: function(t, a, e) {
       "use strict";
       e.r(a);
       var s = e(17),
@@ -67,7 +67,7 @@
                     [t._v("sources"), e("OutboundLink")],
                     1
                   ),
-                  t._v(" ans "),
+                  t._v(" and "),
                   e(
                     "a",
                     {
@@ -85,7 +85,7 @@
                 ]),
                 t._v(" "),
                 e("p", [
-                  t._v("Vue-mapbox exposes layers as Vue components.\n"),
+                  t._v("mapir-vue exposes layers as Vue components.\n"),
                   e("code", [t._v("source")]),
                   t._v(" and "),
                   e("code", [t._v("layer")]),
@@ -120,13 +120,13 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         t._v(" "),
                         e(
                           "span",
                           { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":accessToken")]
+                          [t._v(":apiKey")]
                         ),
                         e(
                           "span",
@@ -148,44 +148,7 @@
                               },
                               [t._v('"')]
                             ),
-                            t._v("accessToken"),
-                            e(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v(" "),
-                        e(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v(":mapStyle.sync")]
-                        ),
-                        e(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-value" } },
-                          [
-                            e(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v("=")]
-                            ),
-                            e(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            ),
-                            t._v("mapStyle"),
+                            t._v("apiKey"),
                             e(
                               "span",
                               {
@@ -216,7 +179,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglNavigationControl")
+                          t._v("mapNavigationControl")
                         ]),
                         t._v(" "),
                         e(
@@ -276,7 +239,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("<")]
                           ),
-                          t._v("MglGeojsonLayer")
+                          t._v("mapGeojsonLayer")
                         ]),
                         t._v("\n      "),
                         e(
@@ -441,7 +404,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("</")]
                           ),
-                          t._v("MglMap")
+                          t._v("mapir")
                         ]),
                         e(
                           "span",
@@ -500,19 +463,19 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v(" MglMap"),
+                          t._v(" mapir"),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v(",")]
                           ),
-                          t._v(" MglNavigationControl"),
+                          t._v(" mapNavigationControl"),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v(",")]
                           ),
-                          t._v(" MglGeojsonLayer "),
+                          t._v(" mapGeojsonLayer "),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -528,7 +491,7 @@
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"vue-mapbox"')]
+                            [t._v('"mapir-vue"')]
                           ),
                           e(
                             "span",
@@ -565,19 +528,19 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n    MglMap"),
+                          t._v("\n    mapir"),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v(",")]
                           ),
-                          t._v("\n    MglNavigationControl"),
+                          t._v("\n    mapNavigationControl"),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v(",")]
                           ),
-                          t._v("\n    MglGeojsonLayer\n  "),
+                          t._v("\n    mapGeojsonLayer\n  "),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -622,7 +585,7 @@
                             { pre: !0, attrs: { class: "token punctuation" } },
                             [t._v("{")]
                           ),
-                          t._v("\n      accessToken"),
+                          t._v("\n      apiKey"),
                           e(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },
@@ -633,23 +596,6 @@
                             "span",
                             { pre: !0, attrs: { class: "token string" } },
                             [t._v('"some_token"')]
-                          ),
-                          e(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n      mapStyle"),
-                          e(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(":")]
-                          ),
-                          t._v(" "),
-                          e(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"style_object"')]
                           ),
                           e(
                             "span",
@@ -788,7 +734,7 @@
                     " and use same source for different layers. If you try to add same source with same "
                   ),
                   e("code", [t._v("id")]),
-                  t._v(" twice, VueMapbox would just use "),
+                  t._v(" twice, MapirVue would just use "),
                   e("code", [t._v("source")]),
                   t._v(" that already existed on the map, but you can set "),
                   e("code", [t._v("replaceSource")]),

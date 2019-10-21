@@ -8,21 +8,19 @@ If you using self-hosting maps on your own server you can omit this parameter.
 
 ```vue
 <template>
-  <MglMap :accessToken="accessToken" :mapStyle="mapStyle" />
+  <mapir :apiKey="apiKey" />
 </template>
 
 <script>
-import Mapbox from "mapbox-gl";
-import { MglMap } from "vue-mapbox";
+import { mapir } from "mapir-vue";
 
 export default {
   components: {
-    MglMap
+    mapir
   },
   data() {
     return {
-      accessToken: ACCESS_TOKEN, // your access token. Needed if you using Mapbox maps
-      mapStyle: MAP_STYLE // your map style
+      apiKey: ACCESS_TOKEN // your access token. Needed if you using Mapbox maps
     };
   },
 
@@ -40,19 +38,18 @@ Example:
 
 ```vue
 <template>
-  <MglMap
+  <mapir
     :mapboxGl="mapbox-gl"
-    :accessToken="accessToken"
-    :mapStyle.sync="mapStyle"
+    :apiKey="apiKey"
     @load="onMapLoaded"
   />
 </template>
 ```
 
-If none is passed, VueMapbox imports Mapbox-gl internally.
+If none is passed, MapirVue imports Mapbox-gl internally.
 :::
 
-### Interact with map properties as GlMap props
+### Interact with map properties as Map props
 
 You can control map parameters like zoom, bearing, pitch etc. by changing props.
 If you set `.sync` modifier ([Vue docs](https://vuejs.org/v2/guide/components.html#sync-Modifier)) to prop, it will updates when you use operations that takes time to proceed. For example, if you use `flyTo` method, props `zoom`, `center`, `bearing`, `pitch` will be updated when animation ends.
@@ -61,8 +58,8 @@ Full list of props see in [API docs](/api/#props), note field 'Synced' in descri
 
 ## Map loading
 
-When map loads, `MglMap` component emits `load` event. Payload of the event contains Mapbox GL JS `Map` object.
-All components placed under `MglMap` will be rendered only after map fully loaded.
+When map loads, `mapir` component emits `load` event. Payload of the event contains Mapbox GL JS `Map` object.
+All components placed under `mapir` will be rendered only after map fully loaded.
 
 ::: warning Storing Map object
 Take note that it's generally bad idea to add to Vuex or component's `data` anything but primitive types and plain objects. Vue adds getters and setters to every property, so if you add `Map` object to Vuex store or component `data`, it may lead to weird bugs.
@@ -71,9 +68,8 @@ If you want to store map object, store it as non-reactive property like in examp
 
 ```vue
 <template>
-  <MglMap
-    :accessToken="accessToken"
-    :mapStyle.sync="mapStyle"
+  <mapir
+    :apiKey="apiKey"
     @load="onMapLoaded"
   />
 </template>
@@ -98,7 +94,7 @@ export default {
 
 ## Map actions
 
-Asynchronous map methods exposed at MglMap component in `actions` property. They returns `Promise`, that resolves when action completed.
+Asynchronous map methods exposed at mapir component in `actions` property. They returns `Promise`, that resolves when action completed.
 Promise resolves with map properties that has been changed by used action.  
 For example:
 
