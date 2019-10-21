@@ -1,8 +1,8 @@
-# VueMapbox [![Build Status](https://travis-ci.org/soal/vue-mapbox.svg?branch=master)](https://travis-ci.org/soal/vue-mapbox) [![npm version](https://badge.fury.io/js/vue-mapbox.svg)](https://badge.fury.io/js/vue-mapbox)
+# Mapir Vue Component [![npm version](https://badge.fury.io/js/mapir-vue.svg)](https://badge.fury.io/js/mapir-vue)
 
 > Combine powers of [Vue.js](https://vuejs.org/) and [Mapbox Gl JS](https://mapbox.com/mapbox-gl-js)
 
-Vue-mapbox is wrapper around Mapbox GL JS library that provides vueish-way to interact with the map.
+mapir-vue is wrapper around Mapbox GL JS library that provides vueish-way to interact with the map.
 
 [Description and documentation](https://soal.github.io/vue-mapbox)
 
@@ -17,8 +17,8 @@ _Coming soon_
 ## Development
 
 ```sh
-git clone git@github.com:soal/vue-mapbox.git
-cd vue-mapbox
+git clone git@github.com:map-ir/mapir-vue.git
+cd mapir-vue
 npm install
 ```
 

@@ -1,9 +1,9 @@
 module.exports = {
-  title: "VueMapbox",
+  title: "MapirVue",
   description: "Combine powers of Mapbox GL JS and Vue.js",
   dest: "docs",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
-  base: "/vue-mapbox/",
+  base: "/mapir-vue/",
 
   themeConfig: {
     nav: [
@@ -15,7 +15,7 @@ module.exports = {
         text: "API",
         link: "/api/"
       },
-      { text: "Github", link: "https://github.com/soal/vue-mapbox" },
+      { text: "Github", link: "https://github.com/map-ir/mapir-vue" },
       {
         text: "map-promisified",
         link: "https://github.com/soal/map-promisified"
@@ -39,7 +39,7 @@ module.exports = {
         title: "API",
         collapsable: false,
         children: [
-          ["/api/", "GlMap"],
+          ["/api/", "Map"],
           ["/api/controls.md", "Controls"],
           ["/api/marker.md", "MapMarker"],
           ["/api/popup.md", "Popup"],

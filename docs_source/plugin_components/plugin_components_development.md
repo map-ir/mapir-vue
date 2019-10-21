@@ -2,12 +2,12 @@
 
 ## Overview
 
-The purpose VueMapbox is to wrap up Mapbox Gl JS library. Any other functions are out of scope. However, there are some plugins for Mapbox Gl JS, that provides additional capabilities, and it where plugin components come into play.
+The purpose MapirVue is to wrap up Mapbox Gl JS library. Any other functions are out of scope. However, there are some plugins for Mapbox Gl JS, that provides additional capabilities, and it where plugin components come into play.
 
-Plugin components are essentially just Vue components that utilize `mapbox` and `map` objects provided by basic `MglMap`.
+Plugin components are essentially just Vue components that utilize `mapbox` and `map` objects provided by basic `mapir`.
 
-VueMapbox internally use dependency injection mechanism of Vue ([provide/inject](https://vuejs.org/v2/api/#provide-inject) in Vue docs).
-When `MglMap` created, it waits for map loads and initializes then renders it's child components, and provide them `mapbox` (Mapbox GL JS library), `map` (initialized instance of the [Map](https://docs.mapbox.com/mapbox-gl-js/api/#map)) and `actions` ([promisified](/api/#actions) Mapbox Map methods).
+MapirVue internally use dependency injection mechanism of Vue ([provide/inject](https://vuejs.org/v2/api/#provide-inject) in Vue docs).
+When `mapir` created, it waits for map loads and initializes then renders it's child components, and provide them `mapbox` (Mapbox GL JS library), `map` (initialized instance of the [Map](https://docs.mapbox.com/mapbox-gl-js/api/#map)) and `actions` ([promisified](/api/#actions) Mapbox Map methods).
 Inject these objects in your component, and you can add to map features you need.
 
 The basic idea is to keep the declarative style of Vue, so it's good to add for example additional controls or layer types to map as a component. It's a right place to wrap Mapbox Gl JS plugins, but it can be used for various purpose.
@@ -18,23 +18,21 @@ The basic idea is to keep the declarative style of Vue, so it's good to add for 
 
 ```vue
 <template>
-  <MglMap :accessToken="accessToken" :mapStyle="mapStyle">
+  <mapir :apiKey="apiKey">
     <MyPluginComponent />
-  </MglMap>
+  </mapir>
 </template>
 
 <script>
-import Mapbox from "mapbox-gl";
-import { MglMap } from "vue-mapbox";
+import { mapir } from "mapir-vue";
 
 export default {
   components: {
-    MglMap
+    mapir
   },
   data() {
     return {
-      accessToken: ACCESS_TOKEN,
-      mapStyle: MAP_STYLE
+      apiKey: ACCESS_TOKEN
     };
   }
 };
@@ -50,8 +48,8 @@ export default {
 </template>
 
 <script>
-import Mapbox from "mapbox-gl";
-import { MglMap } from "vue-mapbox";
+
+import { mapir } from "mapir-vue";
 
 export default {
   name: "MyPluginComponent"
@@ -77,41 +75,41 @@ export default {
 </script>
 ```
 
-## VueMapbox helpers <Badge text="experimental" type="warn"/>
+## MapirVue helpers <Badge text="experimental" type="warn"/>
 
 ::: danger Experimental
 Helpers are experimenatal feature and will change in future, but we will try keep backward compatibility for a long time and provide deprecation warnings.
-For now they just mixins that used in VueMapbox internal implementation.
+For now they just mixins that used in MapirVue internal implementation.
 :::
 
-Beside providing base objects, VueMapbox give some useful helper mixins, that can be used in plugin components.
+Beside providing base objects, MapirVue give some useful helper mixins, that can be used in plugin components.
 You can access to them via `$helpers` named export:
 
 ```js
-import { $helpers } from "vue-mapbox";
+import { $helpers } from "mapir-vue";
 
 const { withEvents, withSelfEvents, asControl, asLayer } = $helpers;
 ```
 
 ### `withEvents`
 
-[Source](https://github.com/soal/vue-mapbox/blob/master/src/lib/withEvents.js).  
-Provides `$_emitEvent` and `$_emitMapEvent` methods to emit events in VueMapbox style.
+[Source](https://github.com/map-ir/mapir-vue/blob/master/src/lib/withEvents.js).  
+Provides `$_emitEvent` and `$_emitMapEvent` methods to emit events in MapirVue style.
 
 ### `withSelfEvents`
 
-[Source](https://github.com/soal/vue-mapbox/blob/master/src/components/UI/withSelfEvents.js)  
+[Source](https://github.com/map-ir/mapir-vue/blob/master/src/components/UI/withSelfEvents.js)  
 Provides `$_bindSelfEvents`, `$_unbindSelfEvents` and `$_emitSelfEvent`.
 They can be used to bind events to Mapbox GL JS objects that emit self events instead of `Map` object like controls, markers and popups.
 
 ### `asControl`
 
-[Source](https://github.com/soal/vue-mapbox/blob/master/src/components/UI/controls/controlMixin.js).  
+[Source](https://github.com/map-ir/mapir-vue/blob/master/src/components/UI/controls/controlMixin.js).  
 Provides backbone for Map controls (like )
 
 ### `asLayer`
 
-[Source](https://github.com/soal/vue-mapbox/blob/master/src/components/layer/layerMixin.js).  
+[Source](https://github.com/map-ir/mapir-vue/blob/master/src/components/layer/layerMixin.js).  
 Provides backbone for Map layer.  
 See also [layers API doc](/api/layers)
 
@@ -119,13 +117,13 @@ See also [layers API doc](/api/layers)
 
 Example below can give you an idea how to create component for Mapbox GL JS plugin.
 
-**[VueMaboxGeocoder](https://github.com/soal/vue-mapbox-geocoder) — wrapper for [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder)**:
+**[VueMaboxGeocoder](https://github.com/map-ir/mapir-vue-geocoder) — wrapper for [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder)**:
 
 ```js
 // First, there is no separate HTML to render, so we don't need template and SFC, so it's just JS file
 
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import { $helpers } from "vue-mapbox"; // Get $helpers from VueMapbox
+import { $helpers } from "mapir-vue"; // Get $helpers from MapirVue
 
 // Define list of mapbox-gl-geocoder events
 const geocoderEvents = {
@@ -140,11 +138,11 @@ export default {
   name: "GeocoderControl",
   mixins: [$helpers.asControl], // MapboxGeocoder is a control, so we use mixin
 
-  inject: ["mapbox", "map"], // Here we inject objects provided by MglMap
+  inject: ["mapbox", "map"], // Here we inject objects provided by mapir
 
   props: {
     // MapboxGeocoder requires access token
-    accessToken: {
+    apiKey: {
       type: String,
       required: true
     },
@@ -184,8 +182,8 @@ export default {
 
   created() {
     this.control = null; // Here we will store MapboxGeocoder instance. We don't want Vue reactivity system mess with it, so we store it non-reactive
-    if (this.accessToken && !this.mapbox.accessToken) {
-      this.mapbox.accessToken = this.accessToken;
+    if (this.apiKey && !this.mapbox.apiKey) {
+      this.mapbox.apiKey = this.apiKey;
     }
     this.control = new MapboxGeocoder(this.$props); // Creating MapboxGeocoder instance and pass props as options to it
     this.control.on("results", this.$_updateInput); // We need to update synchronized prop "input" when user enters some query to search field
@@ -201,7 +199,7 @@ export default {
 
   methods: {
     $_deferredMount() {
-      // Because this component placed in MglMap sub-tree, map already initialized and injected above
+      // Because this component placed in mapir sub-tree, map already initialized and injected above
       this.map.addControl(this.control);
       if (this.input) {
         // Set input in MapboxGeocoder if there is default data
@@ -224,7 +222,7 @@ export default {
       });
     },
 
-    // Process event to line up with VueMapbox events format
+    // Process event to line up with MapirVue events format
     $_emitControlEvent(eventName, eventData) {
       return this.$_emitSelfEvent({ type: eventName }, eventData);
     },

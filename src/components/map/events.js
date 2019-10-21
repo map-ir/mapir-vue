@@ -1,5 +1,7 @@
 /* eslint-disable key-spacing */
 
+// Map events
+
 export default {
   resize: { name: "resize" },
   webglcontextlost: { name: "webglcontextlost" },

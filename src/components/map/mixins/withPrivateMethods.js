@@ -46,11 +46,13 @@ export default {
       return this.mapboxPromise.then(mapbox => {
         this.mapbox = mapbox.default ? mapbox.default : mapbox;
         return new Promise(resolve => {
-          if (this.accessToken) this.mapbox.accessToken = this.accessToken;
+          if (this.mapboxAccessToken)
+            this.mapbox.accessToken = this.mapboxAccessToken;
+          let mapStyle = `${this.mapStyle}?x-api-key=${this.apiKey}`;
           const map = new this.mapbox.Map({
             ...this._props,
             container: this.$refs.container,
-            style: this.mapStyle
+            style: mapStyle
           });
           map.on("load", () => resolve(map));
         });
