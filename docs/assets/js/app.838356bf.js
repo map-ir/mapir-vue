@@ -68,14 +68,14 @@
                 15: "5549f57b",
                 16: "884fab07",
                 17: "afd82f20",
-                18: "bba85b51",
-                19: "c3b53efd",
+                18: "f38a4661",
+                19: "db2dc729",
                 20: "fd5c301c",
                 21: "03d58f3b",
                 22: "a875b6fe",
                 23: "a0d60b12",
                 24: "58909b5a",
-                25: "c8c45ecc"
+                25: "cd86b833"
               }[t] +
               ".js"
             );
@@ -9772,7 +9772,7 @@
       rs = es.router;
     (window.__VUEPRESS_VERSION__ = {
       version: "1.0.0-alpha.37",
-      hash: "0083efa"
+      hash: "b64af73"
     }),
       rs.onReady(function() {
         ns.$mount("#app");

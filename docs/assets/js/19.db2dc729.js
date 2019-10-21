@@ -191,7 +191,7 @@
                           attrs: { class: "token script language-javascript" }
                         },
                         [
-                          t._v("\n\n"),
+                          t._v("\n"),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token keyword" } },
@@ -313,11 +313,6 @@
                             { pre: !0, attrs: { class: "token constant" } },
                             [t._v("ACCESS_TOKEN")]
                           ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
                           t._v(" "),
                           s(
                             "span",
@@ -328,7 +323,7 @@
                               )
                             ]
                           ),
-                          t._v("\n     \n    "),
+                          t._v("\n    "),
                           s(
                             "span",
                             { pre: !0, attrs: { class: "token punctuation" } },

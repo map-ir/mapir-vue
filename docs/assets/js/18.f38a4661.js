@@ -834,7 +834,7 @@
                         { pre: !0, attrs: { class: "token punctuation" } },
                         [t._v(";")]
                       ),
-                      t._v("\n\n\nVue"),
+                      t._v("\n\nVue"),
                       s(
                         "span",
                         { pre: !0, attrs: { class: "token punctuation" } },

@@ -282,7 +282,7 @@
                           attrs: { class: "token script language-javascript" }
                         },
                         [
-                          t._v("\n\n"),
+                          t._v("\n"),
                           a(
                             "span",
                             { pre: !0, attrs: { class: "token keyword" } },
