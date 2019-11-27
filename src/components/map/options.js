@@ -172,7 +172,7 @@ export default {
   },
   transformRequest: {
     type: Function,
-    default: null
+    default: undefined
   },
   maxTileCacheSize: {
     type: Number,

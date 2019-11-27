@@ -119,6 +119,9 @@ export default {
 </script>
 
 <style>
+@import url('https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css');
+
+
 .map-wrapper {
   height: 100%;
   position: relative;

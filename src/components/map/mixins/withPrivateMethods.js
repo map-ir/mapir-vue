@@ -52,7 +52,13 @@ export default {
           const map = new this.mapbox.Map({
             ...this._props,
             container: this.$refs.container,
-            style: mapStyle
+            style: mapStyle,
+            transformRequest: (url, resourceType) => {
+              return {
+                url: url,
+                headers: { "x-api-key": this.apiKey }
+              };
+            }
           });
           map.on("load", () => resolve(map));
         });
