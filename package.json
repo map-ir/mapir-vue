@@ -3,9 +3,16 @@
   "version": "2.1.6",
   "author": {
     "name": "Mohammad H. Sattarian",
-    "email": "mh_sattarian@outlook.com",
-    "url": "https://github.com/soal"
+    "email": "mh.sattarian@map.ir",
+    "url": "https://github.com/mhsattarian"
   },
+  "contributors": [
+    {
+      "name": "Reyhaneh Masoumi",
+      "email": "r.masoumi@map.ir",
+      "url": "https://github.com/ReyhaneMasumi"
+    }
+  ],
   "homepage": "https://github.com/map-ir/mapir-vue",
   "repository": {
     "type": "git",
