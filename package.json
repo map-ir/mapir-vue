@@ -1,6 +1,6 @@
 {
   "name": "mapir-vue",
-  "version": "2.1.1",
+  "version": "2.1.6",
   "author": {
     "name": "Mohammad H. Sattarian",
     "email": "mh_sattarian@outlook.com",
@@ -15,8 +15,8 @@
   "main": "dist/mapir-vue.umd.js",
   "module": "src/main.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name mapir-vue src/main.js",
-    "serve": "vue-cli-service build --target lib --name mapir-vue src/main.js --watch",
+    "build": "cross-env vue-cli-service build --target lib --name mapir-vue src/main.js",
+    "serve": "cross-env vue-cli-service build --target lib --name mapir-vue src/main.js --watch",
     "lint": "vue-cli-service lint",
     "docs:serve": "vuepress dev docs_source",
     "docs:build": "vuepress build docs_source"
@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "map-promisified": "latest"
   },
   "peerDependencies": {
@@ -44,6 +45,7 @@
     "@vue/cli-plugin-eslint": "^3.2.1",
     "@vue/cli-service": "^3.2.0",
     "@vue/eslint-config-prettier": "^4.0.1",
+    "cross-env": "^5.2.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-loader": "2.1.1",

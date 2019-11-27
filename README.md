@@ -34,6 +34,8 @@ Build for production:
 npm run build
 ```
 
+[![Edit Vue Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-template-xo2c9?fontsize=14)
+
 ### Documentation
 
 Documentation use [VuePress 1.0](https://vuepress.vuejs.org).
