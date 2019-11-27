@@ -4,7 +4,7 @@
 
 mapir-vue is wrapper around Mapbox GL JS library that provides vueish-way to interact with the map.
 
-[Description and documentation](https://soal.github.io/vue-mapbox)
+[Description and documentation](https://map-ir.github.io/mapir-vue/)
 
 ## Size
 
