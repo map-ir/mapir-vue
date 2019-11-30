@@ -540,7 +540,7 @@
                     e._v(" "),
                     a("code", [
                       e._v(
-                        "{ component: MarkerComponent, map: Map, mapboxEvent: Event }"
+                        "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
@@ -576,7 +576,7 @@
                     e._v(" "),
                     a("code", [
                       e._v(
-                        "{ component: MarkerComponent, map: Map, mapboxEvent: Event }"
+                        "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
@@ -612,7 +612,7 @@
                     e._v(" "),
                     a("code", [
                       e._v(
-                        "{ component: MarkerComponent, map: Map, mapboxEvent: Event }"
+                        "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
@@ -656,7 +656,7 @@
                   a("pre", { pre: !0, attrs: { class: "language-text" } }, [
                     a("code", [
                       e._v(
-                        "    {\n        component: MarkerComponent,\n        map: Map,\n        mapboxEvent: DOMEvent,\n        marker: Marker\n    }\n"
+                        "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])
@@ -702,7 +702,7 @@
                   a("pre", { pre: !0, attrs: { class: "language-text" } }, [
                     a("code", [
                       e._v(
-                        "    {\n        component: MarkerComponent,\n        map: Map,\n        mapboxEvent: DOMEvent,\n        marker: Marker\n    }\n"
+                        "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])
@@ -748,7 +748,7 @@
                   a("pre", { pre: !0, attrs: { class: "language-text" } }, [
                     a("code", [
                       e._v(
-                        "    {\n        component: MarkerComponent,\n        map: Map,\n        mapboxEvent: DOMEvent,\n        marker: Marker\n    }\n"
+                        "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])

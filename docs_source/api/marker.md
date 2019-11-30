@@ -75,17 +75,17 @@
 ### `@drag`
 
 - **Description:** Fires when marker dragged if marker `draggable` prop is `true`
-- **Payload** `{ component: MarkerComponent, map: Map, mapboxEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
+- **Payload** `{ component: MarkerComponent, map: Map, actualEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
 
 ### `@dragstart`
 
 - **Description:** Fires when marker dragging starts if marker `draggable` prop is `true`
-- **Payload** `{ component: MarkerComponent, map: Map, mapboxEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
+- **Payload** `{ component: MarkerComponent, map: Map, actualEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
 
 ### `@dragend`
 
 - **Description:** Fires when marker dragging ends if marker `draggable` prop is `true`
-- **Payload** `{ component: MarkerComponent, map: Map, mapboxEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
+- **Payload** `{ component: MarkerComponent, map: Map, actualEvent: Event }` Object with `Marker` component, parent map and original MapboxGl event
 
 ### `@click` <Badge text="experimental" type="warn"/>
 
@@ -96,7 +96,7 @@
     {
         component: MarkerComponent,
         map: Map,
-        mapboxEvent: DOMEvent,
+        actualEvent: DOMEvent,
         marker: Marker
     }
 ```
@@ -112,7 +112,7 @@ Object with `Marker` component, parent map and original MapboxGl event
     {
         component: MarkerComponent,
         map: Map,
-        mapboxEvent: DOMEvent,
+        actualEvent: DOMEvent,
         marker: Marker
     }
 ```
@@ -128,7 +128,7 @@ Object with `Marker` component, parent map and original MapboxGl event
     {
         component: MarkerComponent,
         map: Map,
-        mapboxEvent: DOMEvent,
+        actualEvent: DOMEvent,
         marker: Marker
     }
 ```

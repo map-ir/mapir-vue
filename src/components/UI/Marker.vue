@@ -130,6 +130,7 @@ export default {
     },
 
     $_emitSelfEvent(event) {
+      console.log(event)
       this.$_emitMapEvent(event, { marker: this.marker });
     },
 

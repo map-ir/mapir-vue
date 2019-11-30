@@ -109,7 +109,7 @@
 
 Payload of events contains object with properties:
 
-- `mapboxEvent` Original Mapbox GL JS event
+- `actualEvent` Original Mapbox GL JS event
 - `layerId` ID of current layer
 - `map` Current map object
 - `component` Component that emits event

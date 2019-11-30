@@ -4,10 +4,10 @@
 
 ### Installation
 
-You can install mapir-vue via npm. Take note that you need to install mapbox-gl as peer dependency:
+You can install `mapir-vue` via npm. Take note that you need to install mapbox-gl as peer dependency:
 
 ```bash
-npm install --save mapir-vue mapbox-gl
+npm i mapir-vue mapbox-gl@0.53.0
 ```
 
 Add mapbox CSS file to `<head></head>` block of your HTML file (e.g. `index.html`)

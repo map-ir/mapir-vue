@@ -739,7 +739,7 @@
                 e._v(" "),
                 t("ul", [
                   t("li", [
-                    t("code", [e._v("mapboxEvent")]),
+                    t("code", [e._v("actualEvent")]),
                     e._v(" Original Mapbox GL JS event")
                   ]),
                   e._v(" "),

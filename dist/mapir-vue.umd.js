@@ -2020,6 +2020,69 @@
         /***/
       },
 
+      /***/ "9224": /***/ function(module) {
+        module.exports = {
+          name: "mapir-vue",
+          version: "2.2.4",
+          author: {
+            name: "Mohammad H. Sattarian",
+            email: "mh.sattarian@map.ir",
+            url: "https://github.com/mhsattarian"
+          },
+          contributors: [
+            {
+              name: "Reyhaneh Masoumi",
+              email: "r.masoumi@map.ir",
+              url: "https://github.com/ReyhaneMasumi"
+            }
+          ],
+          homepage: "https://github.com/map-ir/mapir-vue",
+          repository: {
+            type: "git",
+            url: "https://github.com/map-ir/mapir-vue.git"
+          },
+          private: false,
+          main: "dist/mapir-vue.umd.js",
+          module: "src/main.js",
+          scripts: {
+            build:
+              "cross-env vue-cli-service build --target lib --name mapir-vue src/main.js",
+            serve:
+              "cross-env vue-cli-service build --target lib --name mapir-vue src/main.js --watch",
+            lint: "vue-cli-service lint",
+            "docs:serve": "vuepress dev docs_source",
+            "docs:build": "vuepress build docs_source"
+          },
+          husky: { hooks: { "pre-commit": "lint-staged" } },
+          "lint-staged": {
+            "*.{js,json,css,md}": ["prettier --write", "git add"]
+          },
+          dependencies: {
+            "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+            "map-promisified": "latest",
+            "mapbox-gl": "^0.53.0"
+          },
+          peerDependencies: { "mapbox-gl": "^0.53.0", vue: "^2.6.6" },
+          devDependencies: {
+            "@vue/cli-plugin-babel": "^3.2.0",
+            "@vue/cli-plugin-eslint": "^3.2.1",
+            "@vue/cli-service": "^3.2.0",
+            "@vue/eslint-config-prettier": "^4.0.1",
+            "babel-eslint": "^10.0.1",
+            "cross-env": "^5.2.1",
+            eslint: "^5.10.0",
+            "eslint-loader": "2.1.1",
+            husky: "^1.2.0",
+            "lint-staged": "^8.1.0",
+            vue: "^2.6.6",
+            "vue-template-compiler": "^2.6.6",
+            vuepress: "^1.0.0-alpha.37"
+          }
+        };
+
+        /***/
+      },
+
       /***/ "9b43": /***/ function(module, exports, __webpack_require__) {
         // optional / simple context binding
         var aFunction = __webpack_require__("d8e8");
@@ -2676,7 +2739,7 @@
         // Indicate to webpack that this file can be concatenated
         /* harmony default export */ var setPublicPath = null;
 
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=7e2d4b5c&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=337fcc47&
         var render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
@@ -2700,10 +2763,16 @@
           }
         ];
 
-        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=7e2d4b5c&
+        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=337fcc47&
 
-        // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
-        var web_dom_iterable = __webpack_require__("ac6a");
+        // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
+        var es6_promise = __webpack_require__("551c");
+
+        // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.array.includes.js
+        var es7_array_includes = __webpack_require__("6762");
+
+        // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.string.includes.js
+        var es6_string_includes = __webpack_require__("2fdb");
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
         var es6_array_iterator = __webpack_require__("cadf");
@@ -2711,8 +2780,8 @@
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.object.keys.js
         var es6_object_keys = __webpack_require__("456d");
 
-        // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
-        var es6_promise = __webpack_require__("551c");
+        // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
+        var web_dom_iterable = __webpack_require__("ac6a");
 
         // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
         function _defineProperty(obj, key, value) {
@@ -2795,7 +2864,7 @@
                 event.type,
                 _objectSpread(
                   {
-                    mapboxEvent: event
+                    actualEvent: event
                   },
                   data
                 )
@@ -2931,12 +3000,6 @@
             name: "idle"
           }
         };
-        // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.array.includes.js
-        var es7_array_includes = __webpack_require__("6762");
-
-        // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.string.includes.js
-        var es6_string_includes = __webpack_require__("2fdb");
-
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.number.constructor.js
         var es6_number_constructor = __webpack_require__("c5f6");
 
@@ -3316,7 +3379,10 @@
                         return {
                           url: url,
                           headers: {
-                            "x-api-key": _this3.apiKey
+                            "x-api-key": _this3.apiKey,
+                            "Mapir-SDK": "vue/"
+                              .concat(_this3.vueVersion, "-map/")
+                              .concat(_this3.componentVersion)
                           }
                         };
                       }
@@ -3394,6 +3460,9 @@
             }
           }
         };
+        // EXTERNAL MODULE: ./package.json
+        var package_0 = __webpack_require__("9224");
+
         // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=script&lang=js&
 
         //
@@ -3467,6 +3536,22 @@
             },
             images: function images() {
               return this.map ? this.map.listImages() : null;
+            },
+            vueVersion: function vueVersion() {
+              var vueversion;
+              Object.keys(package_0)
+                .filter(function(i) {
+                  return i.includes("pendenc");
+                })
+                .forEach(function(item) {
+                  if (package_0[item]["vue"] != undefined)
+                    vueversion = package_0[item]["vue"];
+                });
+              vueversion = vueversion ? vueversion : "";
+              return vueversion.slice(1);
+            },
+            componentVersion: function componentVersion() {
+              return package_0.version;
             }
           },
           created: function created() {
@@ -3501,21 +3586,20 @@
 
               _this.initial = false;
               _this.initialized = true;
-              var holder = document.createElement("div");
-              holder.className = "holder-logo";
-              var link = document.createElement("a");
-              link.href = "http://corp.map.ir/";
-              link.target = "_blank";
-              link.className = "map-logo";
-              holder.appendChild(link);
-
-              _this.$refs.container.appendChild(holder);
 
               _this.$emit("load", {
                 map: map,
                 component: _this
               });
             });
+            var holder = document.createElement("div");
+            holder.className = "holder-logo";
+            var link = document.createElement("a");
+            link.href = "http://corp.map.ir/";
+            link.target = "_blank";
+            link.className = "map-logo";
+            holder.appendChild(link);
+            this.$refs.container.appendChild(holder);
           },
           beforeDestroy: function beforeDestroy() {
             var _this2 = this;
@@ -3864,8 +3948,8 @@
             this.$_addControl();
           }
         };
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
-        var Markervue_type_template_id_bab09942_render = function() {
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47f5d000-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=18d01cbb&
+        var Markervue_type_template_id_18d01cbb_render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
           var _c = _vm._self._c || _h;
@@ -3876,9 +3960,9 @@
             2
           );
         };
-        var Markervue_type_template_id_bab09942_staticRenderFns = [];
+        var Markervue_type_template_id_18d01cbb_staticRenderFns = [];
 
-        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
+        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=18d01cbb&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.values.js
         var es7_object_values = __webpack_require__("8615");
@@ -4019,6 +4103,7 @@
               });
             },
             $_emitSelfEvent: function $_emitSelfEvent(event) {
+              console.log(event);
               this.$_emitMapEvent(event, {
                 marker: this.marker
               });
@@ -4056,8 +4141,8 @@
 
         var Marker_component = normalizeComponent(
           UI_Markervue_type_script_lang_js_,
-          Markervue_type_template_id_bab09942_render,
-          Markervue_type_template_id_bab09942_staticRenderFns,
+          Markervue_type_template_id_18d01cbb_render,
+          Markervue_type_template_id_18d01cbb_staticRenderFns,
           false,
           null,
           null,
