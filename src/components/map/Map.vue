@@ -12,6 +12,7 @@ import options from "./options";
 import withWatchers from "./mixins/withWatchers";
 import withPrivateMethods from "./mixins/withPrivateMethods";
 import withAsyncActions from "./mixins/withAsyncActions";
+import mainPackage from "../../../package.json";
 
 export default {
   name: "Map",
@@ -70,6 +71,20 @@ export default {
     },
     images() {
       return this.map ? this.map.listImages() : null;
+    },
+    vueVersion() {
+      let vueversion;
+      Object.keys(mainPackage)
+        .filter(i => i.includes("pendenc"))
+        .forEach(item => {
+          if (mainPackage[item]["vue"] != undefined)
+            vueversion = mainPackage[item]["vue"];
+        });
+      vueversion = vueversion ? vueversion : ''; 
+      return vueversion.slice(1);
+    },
+    componentVersion() {
+      return mainPackage.version;
     }
   },
 
@@ -96,18 +111,18 @@ export default {
       this.$_bindPropsUpdateEvents();
       this.initial = false;
       this.initialized = true;
-
-      let holder = document.createElement("div");
-      holder.className = "holder-logo";
-      let link = document.createElement("a");
-      link.href = "http://corp.map.ir/";
-      link.target = "_blank";
-      link.className = "map-logo";
-
-      holder.appendChild(link);
-      this.$refs.container.appendChild(holder);
       this.$emit("load", { map, component: this });
     });
+
+    let holder = document.createElement("div");
+    holder.className = "holder-logo";
+    let link = document.createElement("a");
+    link.href = "http://corp.map.ir/";
+    link.target = "_blank";
+    link.className = "map-logo";
+
+    holder.appendChild(link);
+    this.$refs.container.appendChild(holder);
   },
 
   beforeDestroy() {
@@ -119,8 +134,7 @@ export default {
 </script>
 
 <style>
-@import url('https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css');
-
+@import url("https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css");
 
 .map-wrapper {
   height: 100%;

@@ -56,7 +56,12 @@ export default {
             transformRequest: (url, resourceType) => {
               return {
                 url: url,
-                headers: { "x-api-key": this.apiKey }
+                headers: {
+                  "x-api-key": this.apiKey,
+                  "Mapir-SDK": `vue/${this.vueVersion}-map/${
+                    this.componentVersion
+                  }`
+                }
               };
             }
           });
