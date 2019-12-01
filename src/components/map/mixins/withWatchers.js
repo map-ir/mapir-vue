@@ -9,7 +9,6 @@ const watchers = {
     this.map.setMaxZoom(next);
   },
   mapStyle(next) {
-    next = `${next}?x-api-key=${this.apiKey}`;
     this.map.setStyle(next);
   },
   // TODO: make 'bounds' synced prop

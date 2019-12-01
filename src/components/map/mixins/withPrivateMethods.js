@@ -48,7 +48,7 @@ export default {
         return new Promise(resolve => {
           if (this.mapboxAccessToken)
             this.mapbox.accessToken = this.mapboxAccessToken;
-          let mapStyle = `${this.mapStyle}?x-api-key=${this.apiKey}`;
+          let mapStyle = `${this.mapStyle}`;
           const map = new this.mapbox.Map({
             ...this._props,
             container: this.$refs.container,
