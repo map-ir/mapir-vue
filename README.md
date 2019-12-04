@@ -3,6 +3,9 @@
 
 ![Map.ir](https://map.ir/css/images/mapir-logo.png) Vue wrapper for mapbox-gl-js. Expose a bunch of component meant to be simple to use for Vue.
 
+## Get API Key
+🔑 You should first get api key from [Map.ir](https://corp.map.ir/registration/)
+
 ## Installation
 
 ```
