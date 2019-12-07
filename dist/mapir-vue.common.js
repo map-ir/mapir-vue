@@ -1988,7 +1988,7 @@ module.exports = /******/ (function(modules) {
     /***/ "9224": /***/ function(module) {
       module.exports = {
         name: "mapir-vue",
-        version: "2.2.4",
+        version: "2.2.6",
         author: {
           name: "Mohammad H. Sattarian",
           email: "mh.sattarian@map.ir",
@@ -2010,6 +2010,7 @@ module.exports = /******/ (function(modules) {
         main: "dist/mapir-vue.umd.js",
         module: "src/main.js",
         scripts: {
+          start: "npm run serve",
           build:
             "cross-env vue-cli-service build --target lib --name mapir-vue src/main.js",
           serve:
@@ -2025,9 +2026,9 @@ module.exports = /******/ (function(modules) {
         dependencies: {
           "@babel/plugin-syntax-dynamic-import": "^7.2.0",
           "map-promisified": "latest",
-          "mapbox-gl": "^0.53.0"
+          "mapbox-gl": "^1.6.0"
         },
-        peerDependencies: { "mapbox-gl": "^0.53.0", vue: "^2.6.6" },
+        peerDependencies: { "mapbox-gl": "^1.6.0", vue: "^2.6.6" },
         devDependencies: {
           "@vue/cli-plugin-babel": "^3.2.0",
           "@vue/cli-plugin-eslint": "^3.2.1",
