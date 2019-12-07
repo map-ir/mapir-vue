@@ -3229,7 +3229,6 @@
             this.map.setMaxZoom(next);
           },
           mapStyle: function mapStyle(next) {
-            next = "".concat(next, "?x-api-key=").concat(this.apiKey);
             this.map.setStyle(next);
           },
           // TODO: make 'bounds' synced prop
@@ -3365,9 +3364,7 @@
                 return new Promise(function(resolve) {
                   if (_this3.mapboxAccessToken)
                     _this3.mapbox.accessToken = _this3.mapboxAccessToken;
-                  var mapStyle = ""
-                    .concat(_this3.mapStyle, "?x-api-key=")
-                    .concat(_this3.apiKey);
+                  var mapStyle = "".concat(_this3.mapStyle);
                   var map = new _this3.mapbox.Map(
                     _objectSpread({}, _this3._props, {
                       container: _this3.$refs.container,
