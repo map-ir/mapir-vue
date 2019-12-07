@@ -1,64 +1,69 @@
-# Mapir Vue Component [![npm version](https://badge.fury.io/js/mapir-vue.svg)](https://badge.fury.io/js/mapir-vue)
+# MapirVueComponent
+[![npm version](https://badge.fury.io/js/mapir-vue.svg)](https://www.npmjs.com/package/mapir-vue-component)
 
-> Combine powers of [Vue.js](https://vuejs.org/) and [Mapbox Gl JS](https://mapbox.com/mapbox-gl-js)
+![Map.ir](https://map.ir/css/images/mapir-logo.png) Vue wrapper for mapbox-gl-js. Expose a bunch of component meant to be simple to use for Vue.
 
-mapir-vue is wrapper around Mapbox GL JS library that provides vueish-way to interact with the map.
+## Get API Key
+🔑 You should first get api key from [Map.ir](https://corp.map.ir/registration/)
 
-[Description and documentation](https://map-ir.github.io/mapir-vue/)
+## Installation
 
-## Size
-
-~ 15 kB minified and gzipped
-
-## Browser compatibility
-
-_Coming soon_
-
-## Development
-
-```sh
-git clone git@github.com:map-ir/mapir-vue.git
-cd mapir-vue
-npm install
+```
+npm i mapir-vue-component
 ```
 
-Running in dev mode:
+## Quick start 
 
-```sh
-npm run serve
+### Template
+```xml
+ <template>
+  <div id="app">
+    <mapir :apiKey="MapirApiKey" :center="coordinates" @load="onMapLoaded" @click="onClick"/>
+  </div>
+</template>
 ```
+### Script
+```jsx
+<script>
+import { mapir } from "mapir-vue";
 
-Build for production:
-
-```sh
-npm run build
+export default {
+  name: "App",
+  components: {
+    mapir
+  },
+  data() {
+    return {
+      coordinates: [51.420296, 35.732379],
+      MapirApiKey: "pk.Mapir" // your Api Key.
+    };
+  },
+  created() {
+    this.map = null;
+  },
+  methods: {
+    onMapLoaded(event) {
+      // in component
+      this.map = event.map;
+      // or just to store if you want have access from other components
+      this.$store.map = event.map;
+    },
+    onClick(e) {
+      console.log(e, "HIiiiiiiii");
+    }
+  }
+};
+</script>
 ```
-
+### Style
+```jsx
+<style>
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+```
 [![Edit Vue Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-template-xo2c9?fontsize=14)
 
-### Documentation
-
-Documentation use [VuePress 1.0](https://vuepress.vuejs.org).
-Documentations source palced in `docs_source` directory and builds into `docs` directory
-
-Start documentation site in development mode:
-
-```sh
-npm run docs:serve
-```
-
-Build documentation:
-
-```sh
-npm run docs:build
-```
-
-Inspired by KoRiGaN's [Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet).
-
-## License
-
-MIT
-
-## Contributing
-
-Just fork `development` branch and create PR when your work is done. Please ensure you are not added dist files.
+📖 [English Documentation](https://map-ir.github.io/mapir-vue/)
