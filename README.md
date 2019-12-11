@@ -9,7 +9,7 @@
 ## Installation
 
 ```
-npm i mapir-vue-component
+npm i mapir-vue
 ```
 
 ## Quick start 
