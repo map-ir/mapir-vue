@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       initial: true,
-      initialized: false
+      initialized: false,
     };
   },
 
@@ -97,14 +97,19 @@ export default {
   },
 
   mounted() {
+    let _this = this;
     this.$_loadMap().then(map => {
       this.map = map;
-      if (this.RTLTextPluginUrl !== undefined) {
-        this.mapbox.setRTLTextPlugin(
-          this.RTLTextPluginUrl,
-          this.$_RTLTextPluginError
-        );
+      let validStatuses = ['unavailable', 'error'];
+      if (validStatuses.includes(_this.mapbox.getRTLTextPluginStatus())) {
+        if (this.RTLTextPluginUrl !== undefined) {
+          this.mapbox.setRTLTextPlugin (
+            this.RTLTextPluginUrl,
+            this.$_RTLTextPluginError
+          );
+        }
       }
+
       const eventNames = Object.keys(mapEvents);
       this.$_bindMapEvents(eventNames);
       this.$_registerAsyncActions(map);
