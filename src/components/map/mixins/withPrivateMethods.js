@@ -58,13 +58,15 @@ export default {
                 url: url,
                 headers: {
                   "x-api-key": this.apiKey,
-                  "Mapir-SDK": `vue/${this.vueVersion}-map/${
-                    this.componentVersion
-                  }`
+                  "Mapir-SDK": `vue/${this.vueVersion}-map/${this.componentVersion}`
                 }
               };
             }
-          });
+          }).addControl(
+            new this.mapbox.AttributionControl({
+              customAttribution: "© Map © Openstreetmap"
+            })
+          );
           map.on("load", () => resolve(map));
         });
       });

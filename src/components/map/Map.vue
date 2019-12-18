@@ -139,7 +139,13 @@ export default {
 </script>
 
 <style>
-@import url("https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css");
+@import url("https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css");
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    padding: 0 5px;
+    background-color: unset;
+    margin: 7px;
+}
 
 .map-wrapper {
   height: 100%;
@@ -157,10 +163,10 @@ export default {
 
 .holder-logo {
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: 5px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(20%);
+  transform: translateX(20%);
   z-index: 850;
   text-align: center;
   display: -webkit-box;
