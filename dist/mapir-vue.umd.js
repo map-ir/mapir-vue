@@ -2613,7 +2613,7 @@
 
       /***/ "9224": /***/ function(module) {
         module.exports = JSON.parse(
-          '{"name":"mapir-vue","version":"2.2.7","author":{"name":"Mohammad H. Sattarian","email":"mh.sattarian@map.ir","url":"https://github.com/mhsattarian"},"contributors":[{"name":"Reyhaneh Masoumi","email":"r.masoumi@map.ir","url":"https://github.com/ReyhaneMasumi"}],"homepage":"https://github.com/map-ir/mapir-vue","repository":{"type":"git","url":"https://github.com/map-ir/mapir-vue.git"},"private":false,"main":"dist/mapir-vue.umd.js","module":"src/main.js","scripts":{"start":"npm run serve","build":"cross-env vue-cli-service build --target lib --name mapir-vue src/main.js","serve":"cross-env vue-cli-service build --target lib --name mapir-vue src/main.js --watch","lint":"vue-cli-service lint","docs:serve":"vuepress dev docs_source","docs:build":"vuepress build docs_source"},"husky":{"hooks":{"pre-commit":"lint-staged"}},"lint-staged":{"*.{js,json,css,md}":["prettier --write","git add"]},"dependencies":{"@babel/plugin-syntax-dynamic-import":"^7.2.0","babel-loader":"^7.1.5","map-promisified":"latest","mapbox-gl":"^1.6.0"},"peerDependencies":{"mapbox-gl":"^1.6.0","vue":"^2.6.6"},"devDependencies":{"@vue/cli-plugin-babel":"^3.2.0","@vue/cli-plugin-eslint":"^3.2.1","@vue/cli-service":"^3.2.0","@vue/eslint-config-prettier":"^4.0.1","babel-eslint":"^10.0.1","cross-env":"^6.0.3","eslint":"^5.10.0","eslint-loader":"2.1.1","husky":"^1.2.0","lint-staged":"^8.1.0","vue":"^2.6.6","vue-template-compiler":"^2.6.6","vuepress":"^1.0.0-alpha.37"}}'
+          '{"name":"mapir-vue","version":"2.2.10","author":{"name":"Mohammad H. Sattarian","email":"mh.sattarian@map.ir","url":"https://github.com/mhsattarian"},"contributors":[{"name":"Reyhaneh Masoumi","email":"r.masoumi@map.ir","url":"https://github.com/ReyhaneMasumi"}],"homepage":"https://github.com/map-ir/mapir-vue","repository":{"type":"git","url":"https://github.com/map-ir/mapir-vue.git"},"private":false,"main":"dist/mapir-vue.umd.js","module":"src/main.js","scripts":{"start":"npm run serve","build":"cross-env vue-cli-service build --target lib --name mapir-vue src/main.js","serve":"cross-env vue-cli-service build --target lib --name mapir-vue src/main.js --watch","lint":"vue-cli-service lint","docs:serve":"vuepress dev docs_source","docs:build":"vuepress build docs_source"},"husky":{"hooks":{"pre-commit":"lint-staged"}},"lint-staged":{"*.{js,json,css,md}":["prettier --write","git add"]},"dependencies":{"@babel/plugin-syntax-dynamic-import":"^7.2.0","babel-loader":"^7.1.5","map-promisified":"latest","mapbox-gl":"^1.6.0"},"peerDependencies":{"mapbox-gl":"^1.6.0","vue":"^2.6.6"},"devDependencies":{"@vue/cli-plugin-babel":"^3.2.0","@vue/cli-plugin-eslint":"^3.2.1","@vue/cli-service":"^3.2.0","@vue/eslint-config-prettier":"^4.0.1","babel-eslint":"^10.0.1","cross-env":"^6.0.3","eslint":"^5.10.0","eslint-loader":"2.1.1","husky":"^1.2.0","lint-staged":"^8.1.0","vue":"^2.6.6","vue-template-compiler":"^2.6.6","vuepress":"^1.0.0-alpha.37"}}'
         );
 
         /***/
@@ -3622,7 +3622,7 @@
         // Indicate to webpack that this file can be concatenated
         /* harmony default export */ var setPublicPath = null;
 
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"10701cd0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=675b18f5&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1bf0a341-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/map/Map.vue?vue&type=template&id=4206d580&
         var render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
@@ -3646,7 +3646,7 @@
           }
         ];
 
-        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=675b18f5&
+        // CONCATENATED MODULE: ./src/components/map/Map.vue?vue&type=template&id=4206d580&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.get-own-property-descriptors.js
         var es7_object_get_own_property_descriptors = __webpack_require__(
@@ -4331,6 +4331,10 @@
                           }
                         };
                       }
+                    })
+                  ).addControl(
+                    new _this3.mapbox.AttributionControl({
+                      customAttribution: "© Map © Openstreetmap"
                     })
                   );
                   map.on("load", function() {
@@ -5021,8 +5025,8 @@
             this.$_addControl();
           }
         };
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"10701cd0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=18d01cbb&
-        var Markervue_type_template_id_18d01cbb_render = function() {
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1bf0a341-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
+        var Markervue_type_template_id_bab09942_render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
           var _c = _vm._self._c || _h;
@@ -5033,9 +5037,9 @@
             2
           );
         };
-        var Markervue_type_template_id_18d01cbb_staticRenderFns = [];
+        var Markervue_type_template_id_bab09942_staticRenderFns = [];
 
-        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=18d01cbb&
+        // CONCATENATED MODULE: ./src/components/UI/Marker.vue?vue&type=template&id=bab09942&
 
         // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.values.js
         var es7_object_values = __webpack_require__("8615");
@@ -5219,7 +5223,6 @@
               });
             },
             $_emitSelfEvent: function $_emitSelfEvent(event) {
-              console.log(event);
               this.$_emitMapEvent(event, {
                 marker: this.marker
               });
@@ -5257,8 +5260,8 @@
 
         var Marker_component = normalizeComponent(
           UI_Markervue_type_script_lang_js_,
-          Markervue_type_template_id_18d01cbb_render,
-          Markervue_type_template_id_18d01cbb_staticRenderFns,
+          Markervue_type_template_id_bab09942_render,
+          Markervue_type_template_id_bab09942_staticRenderFns,
           false,
           null,
           null,
@@ -5266,7 +5269,7 @@
         );
 
         /* harmony default export */ var Marker = Marker_component.exports;
-        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"10701cd0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Popup.vue?vue&type=template&id=bdbffbcc&
+        // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1bf0a341-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/UI/Popup.vue?vue&type=template&id=bdbffbcc&
         var Popupvue_type_template_id_bdbffbcc_render = function() {
           var _vm = this;
           var _h = _vm.$createElement;
