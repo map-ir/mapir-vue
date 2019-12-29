@@ -1,9 +1,11 @@
 module.exports = {
-  title: "MapirVue",
-  description: "Combine powers of Mapbox GL JS and Vue.js",
+  title: "Mapir Vue Component",
+  description: "Bring Map.ir to your vuejs app",
   dest: "docs",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   base: "/mapir-vue/",
+
+  theme: undefined,
 
   themeConfig: {
     nav: [
@@ -17,8 +19,8 @@ module.exports = {
       },
       { text: "Github", link: "https://github.com/map-ir/mapir-vue" },
       {
-        text: "map-promisified",
-        link: "https://github.com/soal/map-promisified"
+        text: "Get API key",
+        link: "https://corp.map.ir/registration"
       }
     ],
 

@@ -14,7 +14,11 @@ features:
 footer: MIT Licensed
 ---
 
-If you like long story, check out [blog post](https://soal.red/reasoning-behind-mapir-vue/)
+<!-- ::: tip Persian Documentation
+Persian documentation would be available on support.map.ir soon.
+::: -->
+
+## Quick Start
 
 ```vue
 <template>
