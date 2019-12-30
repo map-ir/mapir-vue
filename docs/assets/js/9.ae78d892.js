@@ -1,10 +1,10 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [10],
+  [9],
   {
-    149: function(e, t, a) {
+    200: function(e, t, a) {
       "use strict";
       a.r(t);
-      var r = a(17),
+      var r = a(0),
         s = Object(r.a)(
           {},
           function() {
@@ -20,7 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#imagelayer", "aria-hidden": "true" }
+                      attrs: { href: "#imagelayer" }
                     },
                     [e._v("#")]
                   ),
@@ -30,10 +30,7 @@
                 a("h2", { attrs: { id: "props" } }, [
                   a(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
@@ -55,7 +52,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [e._v("#")]
                   ),
@@ -98,7 +95,7 @@
                   ])
                 ]),
                 e._v(" "),
-                a("div", { staticClass: "tip custom-block" }, [
+                a("div", { staticClass: "custom-block tip" }, [
                   a("p", { staticClass: "custom-block-title" }, [
                     e._v("Reactivity")
                   ]),
@@ -120,7 +117,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
@@ -146,7 +143,6 @@
           null,
           null
         );
-      s.options.__file = "imagelayer.md";
       t.default = s.exports;
     }
   }

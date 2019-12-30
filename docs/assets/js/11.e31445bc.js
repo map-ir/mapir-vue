@@ -1,10 +1,10 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [12],
+  [11],
   {
-    151: function(e, t, r) {
+    202: function(e, t, r) {
       "use strict";
       r.r(t);
-      var a = r(17),
+      var a = r(0),
         s = Object(a.a)(
           {},
           function() {
@@ -20,7 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#vectorlayer", "aria-hidden": "true" }
+                      attrs: { href: "#vectorlayer" }
                     },
                     [e._v("#")]
                   ),
@@ -30,10 +30,7 @@
                 r("h2", { attrs: { id: "props" } }, [
                   r(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
@@ -55,7 +52,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [e._v("#")]
                   ),
@@ -103,10 +100,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#computed-getters",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#computed-getters" }
                     },
                     [e._v("#")]
                   ),
@@ -118,10 +112,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#getsourcefeatures-filter",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#getsourcefeatures-filter" }
                     },
                     [e._v("#")]
                   ),
@@ -181,10 +172,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#getrenderedfeatures-geometry-filter",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#getrenderedfeatures-geometry-filter" }
                       },
                       [e._v("#")]
                     ),
@@ -249,7 +237,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#methods", "aria-hidden": "true" }
+                      attrs: { href: "#methods" }
                     },
                     [e._v("#")]
                   ),
@@ -261,10 +249,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#setfeaturestate-featureid-state",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#setfeaturestate-featureid-state" }
                     },
                     [e._v("#")]
                   ),
@@ -328,10 +313,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#getfeaturestate-featureid",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#getfeaturestate-featureid" }
                     },
                     [e._v("#")]
                   ),
@@ -384,7 +366,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
@@ -410,7 +392,6 @@
           null,
           null
         );
-      s.options.__file = "vectorlayer.md";
       t.default = s.exports;
     }
   }

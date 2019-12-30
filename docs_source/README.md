@@ -18,63 +18,46 @@ footer: MIT Licensed
 Persian documentation would be available on support.map.ir soon.
 ::: -->
 
+This component is based on Soal's vue-mapbox [available here!](https://github.com/soal/vue-mapbox)
+
 ## Quick Start
 
 ```vue
 <template>
-  <mapir
-    container="map-test"
-    :center.sync="center"
-    :apiKey="apiKey"
-    :mapStyle="mapStyle"
-  >
-    <mapMarker
-      :coordinates.sync="markerCoordinates"
-      color='green'
-    />
-    <mapGeojsonLayer
-      type="fill"
-      :sourceId="sourceId"
-      :layerId="layerId"
-      :source="geojson"
-      @click="handleClick"
-    />
-  </mapir>
-</temaplate>
+  <mapir :center="center" :apiKey="apiKey"></mapir>
+</template>
 
 <script>
-import {
-  mapir,
-  mapMarker,
-  mapGeojsonLayer
-} from 'mapir-vue'
+import { mapir } from "mapir-vue";
 
 export default {
-  name: 'App',
+  name: "App",
+  components: {
+    mapir
+  },
   data() {
     return {
-      apiKey: 'some_token',
-      mapStyle: 'mapbox://map_style',
-      geojson: { /* … some geojson */},
-      layerId: 'firstLayer',
-      sourceId: 'firstSource',
-      markerCoordinates: '[50, 50]'
-    }
+      apiKey: "some_token",
+      center: [51.420296, 35.732379]
+    };
   }
-}
+};
 </script>
+
+<style>
+#app {
+  width: 90vw;
+  height: 90vh;
+}
+</style>
 ```
 
-::: tip Dependencies
-[Vue.js 2.5+](https://github.com/vuejs/vue)  
-[Mapbox GL JS 0.51+](https://github.com/mapbox/mapbox-gl-js)  
-[map-promisified](https://github.com/soal/map-promisified)
-:::
+you can get your API Key from [registration panel](https://corp.map.ir/registration/)
 
-::: tip Size
-~ 15 kB minified and gzipped
-:::
+<!-- ::: tip Dependencies
+[Vue.js 2.5+](https://github.com/vuejs/vue)
+::: -->
 
-::: warning Browser compatibility
+<!-- ::: warning Browser compatibility
 _Coming soon_
-:::
+::: -->

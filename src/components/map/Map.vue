@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style>
-@import url("https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css");
+/* @import url("https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css"); */
 
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
     padding: 0 5px;

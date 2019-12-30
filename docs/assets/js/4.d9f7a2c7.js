@@ -1,38 +1,32 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [3],
+  [4],
   {
-    105: function(t, e, s) {},
-    123: function(t, e, s) {
-      "use strict";
-      var n = s(105);
-      s.n(n).a;
-    },
-    143: function(t, e, s) {
+    195: function(t, e, s) {
       "use strict";
       s.r(e);
-      var n = [
+      var o = [
           "There's nothing here.",
           "How did we get here?",
           "That's a Four-Oh-Four.",
           "Looks like we've got some broken links."
         ],
-        o = {
+        n = {
           methods: {
             getMsg: function() {
-              return n[Math.floor(Math.random() * n.length)];
+              return o[Math.floor(Math.random() * o.length)];
             }
           }
         },
-        i = (s(123), s(17)),
-        r = Object(i.a)(
-          o,
+        i = s(0),
+        h = Object(i.a)(
+          n,
           function() {
             var t = this.$createElement,
               e = this._self._c || t;
             return e("div", { staticClass: "theme-container" }, [
               e(
                 "div",
-                { staticClass: "content" },
+                { staticClass: "theme-default-content" },
                 [
                   e("h1", [this._v("404")]),
                   this._v(" "),
@@ -52,8 +46,7 @@
           null,
           null
         );
-      r.options.__file = "404.vue";
-      e.default = r.exports;
+      e.default = h.exports;
     }
   }
 ]);

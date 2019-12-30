@@ -1,77 +1,74 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [16],
+  [15],
   {
-    154: function(e, r, a) {
+    206: function(e, r, t) {
       "use strict";
-      a.r(r);
-      var t = a(17),
-        o = Object(t.a)(
+      t.r(r);
+      var a = t(0),
+        o = Object(a.a)(
           {},
           function() {
             var e = this,
               r = e.$createElement,
-              a = e._self._c || r;
-            return a(
+              t = e._self._c || r;
+            return t(
               "ContentSlotsDistributor",
               { attrs: { "slot-key": e.$parent.slotKey } },
               [
-                a("h1", { attrs: { id: "marker" } }, [
-                  a(
+                t("h1", { attrs: { id: "marker" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#marker", "aria-hidden": "true" }
+                      attrs: { href: "#marker" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Marker")
                 ]),
                 e._v(" "),
-                a("h2", { attrs: { id: "props" } }, [
-                  a(
+                t("h2", { attrs: { id: "props" } }, [
+                  t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "offset" } }, [
-                  a(
+                t("h3", { attrs: { id: "offset" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#offset", "aria-hidden": "true" }
+                      attrs: { href: "#offset" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("offset")])
+                  t("code", [e._v("offset")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Type")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type")]),
                     e._v(": "),
-                    a("code", [e._v("Array<number>")])
+                    t("code", [e._v("Array<number>")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " The offset in pixels as a PointLike object to apply relative to the element's center. Negatives indicate left and up."
                     )
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("See:")]),
+                  t("li", [
+                    t("strong", [e._v("See:")]),
                     e._v(" "),
-                    a("code", [e._v("offset")]),
+                    t("code", [e._v("offset")]),
                     e._v(" in "),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -81,112 +78,109 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Marker"), a("OutboundLink")],
+                      [e._v("Marker"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "coordinates" } }, [
-                  a(
+                t("h3", { attrs: { id: "coordinates" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#coordinates", "aria-hidden": "true" }
+                      attrs: { href: "#coordinates" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("coordinates")])
+                  t("code", [e._v("coordinates")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Type")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type")]),
                     e._v(": "),
-                    a("code", [e._v("Array<number>")])
+                    t("code", [e._v("Array<number>")])
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Required")])]),
+                  t("li", [t("strong", [e._v("Required")])]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Synced")])]),
+                  t("li", [t("strong", [e._v("Synced")])]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Marker coordinates in format "),
-                    a("code", [e._v("[longitude, latitude]")])
+                    t("code", [e._v("[longitude, latitude]")])
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "color" } }, [
-                  a(
+                t("h3", { attrs: { id: "color" } }, [
+                  t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#color", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#color" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("color")])
+                  t("code", [e._v("color")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Type")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type")]),
                     e._v(": "),
-                    a("code", [e._v("string")])
+                    t("code", [e._v("string")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " The color to use for the default marker if custom marker is not provided. The default is light blue."
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "anchor" } }, [
-                  a(
+                t("h3", { attrs: { id: "anchor" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#anchor", "aria-hidden": "true" }
+                      attrs: { href: "#anchor" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("anchor")])
+                  t("code", [e._v("anchor")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Type")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type")]),
                     e._v(": "),
-                    a("code", [e._v("string")])
+                    t("code", [e._v("string")])
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Non-Synced")])]),
+                  t("li", [t("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Default")]),
+                  t("li", [
+                    t("strong", [e._v("Default")]),
                     e._v(" "),
-                    a("code", [e._v("center")])
+                    t("code", [e._v("center")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " A string indicating the part of the Marker that should be positioned closest to the coordinate set via Marker#setLngLat . Options are 'center' , 'top' , 'bottom' , 'left' , 'right' , 'top-left' , 'top-right' , 'bottom-left' , and 'bottom-right' . The default is 'center'."
                     )
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("See")]),
+                  t("li", [
+                    t("strong", [e._v("See")]),
                     e._v(" "),
-                    a("code", [e._v("options.anchor")]),
+                    t("code", [e._v("options.anchor")]),
                     e._v(" in "),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -196,53 +190,53 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Marker"), a("OutboundLink")],
+                      [e._v("Marker"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "draggable" } }, [
-                  a(
+                t("h3", { attrs: { id: "draggable" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#draggable", "aria-hidden": "true" }
+                      attrs: { href: "#draggable" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("draggable")])
+                  t("code", [e._v("draggable")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Type")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Type")]),
                     e._v(": "),
-                    a("code", [e._v("boolean")])
+                    t("code", [e._v("boolean")])
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Non-Synced")])]),
+                  t("li", [t("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Default")]),
+                  t("li", [
+                    t("strong", [e._v("Default")]),
                     e._v(" "),
-                    a("code", [e._v("false")])
+                    t("code", [e._v("false")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " A boolean indicating whether or not a marker is able to be dragged to a new position on the map."
                     )
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("See")]),
+                  t("li", [
+                    t("strong", [e._v("See")]),
                     e._v(" "),
-                    a("code", [e._v("options.draggable")]),
+                    t("code", [e._v("options.draggable")]),
                     e._v(" in "),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -252,66 +246,63 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Marker"), a("OutboundLink")],
+                      [e._v("Marker"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h2", { attrs: { id: "slots" } }, [
-                  a(
+                t("h2", { attrs: { id: "slots" } }, [
+                  t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#slots", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#slots" } },
                     [e._v("#")]
                   ),
                   e._v(" Slots")
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "marker-2" } }, [
-                  a(
+                t("h3", { attrs: { id: "marker-2" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#marker-2", "aria-hidden": "true" }
+                      attrs: { href: "#marker-2" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("marker")])
+                  t("code", [e._v("marker")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " Slot for custom marker. Can be HTML element or Vue component."
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "default" } }, [
-                  a(
+                t("h3", { attrs: { id: "default" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#default", "aria-hidden": "true" }
+                      attrs: { href: "#default" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("default")])
+                  t("code", [e._v("default")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " Slot for popup component. When popup put inside marker, popup automaticaly mounted to marker, similiar as "
                     ),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -321,54 +312,54 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("setPopup"), a("OutboundLink")],
+                      [e._v("setPopup"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h2", { attrs: { id: "methods" } }, [
-                  a(
+                t("h2", { attrs: { id: "methods" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#methods", "aria-hidden": "true" }
+                      attrs: { href: "#methods" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Methods")
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "remove" } }, [
-                  a(
+                t("h3", { attrs: { id: "remove" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#remove", "aria-hidden": "true" }
+                      attrs: { href: "#remove" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v(".remove()")])
+                  t("code", [e._v(".remove()")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Removes marker from the map.")
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Returns")]),
+                  t("li", [
+                    t("strong", [e._v("Returns")]),
                     e._v(" "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" MapboxGL marker.")
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("See")]),
+                  t("li", [
+                    t("strong", [e._v("See")]),
                     e._v(" "),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -378,44 +369,44 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Marker.remove"), a("OutboundLink")],
+                      [e._v("Marker.remove"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "togglepopup" } }, [
-                  a(
+                t("h3", { attrs: { id: "togglepopup" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#togglepopup", "aria-hidden": "true" }
+                      attrs: { href: "#togglepopup" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v(".togglePopup()")])
+                  t("code", [e._v(".togglePopup()")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(
                       " Opens or closes the bound popup, depending on the current state."
                     )
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Returns")]),
+                  t("li", [
+                    t("strong", [e._v("Returns")]),
                     e._v(" "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" MapboxGL marker.")
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("See")]),
+                  t("li", [
+                    t("strong", [e._v("See")]),
                     e._v(" "),
-                    a(
+                    t(
                       "a",
                       {
                         attrs: {
@@ -425,337 +416,331 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Marker.togglePopup"), a("OutboundLink")],
+                      [e._v("Marker.togglePopup"), t("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                a("h2", { attrs: { id: "events" } }, [
-                  a(
+                t("h2", { attrs: { id: "events" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Events")
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "added" } }, [
-                  a(
+                t("h3", { attrs: { id: "added" } }, [
+                  t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#added", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#added" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("@added")])
+                  t("code", [e._v("@added")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when marker added on the map.")
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Payload")]),
+                  t("li", [
+                    t("strong", [e._v("Payload")]),
                     e._v(" "),
-                    a("code", [
+                    t("code", [
                       e._v(
                         "{ component: MarkerComponent, map: Map, marker: Marker }"
                       )
                     ]),
                     e._v(" Object with "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" component, parent map and MapboxGl "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" object")
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "removed" } }, [
-                  a(
+                t("h3", { attrs: { id: "removed" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#removed", "aria-hidden": "true" }
+                      attrs: { href: "#removed" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("@removed")])
+                  t("code", [e._v("@removed")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when marker removed the map.")
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Payload")]),
+                  t("li", [
+                    t("strong", [e._v("Payload")]),
                     e._v(" "),
-                    a("code", [
+                    t("code", [
                       e._v(
                         "{ component: MarkerComponent, map: Map, marker: Marker }"
                       )
                     ]),
                     e._v(" Object with "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" component, parent map and MapboxGl "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" object")
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "drag" } }, [
-                  a(
+                t("h3", { attrs: { id: "drag" } }, [
+                  t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#drag", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#drag" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("@drag")])
+                  t("code", [e._v("@drag")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when marker dragged if marker "),
-                    a("code", [e._v("draggable")]),
+                    t("code", [e._v("draggable")]),
                     e._v(" prop is "),
-                    a("code", [e._v("true")])
+                    t("code", [e._v("true")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Payload")]),
+                  t("li", [
+                    t("strong", [e._v("Payload")]),
                     e._v(" "),
-                    a("code", [
+                    t("code", [
                       e._v(
                         "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" component, parent map and original MapboxGl event")
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "dragstart" } }, [
-                  a(
+                t("h3", { attrs: { id: "dragstart" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#dragstart", "aria-hidden": "true" }
+                      attrs: { href: "#dragstart" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("@dragstart")])
+                  t("code", [e._v("@dragstart")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when marker dragging starts if marker "),
-                    a("code", [e._v("draggable")]),
+                    t("code", [e._v("draggable")]),
                     e._v(" prop is "),
-                    a("code", [e._v("true")])
+                    t("code", [e._v("true")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Payload")]),
+                  t("li", [
+                    t("strong", [e._v("Payload")]),
                     e._v(" "),
-                    a("code", [
+                    t("code", [
                       e._v(
                         "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" component, parent map and original MapboxGl event")
                   ])
                 ]),
                 e._v(" "),
-                a("h3", { attrs: { id: "dragend" } }, [
-                  a(
+                t("h3", { attrs: { id: "dragend" } }, [
+                  t(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#dragend", "aria-hidden": "true" }
+                      attrs: { href: "#dragend" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  a("code", [e._v("@dragend")])
+                  t("code", [e._v("@dragend")])
                 ]),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when marker dragging ends if marker "),
-                    a("code", [e._v("draggable")]),
+                    t("code", [e._v("draggable")]),
                     e._v(" prop is "),
-                    a("code", [e._v("true")])
+                    t("code", [e._v("true")])
                   ]),
                   e._v(" "),
-                  a("li", [
-                    a("strong", [e._v("Payload")]),
+                  t("li", [
+                    t("strong", [e._v("Payload")]),
                     e._v(" "),
-                    a("code", [
+                    t("code", [
                       e._v(
                         "{ component: MarkerComponent, map: Map, actualEvent: Event }"
                       )
                     ]),
                     e._v(" Object with "),
-                    a("code", [e._v("Marker")]),
+                    t("code", [e._v("Marker")]),
                     e._v(" component, parent map and original MapboxGl event")
                   ])
                 ]),
                 e._v(" "),
-                a(
+                t(
                   "h3",
                   { attrs: { id: "click" } },
                   [
-                    a(
+                    t(
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: { href: "#click", "aria-hidden": "true" }
+                        attrs: { href: "#click" }
                       },
                       [e._v("#")]
                     ),
                     e._v(" "),
-                    a("code", [e._v("@click")]),
+                    t("code", [e._v("@click")]),
                     e._v(" "),
-                    a("Badge", {
+                    t("Badge", {
                       attrs: { text: "experimental", type: "warn" }
                     })
                   ],
                   1
                 ),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires marker is clicked.")
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Payload")])])
+                  t("li", [t("strong", [e._v("Payload")])])
                 ]),
                 e._v(" "),
-                a("div", { staticClass: "language- extra-class" }, [
-                  a("pre", { pre: !0, attrs: { class: "language-text" } }, [
-                    a("code", [
+                t("div", { staticClass: "language- extra-class" }, [
+                  t("pre", { pre: !0, attrs: { class: "language-text" } }, [
+                    t("code", [
                       e._v(
                         "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])
                 ]),
-                a("p", [
+                t("p", [
                   e._v("Object with "),
-                  a("code", [e._v("Marker")]),
+                  t("code", [e._v("Marker")]),
                   e._v(" component, parent map and original MapboxGl event")
                 ]),
                 e._v(" "),
-                a(
+                t(
                   "h3",
                   { attrs: { id: "mouseenter" } },
                   [
-                    a(
+                    t(
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: { href: "#mouseenter", "aria-hidden": "true" }
+                        attrs: { href: "#mouseenter" }
                       },
                       [e._v("#")]
                     ),
                     e._v(" "),
-                    a("code", [e._v("@mouseenter")]),
+                    t("code", [e._v("@mouseenter")]),
                     e._v(" "),
-                    a("Badge", {
+                    t("Badge", {
                       attrs: { text: "experimental", type: "warn" }
                     })
                   ],
                   1
                 ),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when mouse cursor enters marker area.")
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Payload")])])
+                  t("li", [t("strong", [e._v("Payload")])])
                 ]),
                 e._v(" "),
-                a("div", { staticClass: "language- extra-class" }, [
-                  a("pre", { pre: !0, attrs: { class: "language-text" } }, [
-                    a("code", [
+                t("div", { staticClass: "language- extra-class" }, [
+                  t("pre", { pre: !0, attrs: { class: "language-text" } }, [
+                    t("code", [
                       e._v(
                         "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])
                 ]),
-                a("p", [
+                t("p", [
                   e._v("Object with "),
-                  a("code", [e._v("Marker")]),
+                  t("code", [e._v("Marker")]),
                   e._v(" component, parent map and original MapboxGl event")
                 ]),
                 e._v(" "),
-                a(
+                t(
                   "h3",
                   { attrs: { id: "mouseleave" } },
                   [
-                    a(
+                    t(
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: { href: "#mouseleave", "aria-hidden": "true" }
+                        attrs: { href: "#mouseleave" }
                       },
                       [e._v("#")]
                     ),
                     e._v(" "),
-                    a("code", [e._v("@mouseleave")]),
+                    t("code", [e._v("@mouseleave")]),
                     e._v(" "),
-                    a("Badge", {
+                    t("Badge", {
                       attrs: { text: "experimental", type: "warn" }
                     })
                   ],
                   1
                 ),
                 e._v(" "),
-                a("ul", [
-                  a("li", [
-                    a("strong", [e._v("Description:")]),
+                t("ul", [
+                  t("li", [
+                    t("strong", [e._v("Description:")]),
                     e._v(" Fires when mouse cursor leaves marker area.")
                   ]),
                   e._v(" "),
-                  a("li", [a("strong", [e._v("Payload")])])
+                  t("li", [t("strong", [e._v("Payload")])])
                 ]),
                 e._v(" "),
-                a("div", { staticClass: "language- extra-class" }, [
-                  a("pre", { pre: !0, attrs: { class: "language-text" } }, [
-                    a("code", [
+                t("div", { staticClass: "language- extra-class" }, [
+                  t("pre", { pre: !0, attrs: { class: "language-text" } }, [
+                    t("code", [
                       e._v(
                         "    {\n        component: MarkerComponent,\n        map: Map,\n        actualEvent: DOMEvent,\n        marker: Marker\n    }\n"
                       )
                     ])
                   ])
                 ]),
-                a("p", [
+                t("p", [
                   e._v("Object with "),
-                  a("code", [e._v("Marker")]),
+                  t("code", [e._v("Marker")]),
                   e._v(" component, parent map and original MapboxGl event")
                 ])
               ]
@@ -767,7 +752,6 @@
           null,
           null
         );
-      o.options.__file = "marker.md";
       r.default = o.exports;
     }
   }

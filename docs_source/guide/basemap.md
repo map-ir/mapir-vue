@@ -1,48 +1,51 @@
 # Base map
 
-## Adding map component
+## prerequisit
 
-For using maps with Mapbox GL JS you need a [map style](https://mapbox.com/mapbox-gl-js/style-spec).  
-If you using Mapbox-hosted maps, you need to set `access_token`. Look for details in Mapbox [documentation](https://mapbox.com/help/define-access-token/).  
-If you using self-hosting maps on your own server you can omit this parameter.
+For using mapir component you need a **API Key**, head over to [registration panel](https://corp.map.ir/registration/) and get yours.
+
+## Adding mapir component
+
+to use `mapir-vue`, simply import and add it to the `components` in your `.vue` file:
 
 ```vue
 <template>
-  <mapir :apiKey="apiKey" />
+  <div id="app">
+    <mapir :center="center" :apiKey="apiKey"></mapir>
+  </div>
 </template>
 
 <script>
 import { mapir } from "mapir-vue";
 
 export default {
-  components: {
-    mapir
-  },
+  name: "App",
+  components: { mapir },
   data() {
     return {
-      apiKey: ACCESS_TOKEN // your access token. Needed if you using Mapbox maps
+      apiKey: YOUR_API_KEY,
+      center: [51.420296, 35.732379]
     };
-  },
-
-  created() {
-    // We need to set mapbox-gl library here in order to use it in template
-    this.mapbox = Mapbox;
   }
 };
 </script>
+
+<style>
+#app {
+  width: 90vw;
+  height: 90vh;
+}
+</style>
 ```
 
+make sure place `mapir` component in an element with `width` and `height` set, now you should be able to see map on your page, like below:
+
 ::: tip
-If you need, you can pass Mapbox-gl-js implementation as `mapboxGl` prop. May be useful for lazy-loading.
-Example:
+If you need, you can pass Mapbox-gl-js implementation as `mapboxGl` prop. May be useful for **lazy-loading**:
 
 ```vue
 <template>
-  <mapir
-    :mapboxGl="mapbox-gl"
-    :apiKey="apiKey"
-    @load="onMapLoaded"
-  />
+  <mapir :mapboxGl="mapbox - gl" :apiKey="apiKey" @load="onMapLoaded" />
 </template>
 ```
 
@@ -51,33 +54,34 @@ If none is passed, MapirVue imports Mapbox-gl internally.
 
 ### Interact with map properties as Map props
 
-You can control map parameters like zoom, bearing, pitch etc. by changing props.
+You can control map parameters like zoom, bearing, pitch, etc. by changing props.
 If you set `.sync` modifier ([Vue docs](https://vuejs.org/v2/guide/components.html#sync-Modifier)) to prop, it will updates when you use operations that takes time to proceed. For example, if you use `flyTo` method, props `zoom`, `center`, `bearing`, `pitch` will be updated when animation ends.
 
-Full list of props see in [API docs](/api/#props), note field 'Synced' in description
+Full list of props is available at [API docs](/api/#props), note field `Synced` in descriptions.
 
-## Map loading
+<!-- ## Map loading -->
 
-When map loads, `mapir` component emits `load` event. Payload of the event contains Mapbox GL JS `Map` object.
-All components placed under `mapir` will be rendered only after map fully loaded.
+## Events and Map object
 
-::: warning Storing Map object
-Take note that it's generally bad idea to add to Vuex or component's `data` anything but primitive types and plain objects. Vue adds getters and setters to every property, so if you add `Map` object to Vuex store or component `data`, it may lead to weird bugs.
-If you want to store map object, store it as non-reactive property like in example below.
-:::
+Events are subscribable object, which trigger on user actions and
+Payload of each event contains Mapbox-GL `Map` object. for example when map loads, `mapir` component emits `load` event, you can access the map object using `event.map`.
+
+> See full list of **events** on [API](/api/#events) page.
+
+### Storing Map object
+
+Take note that it's generally bad idea to add anything but primitive types and **plain objects** to Vuex or component's `data`. Vue adds getters and setters to every property, so if you add `Map` object to Vuex store or component `data`, it may lead to weird bugs.
+If you want to store map object, store it as non-reactive property like in example below:
 
 ```vue
 <template>
-  <mapir
-    :apiKey="apiKey"
-    @load="onMapLoaded"
-  />
+  <mapir :apiKey="apiKey" @load="onMapLoaded" />
 </template>
 
 <script>
 export default {
-  // …component code…
   created() {
+    // define a variable here to be non-reactive
     this.map = null;
   },
   methods: {
@@ -94,15 +98,12 @@ export default {
 
 ## Map actions
 
-Asynchronous map methods exposed at mapir component in `actions` property. They returns `Promise`, that resolves when action completed.
-Promise resolves with map properties that has been changed by used action.  
-For example:
+Actions are asynchronous map methods exposed from mapir component in `actions` property of the component object. They return `Promise`, that resolves when action completed. each promise resolves with map properties that has been changed by used actions:
 
 ```vue
 <script>
 export deafult {
   name: 'App',
-
   methods: {
     async onMapLoad(event) {
       // Here we cathing 'load' map event
@@ -127,12 +128,8 @@ export deafult {
 </script>
 ```
 
-See full list of actions on [API](/api/#actions) page.
+> See full list of **actions** on [API](/api/#actions) page.
 
 ### Method `actions.stop()`
 
 Method `.stop()` just stops all animations on map, updates props with new positions and return Promise with map parameters at the moment when `.stop()` called.
-
-### Events
-
-See list of events on [API](/api/#events) page.

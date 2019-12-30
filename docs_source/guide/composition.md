@@ -1,8 +1,14 @@
-# Composition
+# Composition (slots)
 
-You can use Mapbox GL feature as Vue component and compose it as a child of Map. During creation all components waits until map properly initialized.
+You can use Mapbox-GL features as Vue component and compose it as a child of `mapir`.
 
-For example, adding map controls:
+::: tip render order
+All components placed under `mapir` will be rendered only after map fully loaded.
+:::
+
+## Examples
+
+### map controls
 
 ```vue
 <template>
@@ -34,7 +40,7 @@ export default {
 </script>
 ```
 
-Adding a popup:
+### popup:
 
 ```vue
 <template>

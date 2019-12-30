@@ -1,88 +1,85 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [11],
+  [10],
   {
-    150: function(r, e, t) {
+    201: function(r, t, e) {
       "use strict";
-      t.r(e);
-      var s = t(17),
+      e.r(t);
+      var s = e(0),
         a = Object(s.a)(
           {},
           function() {
             var r = this,
-              e = r.$createElement,
-              t = r._self._c || e;
-            return t(
+              t = r.$createElement,
+              e = r._self._c || t;
+            return e(
               "ContentSlotsDistributor",
               { attrs: { "slot-key": r.$parent.slotKey } },
               [
-                t("h1", { attrs: { id: "rasterlayer" } }, [
-                  t(
+                e("h1", { attrs: { id: "rasterlayer" } }, [
+                  e(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#rasterlayer", "aria-hidden": "true" }
+                      attrs: { href: "#rasterlayer" }
                     },
                     [r._v("#")]
                   ),
                   r._v(" RasterLayer")
                 ]),
                 r._v(" "),
-                t("h2", { attrs: { id: "props" } }, [
-                  t(
+                e("h2", { attrs: { id: "props" } }, [
+                  e(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [r._v("#")]
                   ),
                   r._v(" Props")
                 ]),
                 r._v(" "),
-                t(
+                e(
                   "p",
                   [
                     r._v("All common "),
-                    t("router-link", { attrs: { to: "/api/Layers/#props" } }, [
+                    e("router-link", { attrs: { to: "/api/Layers/#props" } }, [
                       r._v("layers props")
                     ])
                   ],
                   1
                 ),
                 r._v(" "),
-                t("h3", { attrs: { id: "source" } }, [
-                  t(
+                e("h3", { attrs: { id: "source" } }, [
+                  e(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [r._v("#")]
                   ),
                   r._v(" "),
-                  t("code", [r._v("source")])
+                  e("code", [r._v("source")])
                 ]),
                 r._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [r._v("Type:")]),
+                e("ul", [
+                  e("li", [
+                    e("strong", [r._v("Type:")]),
                     r._v(" "),
-                    t("code", [r._v("Object | String")])
+                    e("code", [r._v("Object | String")])
                   ]),
                   r._v(" "),
-                  t("li", [t("strong", [r._v("Non-Synced")])]),
+                  e("li", [e("strong", [r._v("Non-Synced")])]),
                   r._v(" "),
-                  t("li", [
-                    t("strong", [r._v("Description:")]),
+                  e("li", [
+                    e("strong", [r._v("Description:")]),
                     r._v(" A raster tile source.")
                   ]),
                   r._v(" "),
-                  t("li", [
-                    t("strong", [r._v("See:")]),
+                  e("li", [
+                    e("strong", [r._v("See:")]),
                     r._v(" "),
-                    t("code", [r._v("Raster source")]),
+                    e("code", [r._v("Raster source")]),
                     r._v(" in "),
-                    t(
+                    e(
                       "a",
                       {
                         attrs: {
@@ -92,29 +89,29 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [r._v("Mapbox Style Spec"), t("OutboundLink")],
+                      [r._v("Mapbox Style Spec"), e("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 r._v(" "),
-                t("h2", { attrs: { id: "events" } }, [
-                  t(
+                e("h2", { attrs: { id: "events" } }, [
+                  e(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [r._v("#")]
                   ),
                   r._v(" Events")
                 ]),
                 r._v(" "),
-                t(
+                e(
                   "p",
                   [
                     r._v("All common layer "),
-                    t("router-link", { attrs: { to: "/api/Layers/#events" } }, [
+                    e("router-link", { attrs: { to: "/api/Layers/#events" } }, [
                       r._v("events")
                     ])
                   ],
@@ -129,8 +126,7 @@
           null,
           null
         );
-      a.options.__file = "rasterlayer.md";
-      e.default = a.exports;
+      t.default = a.exports;
     }
   }
 ]);

@@ -4,11 +4,19 @@
 
 ### Installation
 
-You can install `mapir-vue` via npm. Take note that you need to install mapbox-gl as peer dependency:
+You can install `mapir-vue` via npm:
 
 ```bash
-npm i mapir-vue mapbox-gl@0.53.0
+npm i mapir-vue
 ```
+
+::: tip mapbox dependancy
+since our component uses [mapbox](https://www.mapbox.com/) as it's foundation, by installing `mapir-vue`, `mapbox-gl@1.6.0` is installed as dependancy.
+:::
+
+::: warning package rename
+`mapir-vue` package would rename to `mapir-vue-component` in **future releases**.
+:::
 
 ## Using in browser
 
@@ -46,17 +54,3 @@ Add Vue, MapboxGL and mapir-vue scripts on your page:
 ```
 
 All components will be placed in global MapirVue object (`MapirVue.mapir` etc.)
-
-## Migration from version 0.1.x
-
-In version `0.2` you don't need to register MapirVue as Vue plugin.
-
-So you don't need this code anymore:
-
-```js
-import MapirVue from "mapir-vue";
-
-Vue.use(VueMapbox, { mapboxgl: Mapbox });
-```
-
-Now you're ready for mapping. See how to [create a map](/guide/basemap.md).

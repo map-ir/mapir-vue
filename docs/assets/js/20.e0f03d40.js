@@ -1,11 +1,11 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [21],
+  [20],
   {
-    159: function(t, a, s) {
+    211: function(t, a, s) {
       "use strict";
       s.r(a);
-      var n = s(17),
-        r = Object(n.a)(
+      var n = s(0),
+        p = Object(n.a)(
           {},
           function() {
             var t = this,
@@ -20,7 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#map-controls", "aria-hidden": "true" }
+                      attrs: { href: "#map-controls" }
                     },
                     [t._v("#")]
                   ),
@@ -32,7 +32,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#overview", "aria-hidden": "true" }
+                      attrs: { href: "#overview" }
                     },
                     [t._v("#")]
                   ),
@@ -539,208 +539,285 @@
                           [t._v(">")]
                         )
                       ]),
-                      s(
-                        "span",
-                        {
-                          pre: !0,
-                          attrs: { class: "token script language-javascript" }
-                        },
-                        [
-                          t._v("\n"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("import")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("{")]
-                          ),
-                          t._v("\n  mapir"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  mapAttributionControl"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  mapNavigationControl"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  mapGeolocateControl"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  mapFullscreenControl"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  mapScaleControl\n"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("}")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("from")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"mapir-vue"')]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n\n"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("export")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("default")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("{")]
-                          ),
-                          t._v("\n  components"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(":")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("{")]
-                          ),
-                          t._v("\n    mapir"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n    mapNavigationControl"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n    mapGeolocateControl\n  "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("}")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(",")]
-                          ),
-                          t._v("\n  "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token function" } },
-                            [t._v("data")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("(")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(")")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("{")]
-                          ),
-                          t._v("\n    "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token keyword" } },
-                            [t._v("return")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("{")]
-                          ),
-                          t._v("\n      apiKey"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(":")]
-                          ),
-                          t._v(" "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token string" } },
-                            [t._v('"some_token"')]
-                          ),
-                          t._v("\n    "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("}")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n  "),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("}")]
-                          ),
-                          t._v("\n"),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("}")]
-                          ),
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v(";")]
-                          ),
-                          t._v("\n")
-                        ]
-                      ),
+                      s("span", { pre: !0, attrs: { class: "token script" } }, [
+                        s(
+                          "span",
+                          {
+                            pre: !0,
+                            attrs: { class: "token language-javascript" }
+                          },
+                          [
+                            t._v("\n"),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token keyword" } },
+                              [t._v("import")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("{")]
+                            ),
+                            t._v("\n  mapir"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  mapAttributionControl"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  mapNavigationControl"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  mapGeolocateControl"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  mapFullscreenControl"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  mapScaleControl\n"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("}")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token keyword" } },
+                              [t._v("from")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token string" } },
+                              [t._v('"mapir-vue"')]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(";")]
+                            ),
+                            t._v("\n\n"),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token keyword" } },
+                              [t._v("export")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token keyword" } },
+                              [t._v("default")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("{")]
+                            ),
+                            t._v("\n  components"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(":")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("{")]
+                            ),
+                            t._v("\n    mapir"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n    mapNavigationControl"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n    mapGeolocateControl\n  "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("}")]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(",")]
+                            ),
+                            t._v("\n  "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token function" } },
+                              [t._v("data")]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("(")]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(")")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("{")]
+                            ),
+                            t._v("\n    "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token keyword" } },
+                              [t._v("return")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("{")]
+                            ),
+                            t._v("\n      apiKey"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(":")]
+                            ),
+                            t._v(" "),
+                            s(
+                              "span",
+                              { pre: !0, attrs: { class: "token string" } },
+                              [t._v('"some_token"')]
+                            ),
+                            t._v("\n    "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("}")]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(";")]
+                            ),
+                            t._v("\n  "),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("}")]
+                            ),
+                            t._v("\n"),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v("}")]
+                            ),
+                            s(
+                              "span",
+                              {
+                                pre: !0,
+                                attrs: { class: "token punctuation" }
+                              },
+                              [t._v(";")]
+                            ),
+                            t._v("\n")
+                          ]
+                        )
+                      ]),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
                         s("span", { pre: !0, attrs: { class: "token tag" } }, [
                           s(
@@ -777,10 +854,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#attribution-control",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#attribution-control" }
                     },
                     [t._v("#")]
                   ),
@@ -821,8 +895,7 @@
           null,
           null
         );
-      r.options.__file = "controls.md";
-      a.default = r.exports;
+      a.default = p.exports;
     }
   }
 ]);

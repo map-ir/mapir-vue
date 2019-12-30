@@ -1,11 +1,11 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [9],
+  [8],
   {
-    148: function(e, t, r) {
+    199: function(e, t, r) {
       "use strict";
       r.r(t);
-      var a = r(17),
-        o = Object(a.a)(
+      var o = r(0),
+        s = Object(o.a)(
           {},
           function() {
             var e = this,
@@ -20,7 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#geojsonlayer", "aria-hidden": "true" }
+                      attrs: { href: "#geojsonlayer" }
                     },
                     [e._v("#")]
                   ),
@@ -30,10 +30,7 @@
                 r("h2", { attrs: { id: "props" } }, [
                   r(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
@@ -55,7 +52,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [e._v("#")]
                   ),
@@ -103,10 +100,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#computed-getters",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#computed-getters" }
                     },
                     [e._v("#")]
                   ),
@@ -118,10 +112,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#getsourcefeatures-filter",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#getsourcefeatures-filter" }
                     },
                     [e._v("#")]
                   ),
@@ -181,10 +172,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#getrenderedfeatures-geometry-filter",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#getrenderedfeatures-geometry-filter" }
                       },
                       [e._v("#")]
                     ),
@@ -252,10 +240,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#getclusterexpansionzoom-clusterid",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#getclusterexpansionzoom-clusterid" }
                       },
                       [e._v("#")]
                     ),
@@ -313,10 +298,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#getclusterchildren-clusterid",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#getclusterchildren-clusterid" }
                     },
                     [e._v("#")]
                   ),
@@ -395,8 +377,7 @@
                       {
                         staticClass: "header-anchor",
                         attrs: {
-                          href: "#getclusterleaves-clusterid-limit-offset",
-                          "aria-hidden": "true"
+                          href: "#getclusterleaves-clusterid-limit-offset"
                         }
                       },
                       [e._v("#")]
@@ -466,7 +447,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#methods", "aria-hidden": "true" }
+                      attrs: { href: "#methods" }
                     },
                     [e._v("#")]
                   ),
@@ -478,10 +459,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#setfeaturestate-featureid-state",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#setfeaturestate-featureid-state" }
                     },
                     [e._v("#")]
                   ),
@@ -545,10 +523,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#getfeaturestate-featureid",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#getfeaturestate-featureid" }
                     },
                     [e._v("#")]
                   ),
@@ -609,8 +584,7 @@
                       {
                         staticClass: "header-anchor",
                         attrs: {
-                          href: "#removefeaturestate-featureid-sourcelayer-key",
-                          "aria-hidden": "true"
+                          href: "#removefeaturestate-featureid-sourcelayer-key"
                         }
                       },
                       [e._v("#")]
@@ -683,7 +657,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
@@ -709,8 +683,7 @@
           null,
           null
         );
-      o.options.__file = "geojsonlayer.md";
-      t.default = o.exports;
+      t.default = s.exports;
     }
   }
 ]);

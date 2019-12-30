@@ -1,10 +1,10 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [18],
+  [17],
   {
-    156: function(t, a, s) {
+    208: function(t, a, s) {
       "use strict";
       s.r(a);
-      var n = s(17),
+      var n = s(0),
         e = Object(n.a)(
           {},
           function() {
@@ -20,7 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#quickstart", "aria-hidden": "true" }
+                      attrs: { href: "#quickstart" }
                     },
                     [t._v("#")]
                   ),
@@ -32,10 +32,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#using-as-es-module",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#using-as-es-module" }
                     },
                     [t._v("#")]
                   ),
@@ -47,7 +44,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#installation", "aria-hidden": "true" }
+                      attrs: { href: "#installation" }
                     },
                     [t._v("#")]
                   ),
@@ -55,9 +52,9 @@
                 ]),
                 t._v(" "),
                 s("p", [
-                  t._v(
-                    "You can install mapir-vue via npm. Take note that you need to install mapbox-gl as peer dependency:"
-                  )
+                  t._v("You can install "),
+                  s("code", [t._v("mapir-vue")]),
+                  t._v(" via npm:")
                 ]),
                 t._v(" "),
                 s("div", { staticClass: "language-bash extra-class" }, [
@@ -68,132 +65,58 @@
                         { pre: !0, attrs: { class: "token function" } },
                         [t._v("npm")]
                       ),
-                      t._v(" "),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token function" } },
-                        [t._v("install")]
-                      ),
-                      t._v(" --save mapir-vue mapbox-gl\n")
+                      t._v(" i mapir-vue\n")
                     ])
                   ])
                 ]),
-                s("p", [
-                  t._v("Add mapbox CSS file to "),
-                  s("code", [t._v("<head></head>")]),
-                  t._v(" block of your HTML file (e.g. "),
-                  s("code", [t._v("index.html")]),
-                  t._v(")")
+                s("div", { staticClass: "custom-block tip" }, [
+                  s("p", { staticClass: "custom-block-title" }, [
+                    t._v("mapbox dependancy")
+                  ]),
+                  t._v(" "),
+                  s("p", [
+                    t._v("since our component uses "),
+                    s(
+                      "a",
+                      {
+                        attrs: {
+                          href: "https://www.mapbox.com/",
+                          target: "_blank",
+                          rel: "noopener noreferrer"
+                        }
+                      },
+                      [t._v("mapbox"), s("OutboundLink")],
+                      1
+                    ),
+                    t._v(" as it's foundation, by installing "),
+                    s("code", [t._v("mapir-vue")]),
+                    t._v(", "),
+                    s("code", [t._v("mapbox-gl@1.6.0")]),
+                    t._v(" is installed as dependancy.")
+                  ])
                 ]),
                 t._v(" "),
-                s("div", { staticClass: "language-html extra-class" }, [
-                  s("pre", { pre: !0, attrs: { class: "language-html" } }, [
-                    s("code", [
-                      s("span", { pre: !0, attrs: { class: "token tag" } }, [
-                        s("span", { pre: !0, attrs: { class: "token tag" } }, [
-                          s(
-                            "span",
-                            { pre: !0, attrs: { class: "token punctuation" } },
-                            [t._v("<")]
-                          ),
-                          t._v("link")
-                        ]),
-                        t._v("\n  "),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v("href")]
-                        ),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-value" } },
-                          [
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v("=")]
-                            ),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            ),
-                            t._v(
-                              "https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
-                            ),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v("\n  "),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-name" } },
-                          [t._v("rel")]
-                        ),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token attr-value" } },
-                          [
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v("=")]
-                            ),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            ),
-                            t._v("stylesheet"),
-                            s(
-                              "span",
-                              {
-                                pre: !0,
-                                attrs: { class: "token punctuation" }
-                              },
-                              [t._v('"')]
-                            )
-                          ]
-                        ),
-                        t._v("\n"),
-                        s(
-                          "span",
-                          { pre: !0, attrs: { class: "token punctuation" } },
-                          [t._v("/>")]
-                        )
-                      ]),
-                      t._v("\n")
-                    ])
+                s("div", { staticClass: "custom-block warning" }, [
+                  s("p", { staticClass: "custom-block-title" }, [
+                    t._v("package rename")
+                  ]),
+                  t._v(" "),
+                  s("p", [
+                    s("code", [t._v("mapir-vue")]),
+                    t._v(" package would rename to "),
+                    s("code", [t._v("mapir-vue-component")]),
+                    t._v(" in "),
+                    s("strong", [t._v("future releases")]),
+                    t._v(".")
                   ])
                 ]),
+                t._v(" "),
                 s("h2", { attrs: { id: "using-in-browser" } }, [
                   s(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#using-in-browser",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#using-in-browser" }
                     },
                     [t._v("#")]
                   ),
@@ -205,7 +128,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#installation-2", "aria-hidden": "true" }
+                      attrs: { href: "#installation-2" }
                     },
                     [t._v("#")]
                   ),
@@ -521,10 +444,7 @@
                           [t._v(">")]
                         )
                       ]),
-                      s("span", {
-                        pre: !0,
-                        attrs: { class: "token script language-javascript" }
-                      }),
+                      s("span", { pre: !0, attrs: { class: "token script" } }),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
                         s("span", { pre: !0, attrs: { class: "token tag" } }, [
                           s(
@@ -601,10 +521,7 @@
                           [t._v(">")]
                         )
                       ]),
-                      s("span", {
-                        pre: !0,
-                        attrs: { class: "token script language-javascript" }
-                      }),
+                      s("span", { pre: !0, attrs: { class: "token script" } }),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
                         s("span", { pre: !0, attrs: { class: "token tag" } }, [
                           s(
@@ -719,10 +636,7 @@
                           [t._v(">")]
                         )
                       ]),
-                      s("span", {
-                        pre: !0,
-                        attrs: { class: "token script language-javascript" }
-                      }),
+                      s("span", { pre: !0, attrs: { class: "token script" } }),
                       s("span", { pre: !0, attrs: { class: "token tag" } }, [
                         s("span", { pre: !0, attrs: { class: "token tag" } }, [
                           s(
@@ -786,119 +700,7 @@
                   ),
                   s("code", [t._v("MapirVue.mapir")]),
                   t._v(" etc.)")
-                ]),
-                t._v(" "),
-                s("h2", { attrs: { id: "migration-from-version-0-1-x" } }, [
-                  s(
-                    "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: {
-                        href: "#migration-from-version-0-1-x",
-                        "aria-hidden": "true"
-                      }
-                    },
-                    [t._v("#")]
-                  ),
-                  t._v(" Migration from version 0.1.x")
-                ]),
-                t._v(" "),
-                s("p", [
-                  t._v("In version "),
-                  s("code", [t._v("0.2")]),
-                  t._v(" you don't need to register MapirVue as Vue plugin.")
-                ]),
-                t._v(" "),
-                s("p", [t._v("So you don't need this code anymore:")]),
-                t._v(" "),
-                s("div", { staticClass: "language-js extra-class" }, [
-                  s("pre", { pre: !0, attrs: { class: "language-js" } }, [
-                    s("code", [
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token keyword" } },
-                        [t._v("import")]
-                      ),
-                      t._v(" MapirVue "),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token keyword" } },
-                        [t._v("from")]
-                      ),
-                      t._v(" "),
-                      s("span", { pre: !0, attrs: { class: "token string" } }, [
-                        t._v('"mapir-vue"')
-                      ]),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(";")]
-                      ),
-                      t._v("\n\nVue"),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(".")]
-                      ),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token function" } },
-                        [t._v("use")]
-                      ),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v("(")]
-                      ),
-                      t._v("VueMapbox"),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(",")]
-                      ),
-                      t._v(" "),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v("{")]
-                      ),
-                      t._v(" mapboxgl"),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(":")]
-                      ),
-                      t._v(" Mapbox "),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v("}")]
-                      ),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(")")]
-                      ),
-                      s(
-                        "span",
-                        { pre: !0, attrs: { class: "token punctuation" } },
-                        [t._v(";")]
-                      ),
-                      t._v("\n")
-                    ])
-                  ])
-                ]),
-                s(
-                  "p",
-                  [
-                    t._v("Now you're ready for mapping. See how to "),
-                    s("router-link", { attrs: { to: "/guide/basemap.html" } }, [
-                      t._v("create a map")
-                    ]),
-                    t._v(".")
-                  ],
-                  1
-                )
+                ])
               ]
             );
           },
@@ -908,7 +710,6 @@
           null,
           null
         );
-      e.options.__file = "README.md";
       a.default = e.exports;
     }
   }

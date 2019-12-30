@@ -1,96 +1,90 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [7],
+  [6],
   {
-    146: function(e, r, t) {
+    197: function(e, t, r) {
       "use strict";
-      t.r(r);
-      var a = t(17),
-        o = Object(a.a)(
+      r.r(t);
+      var o = r(0),
+        a = Object(o.a)(
           {},
           function() {
             var e = this,
-              r = e.$createElement,
-              t = e._self._c || r;
-            return t(
+              t = e.$createElement,
+              r = e._self._c || t;
+            return r(
               "ContentSlotsDistributor",
               { attrs: { "slot-key": e.$parent.slotKey } },
               [
-                t("h1", { attrs: { id: "layers-common" } }, [
-                  t(
+                r("h1", { attrs: { id: "layers-common" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#layers-common", "aria-hidden": "true" }
+                      attrs: { href: "#layers-common" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Layers common")
                 ]),
                 e._v(" "),
-                t("h2", { attrs: { id: "props" } }, [
-                  t(
+                r("h2", { attrs: { id: "props" } }, [
+                  r(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
                 ]),
                 e._v(" "),
-                t("h4", { attrs: { id: "props-for-mapbox-gl-source" } }, [
-                  t(
+                r("h4", { attrs: { id: "props-for-mapbox-gl-source" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#props-for-mapbox-gl-source",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#props-for-mapbox-gl-source" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Props for Mapbox GL source")
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "sourceid" } }, [
-                  t(
+                r("h3", { attrs: { id: "sourceid" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#sourceid", "aria-hidden": "true" }
+                      attrs: { href: "#sourceid" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("sourceId")])
+                  r("code", [e._v("sourceId")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("String")])
+                    r("code", [e._v("String")])
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Required")])]),
+                  r("li", [r("strong", [e._v("Required")])]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(
                       " ID of the source to add. Must not conflict with existing sources."
                     )
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See:")]),
+                  r("li", [
+                    r("strong", [e._v("See:")]),
                     e._v(" "),
-                    t("code", [e._v(".addSource()")]),
+                    r("code", [e._v(".addSource()")]),
                     e._v(" "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -100,45 +94,45 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Map method"), t("OutboundLink")],
+                      [e._v("Map method"), r("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "source" } }, [
-                  t(
+                r("h3", { attrs: { id: "source" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("source")])
+                  r("code", [e._v("source")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("Object | String")])
+                    r("code", [e._v("Object | String")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Non-Synced")]),
+                  r("li", [
+                    r("strong", [e._v("Non-Synced")]),
                     e._v(" A source for layer or URL to it.")
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Description:")])]),
+                  r("li", [r("strong", [e._v("Description:")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See:")]),
+                  r("li", [
+                    r("strong", [e._v("See:")]),
                     e._v(" "),
-                    t("code", [e._v("sources")]),
+                    r("code", [e._v("sources")]),
                     e._v(" in "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -148,64 +142,61 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Mapbox Style Spec"), t("OutboundLink")],
+                      [e._v("Mapbox Style Spec"), r("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h4", { attrs: { id: "props-for-mapbox-gl-layer" } }, [
-                  t(
+                r("h4", { attrs: { id: "props-for-mapbox-gl-layer" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#props-for-mapbox-gl-layer",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#props-for-mapbox-gl-layer" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Props for Mapbox GL layer")
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "layerid" } }, [
-                  t(
+                r("h3", { attrs: { id: "layerid" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#layerid", "aria-hidden": "true" }
+                      attrs: { href: "#layerid" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("layerId")])
+                  r("code", [e._v("layerId")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type")]),
                     e._v(" "),
-                    t("code", [e._v("String")])
+                    r("code", [e._v("String")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(
                       " ID of the layer to add. Must not conflict with existing layers."
                     )
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Required")])]),
+                  r("li", [r("strong", [e._v("Required")])]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See:")]),
+                  r("li", [
+                    r("strong", [e._v("See:")]),
                     e._v(" "),
-                    t("code", [e._v("id")]),
+                    r("code", [e._v("id")]),
                     e._v(" in "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -215,47 +206,44 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Mapbox Layer Style Spec"), t("OutboundLink")],
+                      [e._v("Mapbox Layer Style Spec"), r("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "layer" } }, [
-                  t(
+                r("h3", { attrs: { id: "layer" } }, [
+                  r(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#layer", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#layer" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("layer")])
+                  r("code", [e._v("layer")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type")]),
                     e._v(" "),
-                    t("code", [e._v("String")])
+                    r("code", [e._v("String")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(" Layer configuration object.")
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Required")])]),
+                  r("li", [r("strong", [e._v("Required")])]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See:")]),
+                  r("li", [
+                    r("strong", [e._v("See:")]),
                     e._v(" "),
-                    t("code", [e._v("layers")]),
+                    r("code", [e._v("layers")]),
                     e._v(" in "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -265,76 +253,76 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Mapbox Layer Style Spec"), t("OutboundLink")],
+                      [e._v("Mapbox Layer Style Spec"), r("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("div", { staticClass: "tip custom-block" }, [
-                  t("p", { staticClass: "custom-block-title" }, [
+                r("div", { staticClass: "custom-block tip" }, [
+                  r("p", { staticClass: "custom-block-title" }, [
                     e._v("Reactivity")
                   ]),
                   e._v(" "),
-                  t("p", [
-                    t("code", [e._v("minzoom")]),
+                  r("p", [
+                    r("code", [e._v("minzoom")]),
                     e._v(", "),
-                    t("code", [e._v("maxzoom")]),
+                    r("code", [e._v("maxzoom")]),
                     e._v(", "),
-                    t("code", [e._v("paint")]),
+                    r("code", [e._v("paint")]),
                     e._v(", "),
-                    t("code", [e._v("layout")]),
+                    r("code", [e._v("layout")]),
                     e._v(" and "),
-                    t("code", [e._v("filter")]),
+                    r("code", [e._v("filter")]),
                     e._v(" fields of "),
-                    t("code", [e._v("layer")]),
+                    r("code", [e._v("layer")]),
                     e._v(
                       " prop are reactive. If you change their value, changes automatically applied to the map."
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "before" } }, [
-                  t(
+                r("h3", { attrs: { id: "before" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#before", "aria-hidden": "true" }
+                      attrs: { href: "#before" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("before")])
+                  r("code", [e._v("before")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("String")])
+                    r("code", [e._v("String")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Default:")]),
+                  r("li", [
+                    r("strong", [e._v("Default:")]),
                     e._v(" "),
-                    t("code", [e._v("undefined")])
+                    r("code", [e._v("undefined")])
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(
                       " The ID of an existing layer to insert the new layer before."
                     )
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See:")]),
+                  r("li", [
+                    r("strong", [e._v("See:")]),
                     e._v(" "),
-                    t("code", [e._v("metadata")]),
+                    r("code", [e._v("metadata")]),
                     e._v(" in "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -344,217 +332,211 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Mapbox Layer Style Spec"), t("OutboundLink")],
+                      [e._v("Mapbox Layer Style Spec"), r("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h4", { attrs: { id: "props-for-mapir-vue-component" } }, [
-                  t(
+                r("h4", { attrs: { id: "props-for-mapir-vue-component" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#props-for-mapir-vue-component",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#props-for-mapir-vue-component" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Props for mapir-vue component")
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "clearsource" } }, [
-                  t(
+                r("h3", { attrs: { id: "clearsource" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#clearsource", "aria-hidden": "true" }
+                      attrs: { href: "#clearsource" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("clearSource")])
+                  r("code", [e._v("clearSource")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("Boolean")])
+                    r("code", [e._v("Boolean")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Default:")]),
+                  r("li", [
+                    r("strong", [e._v("Default:")]),
                     e._v(" "),
-                    t("code", [e._v("true")])
+                    r("code", [e._v("true")])
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(" If "),
-                    t("code", [e._v("true")]),
+                    r("code", [e._v("true")]),
                     e._v(
                       ", component will remove layer source from map on component destruction."
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "replacesource" } }, [
-                  t(
+                r("h3", { attrs: { id: "replacesource" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#replacesource", "aria-hidden": "true" }
+                      attrs: { href: "#replacesource" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("replaceSource")])
+                  r("code", [e._v("replaceSource")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("Boolean")])
+                    r("code", [e._v("Boolean")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Default:")]),
+                  r("li", [
+                    r("strong", [e._v("Default:")]),
                     e._v(" "),
-                    t("code", [e._v("false")])
+                    r("code", [e._v("false")])
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(" If source passed to "),
-                    t("code", [e._v("source")]),
+                    r("code", [e._v("source")]),
                     e._v(
                       " prop of layer component already added ot the map, it will be ignored and existed "
                     ),
-                    t("code", [e._v("source")]),
+                    r("code", [e._v("source")]),
                     e._v(" will be used. If "),
-                    t("code", [e._v("replaceSource")]),
+                    r("code", [e._v("replaceSource")]),
                     e._v(" is "),
-                    t("code", [e._v("true")]),
+                    r("code", [e._v("true")]),
                     e._v(" source will be replaced with new instead.")
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "replace" } }, [
-                  t(
+                r("h3", { attrs: { id: "replace" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#replace", "aria-hidden": "true" }
+                      attrs: { href: "#replace" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("replace")])
+                  r("code", [e._v("replace")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type:")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type:")]),
                     e._v(" "),
-                    t("code", [e._v("Boolean")])
+                    r("code", [e._v("Boolean")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Default:")]),
+                  r("li", [
+                    r("strong", [e._v("Default:")]),
                     e._v(" "),
-                    t("code", [e._v("false")])
+                    r("code", [e._v("false")])
                   ]),
                   e._v(" "),
-                  t("li", [t("strong", [e._v("Non-Synced")])]),
+                  r("li", [r("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description:")]),
+                  r("li", [
+                    r("strong", [e._v("Description:")]),
                     e._v(" If "),
-                    t("code", [e._v("true")]),
+                    r("code", [e._v("true")]),
                     e._v(
                       ", replaces existing layer with same id. Otherwise, error returns."
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h2", { attrs: { id: "computed-properties" } }, [
-                  t(
+                r("h2", { attrs: { id: "computed-properties" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#computed-properties",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#computed-properties" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Computed properties")
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "sourceloaded" } }, [
-                  t(
+                r("h3", { attrs: { id: "sourceloaded" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#sourceloaded", "aria-hidden": "true" }
+                      attrs: { href: "#sourceloaded" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("sourceLoaded")])
+                  r("code", [e._v("sourceLoaded")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type")]),
                     e._v(" "),
-                    t("code", [e._v("Boolean")])
+                    r("code", [e._v("Boolean")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description")]),
+                  r("li", [
+                    r("strong", [e._v("Description")]),
                     e._v(" Flag that indicated if layer source already loaded.")
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "maplayer" } }, [
-                  t(
+                r("h3", { attrs: { id: "maplayer" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#maplayer", "aria-hidden": "true" }
+                      attrs: { href: "#maplayer" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("mapLayer")])
+                  r("code", [e._v("mapLayer")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type")]),
                     e._v(" "),
-                    t("code", [e._v("Object")])
+                    r("code", [e._v("Object")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description")]),
+                  r("li", [
+                    r("strong", [e._v("Description")]),
                     e._v(" Mapbox GL layer object.")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See")]),
+                  r("li", [
+                    r("strong", [e._v("See")]),
                     e._v(" "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -564,42 +546,42 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [t("code", [e._v(".getLayer()")]), t("OutboundLink")],
+                      [r("code", [e._v(".getLayer()")]), r("OutboundLink")],
                       1
                     ),
                     e._v(" map method")
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mapsource" } }, [
-                  t(
+                r("h3", { attrs: { id: "mapsource" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mapsource", "aria-hidden": "true" }
+                      attrs: { href: "#mapsource" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("mapSource")])
+                  r("code", [e._v("mapSource")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Type")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Type")]),
                     e._v(" "),
-                    t("code", [e._v("Object")])
+                    r("code", [e._v("Object")])
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description")]),
+                  r("li", [
+                    r("strong", [e._v("Description")]),
                     e._v(" Source for this layer.")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See")]),
+                  r("li", [
+                    r("strong", [e._v("See")]),
                     e._v(" "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -610,60 +592,60 @@
                         }
                       },
                       [
-                        t("code", [e._v("Mapbox GL source")]),
-                        t("OutboundLink")
+                        r("code", [e._v("Mapbox GL source")]),
+                        r("OutboundLink")
                       ],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                t("h2", { attrs: { id: "methods" } }, [
-                  t(
+                r("h2", { attrs: { id: "methods" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#methods", "aria-hidden": "true" }
+                      attrs: { href: "#methods" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Methods")
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "move-beforeid" } }, [
-                  t(
+                r("h3", { attrs: { id: "move-beforeid" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#move-beforeid", "aria-hidden": "true" }
+                      attrs: { href: "#move-beforeid" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v(".move(beforeId?)")])
+                  r("code", [e._v(".move(beforeId?)")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [t("strong", [e._v("Arguments:")])]),
+                r("ul", [
+                  r("li", [r("strong", [e._v("Arguments:")])]),
                   e._v(" "),
-                  t("li", [
-                    t("code", [e._v("beforeId")]),
+                  r("li", [
+                    r("code", [e._v("beforeId")]),
                     e._v(" "),
-                    t("code", [e._v("String")]),
+                    r("code", [e._v("String")]),
                     e._v(
                       " The ID of an existing layer to insert the new layer before. If this argument is omitted, the layer will be appended to the end of the layers array."
                     )
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("Description")]),
+                  r("li", [
+                    r("strong", [e._v("Description")]),
                     e._v(" Moves a layer to a different z-position.")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See")]),
+                  r("li", [
+                    r("strong", [e._v("See")]),
                     e._v(" "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -673,38 +655,38 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [t("code", [e._v(".moveLayer()")]), t("OutboundLink")],
+                      [r("code", [e._v(".moveLayer()")]), r("OutboundLink")],
                       1
                     ),
                     e._v(" map method")
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "remove" } }, [
-                  t(
+                r("h3", { attrs: { id: "remove" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#remove", "aria-hidden": "true" }
+                      attrs: { href: "#remove" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v(".remove()")])
+                  r("code", [e._v(".remove()")])
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("strong", [e._v("Description")]),
+                r("ul", [
+                  r("li", [
+                    r("strong", [e._v("Description")]),
                     e._v(
                       " Removes the layer with and source assosiated with it."
                     )
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("strong", [e._v("See")]),
+                  r("li", [
+                    r("strong", [e._v("See")]),
                     e._v(" "),
-                    t(
+                    r(
                       "a",
                       {
                         attrs: {
@@ -714,218 +696,215 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [t("code", [e._v(".removeLayer()")]), t("OutboundLink")],
+                      [r("code", [e._v(".removeLayer()")]), r("OutboundLink")],
                       1
                     ),
                     e._v(" map method")
                   ])
                 ]),
                 e._v(" "),
-                t("h2", { attrs: { id: "events" } }, [
-                  t(
+                r("h2", { attrs: { id: "events" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Events")
                 ]),
                 e._v(" "),
-                t("p", [
+                r("p", [
                   e._v("Payload of events contains object with properties:")
                 ]),
                 e._v(" "),
-                t("ul", [
-                  t("li", [
-                    t("code", [e._v("actualEvent")]),
+                r("ul", [
+                  r("li", [
+                    r("code", [e._v("actualEvent")]),
                     e._v(" Original Mapbox GL JS event")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("code", [e._v("layerId")]),
+                  r("li", [
+                    r("code", [e._v("layerId")]),
                     e._v(" ID of current layer")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("code", [e._v("map")]),
+                  r("li", [
+                    r("code", [e._v("map")]),
                     e._v(" Current map object")
                   ]),
                   e._v(" "),
-                  t("li", [
-                    t("code", [e._v("component")]),
+                  r("li", [
+                    r("code", [e._v("component")]),
                     e._v(" Component that emits event")
                   ])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mousedown" } }, [
-                  t(
+                r("h3", { attrs: { id: "mousedown" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mousedown", "aria-hidden": "true" }
+                      attrs: { href: "#mousedown" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mousedown")])
+                  r("code", [e._v("@mousedown")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mouseup" } }, [
-                  t(
+                r("h3", { attrs: { id: "mouseup" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mouseup", "aria-hidden": "true" }
+                      attrs: { href: "#mouseup" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mouseup")])
+                  r("code", [e._v("@mouseup")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "click" } }, [
-                  t(
+                r("h3", { attrs: { id: "click" } }, [
+                  r(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#click", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#click" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@click")])
+                  r("code", [e._v("@click")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "dblclick" } }, [
-                  t(
+                r("h3", { attrs: { id: "dblclick" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#dblclick", "aria-hidden": "true" }
+                      attrs: { href: "#dblclick" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@dblclick")])
+                  r("code", [e._v("@dblclick")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mousemove" } }, [
-                  t(
+                r("h3", { attrs: { id: "mousemove" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mousemove", "aria-hidden": "true" }
+                      attrs: { href: "#mousemove" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mousemove")])
+                  r("code", [e._v("@mousemove")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mouseenter" } }, [
-                  t(
+                r("h3", { attrs: { id: "mouseenter" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mouseenter", "aria-hidden": "true" }
+                      attrs: { href: "#mouseenter" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mouseenter")])
+                  r("code", [e._v("@mouseenter")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mouseleave" } }, [
-                  t(
+                r("h3", { attrs: { id: "mouseleave" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mouseleave", "aria-hidden": "true" }
+                      attrs: { href: "#mouseleave" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mouseleave")])
+                  r("code", [e._v("@mouseleave")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mouseover" } }, [
-                  t(
+                r("h3", { attrs: { id: "mouseover" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mouseover", "aria-hidden": "true" }
+                      attrs: { href: "#mouseover" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mouseover")])
+                  r("code", [e._v("@mouseover")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "mouseout" } }, [
-                  t(
+                r("h3", { attrs: { id: "mouseout" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mouseout", "aria-hidden": "true" }
+                      attrs: { href: "#mouseout" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@mouseout")])
+                  r("code", [e._v("@mouseout")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "contextmenu" } }, [
-                  t(
+                r("h3", { attrs: { id: "contextmenu" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#contextmenu", "aria-hidden": "true" }
+                      attrs: { href: "#contextmenu" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@contextmenu")])
+                  r("code", [e._v("@contextmenu")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "touchstart" } }, [
-                  t(
+                r("h3", { attrs: { id: "touchstart" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#touchstart", "aria-hidden": "true" }
+                      attrs: { href: "#touchstart" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@touchstart")])
+                  r("code", [e._v("@touchstart")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "touchend" } }, [
-                  t(
+                r("h3", { attrs: { id: "touchend" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#touchend", "aria-hidden": "true" }
+                      attrs: { href: "#touchend" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@touchend")])
+                  r("code", [e._v("@touchend")])
                 ]),
                 e._v(" "),
-                t("h3", { attrs: { id: "touchcancel" } }, [
-                  t(
+                r("h3", { attrs: { id: "touchcancel" } }, [
+                  r(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#touchcancel", "aria-hidden": "true" }
+                      attrs: { href: "#touchcancel" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  t("code", [e._v("@touchcancel")])
+                  r("code", [e._v("@touchcancel")])
                 ])
               ]
             );
@@ -936,8 +915,7 @@
           null,
           null
         );
-      o.options.__file = "README.md";
-      r.default = o.exports;
+      t.default = a.exports;
     }
   }
 ]);

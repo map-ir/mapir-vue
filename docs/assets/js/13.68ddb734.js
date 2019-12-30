@@ -1,11 +1,11 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [14],
+  [13],
   {
-    164: function(e, o, t) {
+    204: function(e, o, t) {
       "use strict";
       t.r(o);
-      var a = t(17),
-        n = Object(a.a)(
+      var n = t(0),
+        a = Object(n.a)(
           {},
           function() {
             var e = this,
@@ -18,10 +18,7 @@
                 t("h1", { attrs: { id: "map" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#map", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#map" } },
                     [e._v("#")]
                   ),
                   e._v(" Map")
@@ -30,10 +27,7 @@
                 t("h2", { attrs: { id: "props" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
@@ -44,7 +38,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mapboxgl", "aria-hidden": "true" }
+                      attrs: { href: "#mapboxgl" }
                     },
                     [e._v("#")]
                   ),
@@ -82,7 +76,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#mapstyle", "aria-hidden": "true" }
+                      attrs: { href: "#mapstyle" }
                     },
                     [e._v("#")]
                   ),
@@ -135,7 +129,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#container", "aria-hidden": "true" }
+                      attrs: { href: "#container" }
                     },
                     [e._v("#")]
                   ),
@@ -192,7 +186,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#apikey", "aria-hidden": "true" }
+                      attrs: { href: "#apikey" }
                     },
                     [e._v("#")]
                   ),
@@ -244,7 +238,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#minzoom", "aria-hidden": "true" }
+                      attrs: { href: "#minzoom" }
                     },
                     [e._v("#")]
                   ),
@@ -297,7 +291,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#maxzoom", "aria-hidden": "true" }
+                      attrs: { href: "#maxzoom" }
                     },
                     [e._v("#")]
                   ),
@@ -348,10 +342,7 @@
                 t("h3", { attrs: { id: "hash" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#hash", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#hash" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
@@ -405,7 +396,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#interactive", "aria-hidden": "true" }
+                      attrs: { href: "#interactive" }
                     },
                     [e._v("#")]
                   ),
@@ -460,7 +451,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#bearingsnap", "aria-hidden": "true" }
+                      attrs: { href: "#bearingsnap" }
                     },
                     [e._v("#")]
                   ),
@@ -515,10 +506,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#attributioncontrol",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#attributioncontrol" }
                     },
                     [e._v("#")]
                   ),
@@ -573,7 +561,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#logoposition", "aria-hidden": "true" }
+                      attrs: { href: "#logoposition" }
                     },
                     [e._v("#")]
                   ),
@@ -636,10 +624,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#failifmajorperformancecaveat",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#failifmajorperformancecaveat" }
                     },
                     [e._v("#")]
                   ),
@@ -694,10 +679,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#crosssourcecollisions",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#crosssourcecollisions" }
                     },
                     [e._v("#")]
                   ),
@@ -752,7 +734,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#fadeduration", "aria-hidden": "true" }
+                      attrs: { href: "#fadeduration" }
                     },
                     [e._v("#")]
                   ),
@@ -807,10 +789,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#preservedrawingbuffer",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#preservedrawingbuffer" }
                     },
                     [e._v("#")]
                   ),
@@ -865,10 +844,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#refreshexpiredtiles",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#refreshexpiredtiles" }
                     },
                     [e._v("#")]
                   ),
@@ -923,7 +899,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#maxbounds", "aria-hidden": "true" }
+                      attrs: { href: "#maxbounds" }
                     },
                     [e._v("#")]
                   ),
@@ -980,7 +956,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#scrollzoom", "aria-hidden": "true" }
+                      attrs: { href: "#scrollzoom" }
                     },
                     [e._v("#")]
                   ),
@@ -1037,7 +1013,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#boxzoom", "aria-hidden": "true" }
+                      attrs: { href: "#boxzoom" }
                     },
                     [e._v("#")]
                   ),
@@ -1090,7 +1066,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#dragrotate", "aria-hidden": "true" }
+                      attrs: { href: "#dragrotate" }
                     },
                     [e._v("#")]
                   ),
@@ -1145,7 +1121,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#keyboard", "aria-hidden": "true" }
+                      attrs: { href: "#keyboard" }
                     },
                     [e._v("#")]
                   ),
@@ -1198,7 +1174,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#doubleclickzoom", "aria-hidden": "true" }
+                      attrs: { href: "#doubleclickzoom" }
                     },
                     [e._v("#")]
                   ),
@@ -1253,7 +1229,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#touchzoomrotate", "aria-hidden": "true" }
+                      attrs: { href: "#touchzoomrotate" }
                     },
                     [e._v("#")]
                   ),
@@ -1310,7 +1286,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#trackresize", "aria-hidden": "true" }
+                      attrs: { href: "#trackresize" }
                     },
                     [e._v("#")]
                   ),
@@ -1365,7 +1341,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#center", "aria-hidden": "true" }
+                      attrs: { href: "#center" }
                     },
                     [e._v("#")]
                   ),
@@ -1419,10 +1395,7 @@
                 t("h3", { attrs: { id: "zoom" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#zoom", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#zoom" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
@@ -1477,7 +1450,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#bearing", "aria-hidden": "true" }
+                      attrs: { href: "#bearing" }
                     },
                     [e._v("#")]
                   ),
@@ -1531,10 +1504,7 @@
                 t("h3", { attrs: { id: "pitch" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#pitch", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#pitch" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
@@ -1589,10 +1559,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#renderworldcopies",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#renderworldcopies" }
                     },
                     [e._v("#")]
                   ),
@@ -1645,10 +1612,7 @@
                 t("h3", { attrs: { id: "light" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#light", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#light" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
@@ -1702,7 +1666,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#tileboundaries", "aria-hidden": "true" }
+                      attrs: { href: "#tileboundaries" }
                     },
                     [e._v("#")]
                   ),
@@ -1757,7 +1721,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#collisionboxes", "aria-hidden": "true" }
+                      attrs: { href: "#collisionboxes" }
                     },
                     [e._v("#")]
                   ),
@@ -1812,7 +1776,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#repaint", "aria-hidden": "true" }
+                      attrs: { href: "#repaint" }
                     },
                     [e._v("#")]
                   ),
@@ -1867,10 +1831,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#transformrequest",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#transformrequest" }
                     },
                     [e._v("#")]
                   ),
@@ -1931,10 +1892,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#localideographfontfamily",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#localideographfontfamily" }
                     },
                     [e._v("#")]
                   ),
@@ -1989,7 +1947,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#bounds", "aria-hidden": "true" }
+                      attrs: { href: "#bounds" }
                     },
                     [e._v("#")]
                   ),
@@ -2048,10 +2006,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#fitboundsoptions",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#fitboundsoptions" }
                     },
                     [e._v("#")]
                   ),
@@ -2106,7 +2061,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#actions", "aria-hidden": "true" }
+                      attrs: { href: "#actions" }
                     },
                     [e._v("#")]
                   ),
@@ -2118,7 +2073,7 @@
                   t("code", [e._v("Map.actions")])
                 ]),
                 e._v(" "),
-                t("div", { staticClass: "tip custom-block" }, [
+                t("div", { staticClass: "custom-block tip" }, [
                   t("p", { staticClass: "custom-block-title" }, [e._v("TIP")]),
                   e._v(" "),
                   t("p", [
@@ -2145,7 +2100,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#stop-eventdata", "aria-hidden": "true" }
+                      attrs: { href: "#stop-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2190,10 +2145,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#panby-offset-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#panby-offset-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2284,10 +2236,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#panto-coordinates-options-eventdata",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#panto-coordinates-options-eventdata" }
                       },
                       [e._v("#")]
                     ),
@@ -2393,10 +2342,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#zoomto-zoom-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#zoomto-zoom-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2486,10 +2432,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#zoomin-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#zoomin-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2570,10 +2513,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#zoomout-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#zoomout-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2657,10 +2597,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#rotateto-bearing-options-eventdata",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#rotateto-bearing-options-eventdata" }
                       },
                       [e._v("#")]
                     ),
@@ -2753,10 +2690,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#resetnorth-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#resetnorth-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2832,10 +2766,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#snaptonorth-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#snaptonorth-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -2923,10 +2854,7 @@
                       "a",
                       {
                         staticClass: "header-anchor",
-                        attrs: {
-                          href: "#fitbounds-bounds-options-eventdata",
-                          "aria-hidden": "true"
-                        }
+                        attrs: { href: "#fitbounds-bounds-options-eventdata" }
                       },
                       [e._v("#")]
                     ),
@@ -3079,10 +3007,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#jumpto-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#jumpto-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -3212,10 +3137,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#easeto-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#easeto-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -3406,10 +3328,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#flyto-options-eventdata",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#flyto-options-eventdata" }
                     },
                     [e._v("#")]
                   ),
@@ -3549,7 +3468,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#events", "aria-hidden": "true" }
+                      attrs: { href: "#events" }
                     },
                     [e._v("#")]
                   ),
@@ -3580,10 +3499,7 @@
                 t("h3", { attrs: { id: "load" } }, [
                   t(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#load", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#load" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
@@ -3635,8 +3551,7 @@
           null,
           null
         );
-      n.options.__file = "README.md";
-      o.default = n.exports;
+      o.default = a.exports;
     }
   }
 ]);

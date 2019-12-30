@@ -1,88 +1,85 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [13],
+  [12],
   {
-    152: function(e, t, r) {
+    203: function(e, t, o) {
       "use strict";
-      r.r(t);
-      var a = r(17),
-        o = Object(a.a)(
+      o.r(t);
+      var r = o(0),
+        a = Object(r.a)(
           {},
           function() {
             var e = this,
               t = e.$createElement,
-              r = e._self._c || t;
-            return r(
+              o = e._self._c || t;
+            return o(
               "ContentSlotsDistributor",
               { attrs: { "slot-key": e.$parent.slotKey } },
               [
-                r("h1", { attrs: { id: "canvaslayer" } }, [
-                  r(
+                o("h1", { attrs: { id: "canvaslayer" } }, [
+                  o(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#canvaslayer", "aria-hidden": "true" }
+                      attrs: { href: "#canvaslayer" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" CanvasLayer")
                 ]),
                 e._v(" "),
-                r("h2", { attrs: { id: "props" } }, [
-                  r(
+                o("h2", { attrs: { id: "props" } }, [
+                  o(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [e._v("#")]
                   ),
                   e._v(" Props")
                 ]),
                 e._v(" "),
-                r(
+                o(
                   "p",
                   [
                     e._v("All common "),
-                    r("router-link", { attrs: { to: "/api/Layers/#props" } }, [
+                    o("router-link", { attrs: { to: "/api/Layers/#props" } }, [
                       e._v("layers props")
                     ])
                   ],
                   1
                 ),
                 e._v(" "),
-                r("h3", { attrs: { id: "source" } }, [
-                  r(
+                o("h3", { attrs: { id: "source" } }, [
+                  o(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#source", "aria-hidden": "true" }
+                      attrs: { href: "#source" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  r("code", [e._v("source")])
+                  o("code", [e._v("source")])
                 ]),
                 e._v(" "),
-                r("ul", [
-                  r("li", [
-                    r("strong", [e._v("Type:")]),
+                o("ul", [
+                  o("li", [
+                    o("strong", [e._v("Type:")]),
                     e._v(" "),
-                    r("code", [e._v("Object | String")])
+                    o("code", [e._v("Object | String")])
                   ]),
                   e._v(" "),
-                  r("li", [r("strong", [e._v("Non-Synced")])]),
+                  o("li", [o("strong", [e._v("Non-Synced")])]),
                   e._v(" "),
-                  r("li", [
-                    r("strong", [e._v("Description:")]),
+                  o("li", [
+                    o("strong", [e._v("Description:")]),
                     e._v(" A data source containing video.")
                   ]),
                   e._v(" "),
-                  r("li", [
-                    r("strong", [e._v("See:")]),
+                  o("li", [
+                    o("strong", [e._v("See:")]),
                     e._v(" "),
-                    r("code", [e._v("Video source")]),
+                    o("code", [e._v("Video source")]),
                     e._v(" in "),
-                    r(
+                    o(
                       "a",
                       {
                         attrs: {
@@ -92,67 +89,61 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("Mapbox API Docs"), r("OutboundLink")],
+                      [e._v("Mapbox API Docs"), o("OutboundLink")],
                       1
                     )
                   ])
                 ]),
                 e._v(" "),
-                r("div", { staticClass: "tip custom-block" }, [
-                  r("p", { staticClass: "custom-block-title" }, [
+                o("div", { staticClass: "custom-block tip" }, [
+                  o("p", { staticClass: "custom-block-title" }, [
                     e._v("Reactivity")
                   ]),
                   e._v(" "),
-                  r("p", [
-                    r("code", [e._v("coordinates")]),
+                  o("p", [
+                    o("code", [e._v("coordinates")]),
                     e._v(" field of the "),
-                    r("code", [e._v("source")]),
+                    o("code", [e._v("source")]),
                     e._v(
                       " prop is reactive.\nIf you change it's value, changes automatically applied to the map."
                     )
                   ])
                 ]),
                 e._v(" "),
-                r("h2", { attrs: { id: "computed-getters" } }, [
-                  r(
+                o("h2", { attrs: { id: "computed-getters" } }, [
+                  o(
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#computed-getters",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#computed-getters" }
                     },
                     [e._v("#")]
                   ),
                   e._v(" Computed getters")
                 ]),
                 e._v(" "),
-                r("h3", { attrs: { id: "video" } }, [
-                  r(
+                o("h3", { attrs: { id: "video" } }, [
+                  o(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#video", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#video" } },
                     [e._v("#")]
                   ),
                   e._v(" "),
-                  r("code", [e._v("video")])
+                  o("code", [e._v("video")])
                 ]),
                 e._v(" "),
-                r("ul", [
-                  r("li", [
-                    r("strong", [e._v("Description")]),
+                o("ul", [
+                  o("li", [
+                    o("strong", [e._v("Description")]),
                     e._v(" Returns the HTML video element.")
                   ]),
                   e._v(" "),
-                  r("li", [
-                    r("strong", [e._v("See")]),
+                  o("li", [
+                    o("strong", [e._v("See")]),
                     e._v(" "),
-                    r("code", [e._v(".getVideo()")]),
+                    o("code", [e._v(".getVideo()")]),
                     e._v(" "),
-                    r(
+                    o(
                       "a",
                       {
                         attrs: {
@@ -162,7 +153,7 @@
                           rel: "noopener noreferrer"
                         }
                       },
-                      [e._v("method"), r("OutboundLink")],
+                      [e._v("method"), o("OutboundLink")],
                       1
                     )
                   ])
@@ -176,8 +167,7 @@
           null,
           null
         );
-      o.options.__file = "videolayer.md";
-      t.default = o.exports;
+      t.default = a.exports;
     }
   }
 ]);

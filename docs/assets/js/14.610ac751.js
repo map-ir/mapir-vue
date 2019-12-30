@@ -1,10 +1,10 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [15],
+  [14],
   {
-    153: function(t, o, e) {
+    205: function(t, o, e) {
       "use strict";
       e.r(o);
-      var r = e(17),
+      var r = e(0),
         a = Object(r.a)(
           {},
           function() {
@@ -20,10 +20,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#map-control-components",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#map-control-components" }
                     },
                     [t._v("#")]
                   ),
@@ -35,10 +32,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#attributioncontrol",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#attributioncontrol" }
                     },
                     [t._v("#")]
                   ),
@@ -54,10 +48,7 @@
                 e("h3", { attrs: { id: "props" } }, [
                   e(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#props", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#props" } },
                     [t._v("#")]
                   ),
                   t._v(" Props")
@@ -68,7 +59,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#compact", "aria-hidden": "true" }
+                      attrs: { href: "#compact" }
                     },
                     [t._v("#")]
                   ),
@@ -122,10 +113,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#customattribution",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#customattribution" }
                     },
                     [t._v("#")]
                   ),
@@ -181,10 +169,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#fullscreencontrol",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#fullscreencontrol" }
                     },
                     [t._v("#")]
                   ),
@@ -200,7 +185,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#props-2", "aria-hidden": "true" }
+                      attrs: { href: "#props-2" }
                     },
                     [t._v("#")]
                   ),
@@ -212,7 +197,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#container", "aria-hidden": "true" }
+                      attrs: { href: "#container" }
                     },
                     [t._v("#")]
                   ),
@@ -262,10 +247,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#geolocatecontrol",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#geolocatecontrol" }
                     },
                     [t._v("#")]
                   ),
@@ -283,7 +265,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#props-3", "aria-hidden": "true" }
+                      attrs: { href: "#props-3" }
                     },
                     [t._v("#")]
                   ),
@@ -295,7 +277,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#positionoptions", "aria-hidden": "true" }
+                      attrs: { href: "#positionoptions" }
                     },
                     [t._v("#")]
                   ),
@@ -351,10 +333,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#fitboundsoptions",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#fitboundsoptions" }
                     },
                     [t._v("#")]
                   ),
@@ -410,10 +389,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#trackuserlocation",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#trackuserlocation" }
                     },
                     [t._v("#")]
                   ),
@@ -469,10 +445,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#showuserlocation",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#showuserlocation" }
                     },
                     [t._v("#")]
                   ),
@@ -528,7 +501,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#methods", "aria-hidden": "true" }
+                      attrs: { href: "#methods" }
                     },
                     [t._v("#")]
                   ),
@@ -540,7 +513,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#trigger", "aria-hidden": "true" }
+                      attrs: { href: "#trigger" }
                     },
                     [t._v("#")]
                   ),
@@ -585,10 +558,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: {
-                        href: "#navigationcontrol",
-                        "aria-hidden": "true"
-                      }
+                      attrs: { href: "#navigationcontrol" }
                     },
                     [t._v("#")]
                   ),
@@ -600,7 +570,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#props-4", "aria-hidden": "true" }
+                      attrs: { href: "#props-4" }
                     },
                     [t._v("#")]
                   ),
@@ -612,7 +582,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#showcompass", "aria-hidden": "true" }
+                      attrs: { href: "#showcompass" }
                     },
                     [t._v("#")]
                   ),
@@ -666,7 +636,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#showzoom", "aria-hidden": "true" }
+                      attrs: { href: "#showzoom" }
                     },
                     [t._v("#")]
                   ),
@@ -722,7 +692,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#scalecontrol", "aria-hidden": "true" }
+                      attrs: { href: "#scalecontrol" }
                     },
                     [t._v("#")]
                   ),
@@ -734,7 +704,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#props-5", "aria-hidden": "true" }
+                      attrs: { href: "#props-5" }
                     },
                     [t._v("#")]
                   ),
@@ -746,7 +716,7 @@
                     "a",
                     {
                       staticClass: "header-anchor",
-                      attrs: { href: "#maxwidth", "aria-hidden": "true" }
+                      attrs: { href: "#maxwidth" }
                     },
                     [t._v("#")]
                   ),
@@ -798,10 +768,7 @@
                 e("h3", { attrs: { id: "unit" } }, [
                   e(
                     "a",
-                    {
-                      staticClass: "header-anchor",
-                      attrs: { href: "#unit", "aria-hidden": "true" }
-                    },
+                    { staticClass: "header-anchor", attrs: { href: "#unit" } },
                     [t._v("#")]
                   ),
                   t._v(" "),
@@ -859,7 +826,6 @@
           null,
           null
         );
-      a.options.__file = "controls.md";
       o.default = a.exports;
     }
   }
