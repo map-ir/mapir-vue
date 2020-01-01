@@ -1,26 +1,28 @@
 # Map controls
 
+<ClientOnly>
+  <Controls />
+</ClientOnly>
+
 ## Overview
 
-Controls is UI elemetns for controlling view of the map, such as scale or bearing.
-You can check them out in Mapbox GL JS [documentation](https://docs.mapbox.com/mapbox-gl-js/api/#user%20interface)
-In mapir-vue they exposed as Vue components, so you can control they properties and behavior dynamically by changing props.
+Controls are UI elements for controlling view of the map, such as scale or bearing.
+You can check them out in Mapbox-GL JS ([documentation](https://docs.mapbox.com/mapbox-gl-js/api/#user%20interface)).
+In `mapir-vue` they are exposed as Vue components, so you can control they properties and behavior dynamically by changing props:
 
 _All controls_:
 
 ```vue
 <template>
-  <div id="#app">
-    <mapir
-      :apiKey="apiKey"
-      :attributionControl="false"
-    >
+  <div style="width: 100%; height: 400px;">
+    <mapir :apiKey="MapirToken">
       <mapAttributionControl />
       <mapNavigationControl position="top-right" />
       <mapGeolocateControl position="top-right" />
-      <mapNavigationControl position="top-right" />
-      <mapGeolocateControl position="top-right" />
-      <mapScaleControl />
+      <mapScaleControl position="top-right" />
+      <mapNavigationControl position="top-left" />
+      <mapGeolocateControl position="top-left" />
+      <mapScaleControl position="top-left" />
     </mapir>
   </div>
 </template>
@@ -28,22 +30,23 @@ _All controls_:
 <script>
 import {
   mapir,
-  mapAttributionControl,
   mapNavigationControl,
   mapGeolocateControl,
-  mapFullscreenControl,
   mapScaleControl
 } from "mapir-vue";
 
 export default {
+  name: "Controls",
   components: {
     mapir,
     mapNavigationControl,
-    mapGeolocateControl
+    mapGeolocateControl,
+    mapScaleControl
   },
   data() {
     return {
-      apiKey: "some_token"
+      coordinates: [51.420296, 35.732379],
+      MapirToken: "<Your API Key>"
     };
   }
 };
@@ -51,10 +54,3 @@ export default {
 ```
 
 See list of controls and they properties in [API docs](/api/controls.md).
-
-### Attribution control
-
-Due to Mapbox [policy](https://docs.mapbox.com/help/how-attribution-works/) attribution control
-is enabled by default. You can disable default attributions by setting
-`attributionControl` prop of mapir to `false` and set your own attribution
-using AttributionControl component.

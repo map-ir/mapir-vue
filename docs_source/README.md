@@ -22,6 +22,10 @@ This component is based on Soal's vue-mapbox [available here!](https://github.co
 
 ## Quick Start
 
+<ClientOnly>
+  <Simple />
+</ClientOnly>
+
 ```vue
 <template>
   <mapir :center="center" :apiKey="apiKey"></mapir>

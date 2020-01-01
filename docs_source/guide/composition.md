@@ -1,6 +1,6 @@
 # Composition (slots)
 
-You can use Mapbox-GL features as Vue component and compose it as a child of `mapir`.
+You can use Mapbox-GL features as Vue component and compose it as a child of `mapir`, check examples below for further details.
 
 ::: tip render order
 All components placed under `mapir` will be rendered only after map fully loaded.
@@ -10,22 +10,25 @@ All components placed under `mapir` will be rendered only after map fully loaded
 
 ### map controls
 
+<!--  -->
+
+<ClientOnly>
+  <SimpleControls />
+</ClientOnly>
+
 ```vue
 <template>
-<div id="#app">
-  <mapir
-    :apiKey="apiKey"
-  >
-    <mapNavigationControl position="top-right"/>
+  <mapir :apiKey="MapirToken">
+    <mapNavigationControl position="top-right" />
     <mapGeolocateControl position="top-right" />
-  </map-map>
-</div>
+  </mapir>
 </template>
 
 <script>
 import { mapir, mapNavigationControl, mapGeolocateControl } from "mapir-vue";
 
 export default {
+  name: "SimpleControls",
   components: {
     mapir,
     mapNavigationControl,
@@ -33,47 +36,43 @@ export default {
   },
   data() {
     return {
-      apiKey: "some_token"
+      coordinates: [51.420296, 35.732379],
+      MapirToken: "<Your API Key>"
     };
   }
 };
 </script>
 ```
 
-### popup:
+### popup
+
+<ClientOnly>
+  <Popup />
+</ClientOnly>
 
 ```vue
 <template>
-  <div id="#app">
-    <mapir :apiKey="apiKey">
-      <mapNavigationControl position="top-right" />
-      <mapGeolocateControl position="top-right" />
-      <mapPopup :coordinates="popupCoordinates">
-        <span>Hello world!</span>
-      </mapPopup>
-    </mapir>
-  </div>
+  <mapir :apiKey="MapirToken" :center="coordinates">
+    <mapPopup :coordinates="popupCoordinates" anchor="bottom" :showed="true">
+      <span>Hello world!</span>
+    </mapPopup>
+  </mapir>
 </template>
 
 <script>
-import {
-  mapir,
-  mapNavigationControl,
-  mapGeolocateControl,
-  mapPopup
-} from "mapir-vue";
+import { mapir, mapPopup } from "mapir-vue";
 
 export default {
+  name: "Popup",
   components: {
     mapir,
-    mapNavigationControl,
-    mapGeolocateControl,
     mapPopup
   },
   data() {
     return {
-      apiKey: "some_token",
-      popupCoordinates: [10, 10]
+      coordinates: [51.420296, 35.732379],
+      popupCoordinates: [51.420296, 35.732379],
+      MapirToken: "<Your API Key>"
     };
   }
 };
@@ -89,8 +88,8 @@ For example:
 ```vue
 <template>
   <div class="popup-wrapper">
-    <mapPopup :coordinates="popupCoordinates">
-      <span>Hello world from wrapped popup!</span>
+    <mapPopup :coordinates="popupCoordinates" anchor="bottom" :showed="true">
+      <span>Hello world!</span>
     </mapPopup>
   </div>
 </template>
@@ -107,7 +106,7 @@ export default {
     popupCoordinates() {
       // Here we can do some work for calculate proper coordinates
       //...
-      return [10, 10]
+      return [51, 32]
     }
   }
 }
@@ -119,7 +118,7 @@ export default {
 ```vue
 <template>
   <div id="#app">
-    <mapir :apiKey="apiKey">
+    <mapir :apiKey="MapirToken" :center="coordinates">
       <PopupWrapper />
       <!-- works! -->
     </mapir>
@@ -137,7 +136,8 @@ export default {
   },
   data() {
     return {
-      apiKey: "some_token"
+      coordinates: [51.420296, 35.732379],
+      MapirToken: "<Your API Key>"
     };
   }
 };
