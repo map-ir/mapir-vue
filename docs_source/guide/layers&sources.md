@@ -1,47 +1,85 @@
 # Layers and sources
 
-## Adding layers
+<br />
 
-Geographic features on the map draws as layers.
-Layer use `source` object that contains data for layer (for example, GeoJSON object). Source must be added to map and several layers can use common `source` and draw it's data differently.
-Also, layer has own configuration object that declares how layer draws on the map. You can read more about it in Mapbox GL JS docs for [sources](https://docs.mapbox.com/mapbox-gl-js/api/#sources) and [layers](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layers).
+<ClientOnly>
+  <Geojson />
+</ClientOnly>
 
-mapir-vue exposes layers as Vue components.
-`source` and `layer` configuration object passed to layer component as props. There is several layers types for drawing different types of sources.
+`mapir` component easily allows drawing geographic features on the map using vue components, for example, `mapGeojsonLayer` component make it easy to draw geoJSON data on the map, using `source` prop that contains data for the desired layer (for example, GeoJSON object or url), and `layer` prop which has the configurations that declares how layer draws on the map (again object or url).
+
+> You can read more about it in Mapbox-GL JS docs for [sources](https://docs.mapbox.com/mapbox-gl-js/api/#sources) and [layers](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layers).
+
+::: tip sources and layers
+There is several layers types for drawing different types of sources.
+several layers can use common `source` and draw it's data differently
+:::
+
 For example adding a layer with GeoJSON data:
+
+## Adding layers
 
 ```vue
 <template>
-  <mapir :apiKey="apiKey">
-    <!-- Adding navigation control -->
-    <mapNavigationControl position="top-right" />
-    <!-- Adding GeoJSON layer -->
-    <mapGeojsonLayer
-      :sourceId="geoJsonSource.id"
-      :source="geoJsonSource"
-      layerId="myLayer"
-      :layer="geoJsonlayer"
-    />
-  </mapir>
+  <div style="width: 100%; height: 400px;">
+    <mapir :apiKey="mapirToken" :center="coordinates">
+      <mapGeojsonLayer
+        sourceId="mySource"
+        :source="geoJsonSource"
+        layerId="myLayer"
+        :layer="geoJsonlayer"
+      />
+    </mapir>
+  </div>
 </template>
 
 <script>
-import { mapir, mapNavigationControl, mapGeojsonLayer } from "mapir-vue";
+import { mapir, mapGeojsonLayer } from "../../../src/main";
 
 export default {
+  name: "Geojson",
   components: {
     mapir,
-    mapNavigationControl,
     mapGeojsonLayer
   },
   data() {
     return {
-      apiKey: "some_token",
+      coordinates: [51.420296, 35.732379],
+      mapirToken: "<Your API Key>",
       geoJsonSource: {
-        //...some GeoJSON object
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [
+            {
+              type: "Feature",
+              properties: {},
+              geometry: {
+                type: "Polygon",
+                coordinates: [
+                  [
+                    [51.35061264038086, 35.74888069888655],
+                    [51.34992599487305, 35.72352080874787],
+                    [51.39352798461914, 35.678912411239935],
+                    [51.4683723449707, 35.69048511140501],
+                    [51.48468017578124, 35.7491593341318],
+                    [51.39919281005859, 35.78244922192265],
+                    [51.35061264038086, 35.74888069888655]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
       },
-      geoJsonLayer: {
-        //...some GeoJSON layer configuration object
+      geoJsonlayer: {
+        id: "myLayer",
+        type: "fill",
+        source: "mySource",
+        paint: {
+          "fill-color": "#888888",
+          "fill-opacity": 0.4
+        }
       }
     };
   }

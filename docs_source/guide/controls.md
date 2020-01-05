@@ -15,7 +15,7 @@ _All controls_:
 ```vue
 <template>
   <div style="width: 100%; height: 400px;">
-    <mapir :apiKey="MapirToken">
+    <mapir :apiKey="mapirToken">
       <mapAttributionControl />
       <mapNavigationControl position="top-right" />
       <mapGeolocateControl position="top-right" />
@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       coordinates: [51.420296, 35.732379],
-      MapirToken: "<Your API Key>"
+      mapirToken: "<Your API Key>"
     };
   }
 };

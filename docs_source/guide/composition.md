@@ -10,7 +10,7 @@ All components placed under `mapir` will be rendered only after map fully loaded
 
 ### map controls
 
-<!--  -->
+<br/>
 
 <ClientOnly>
   <SimpleControls />
@@ -18,7 +18,7 @@ All components placed under `mapir` will be rendered only after map fully loaded
 
 ```vue
 <template>
-  <mapir :apiKey="MapirToken">
+  <mapir :apiKey="mapirToken">
     <mapNavigationControl position="top-right" />
     <mapGeolocateControl position="top-right" />
   </mapir>
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       coordinates: [51.420296, 35.732379],
-      MapirToken: "<Your API Key>"
+      mapirToken: "<Your API Key>"
     };
   }
 };
@@ -46,13 +46,15 @@ export default {
 
 ### popup
 
+<br/>
+
 <ClientOnly>
   <Popup />
 </ClientOnly>
 
 ```vue
 <template>
-  <mapir :apiKey="MapirToken" :center="coordinates">
+  <mapir :apiKey="mapirToken" :center="coordinates">
     <mapPopup :coordinates="popupCoordinates" anchor="bottom" :showed="true">
       <span>Hello world!</span>
     </mapPopup>
@@ -72,7 +74,7 @@ export default {
     return {
       coordinates: [51.420296, 35.732379],
       popupCoordinates: [51.420296, 35.732379],
-      MapirToken: "<Your API Key>"
+      mapirToken: "<Your API Key>"
     };
   }
 };
@@ -118,7 +120,7 @@ export default {
 ```vue
 <template>
   <div id="#app">
-    <mapir :apiKey="MapirToken" :center="coordinates">
+    <mapir :apiKey="mapirToken" :center="coordinates">
       <PopupWrapper />
       <!-- works! -->
     </mapir>
@@ -137,7 +139,7 @@ export default {
   data() {
     return {
       coordinates: [51.420296, 35.732379],
-      MapirToken: "<Your API Key>"
+      mapirToken: "<Your API Key>"
     };
   }
 };

@@ -1,5 +1,7 @@
 # Base map
 
+<br/>
+
 <ClientOnly>
   <Simple />
 </ClientOnly>
@@ -84,7 +86,7 @@ Here is an example of adding event listeners (here `click` event) on mapir compo
 <template>
   <div style="width: 100%; height: 400px;">
     <mapir
-      :apiKey="MapirToken"
+      :apiKey="mapirToken"
       :center="coordinates"
       @click="mapOnClick"
     ></mapir>
@@ -102,7 +104,7 @@ export default {
   data() {
     return {
       coordinates: [51.420296, 35.732379],
-      MapirToken: "<Your API Key>"
+      mapirToken: "<Your API Key>"
     };
   },
   methods: {
