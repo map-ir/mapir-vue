@@ -2,6 +2,22 @@
 
 ## Using as ES module
 
+### prerequisites
+
+please install `@vue/cli-plugin-babel` version `4.0.0` as development dependancy (which uses `@babel/core` version `7.7.4`):
+
+```json
+"@vue/cli-plugin-babel": "^4.0.0"
+```
+
+and add it to `babel.config.js`:
+
+```js
+module.exports = {
+  presets: ["@vue/cli-plugin-babel/preset"]
+};
+```
+
 ### Installation
 
 You can install `mapir-vue` via npm:
@@ -14,7 +30,7 @@ npm i mapir-vue
 since our component uses [mapbox](https://www.mapbox.com/) as it's foundation, by installing `mapir-vue`, `mapbox-gl@1.6.0` is installed as dependancy.
 :::
 
-::: warning package rename
+::: danger package rename
 `mapir-vue` package would rename to `mapir-vue-component` in **future releases**.
 :::
 
