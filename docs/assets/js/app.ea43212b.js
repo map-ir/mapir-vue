@@ -67,17 +67,17 @@
                 13: "21778efe",
                 14: "d76388bc",
                 15: "e1370cd6",
-                16: "ff565eb4",
-                17: "208e793f",
-                18: "508d8a31",
-                19: "b55da4c4",
+                16: "e0f4941c",
+                17: "e0d92981",
+                18: "69f5ab4a",
+                19: "e29ebdd3",
                 20: "d251ffdf",
                 21: "ddb46c7f",
                 22: "bd88bdce",
-                23: "cc598fc2",
-                24: "4430e5cc",
-                25: "f924f2e2",
-                26: "27cce37b",
+                23: "08c29f91",
+                24: "98bcf439",
+                25: "129a25f9",
+                26: "72cc1abe",
                 27: "2d50b366",
                 28: "b4e19964",
                 29: "80aa80fe",
@@ -162,7 +162,7 @@
     (a.o = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (a.p = "/docs/"),
+    (a.p = "/mapir-vue/"),
     (a.oe = function(e) {
       throw (console.error(e), e);
     });
@@ -6083,17 +6083,17 @@
           Promise.all([n.e(0), n.e(1), n.e(4)]).then(n.bind(null, 217))
       },
       ka = {
-        "v-3c4078b6": () => n.e(16).then(n.bind(null, 228)),
-        "v-175487c6": () => n.e(17).then(n.bind(null, 229)),
-        "v-cde0a2e2": () => n.e(18).then(n.bind(null, 230)),
-        "v-e4db00b6": () => n.e(19).then(n.bind(null, 231)),
+        "v-175487c6": () => n.e(17).then(n.bind(null, 228)),
+        "v-cde0a2e2": () => n.e(18).then(n.bind(null, 229)),
+        "v-e4db00b6": () => n.e(19).then(n.bind(null, 230)),
+        "v-3c4078b6": () => n.e(16).then(n.bind(null, 231)),
         "v-2750ed36": () => n.e(20).then(n.bind(null, 232)),
         "v-2e1e13ce": () => n.e(21).then(n.bind(null, 233)),
         "v-9daaf9b6": () => n.e(22).then(n.bind(null, 234)),
-        "v-51bb4d65": () => n.e(23).then(n.bind(null, 235)),
-        "v-35e0d8a0": () => n.e(24).then(n.bind(null, 236)),
-        "v-073f63fb": () => n.e(25).then(n.bind(null, 237)),
-        "v-347cfa33": () => n.e(26).then(n.bind(null, 238)),
+        "v-35e0d8a0": () => n.e(24).then(n.bind(null, 235)),
+        "v-073f63fb": () => n.e(25).then(n.bind(null, 236)),
+        "v-347cfa33": () => n.e(26).then(n.bind(null, 237)),
+        "v-51bb4d65": () => n.e(23).then(n.bind(null, 238)),
         "v-12f1c0c5": () => n.e(27).then(n.bind(null, 239)),
         "v-7a72e51c": () => n.e(28).then(n.bind(null, 240)),
         "v-a58487b6": () => n.e(29).then(n.bind(null, 241)),
@@ -6324,15 +6324,6 @@
     })(Ja, "mixins", Ga);
     const Qa = [
         {
-          name: "v-3c4078b6",
-          path: "/",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-3c4078b6").then(n);
-          }
-        },
-        { path: "/index.html", redirect: "/" },
-        {
           name: "v-175487c6",
           path: "/api/Layers/",
           component: Ja,
@@ -6358,6 +6349,15 @@
           }
         },
         {
+          name: "v-3c4078b6",
+          path: "/",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-3c4078b6").then(n);
+          }
+        },
+        { path: "/index.html", redirect: "/" },
+        {
           name: "v-2750ed36",
           path: "/api/Layers/imagelayer.html",
           component: Ja,
@@ -6379,14 +6379,6 @@
           component: Ja,
           beforeEnter: (e, t, n) => {
             Fa("Layout", "v-9daaf9b6").then(n);
-          }
-        },
-        {
-          name: "v-51bb4d65",
-          path: "/api/Layers/videolayer.html",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-51bb4d65").then(n);
           }
         },
         {
@@ -6412,6 +6404,14 @@
           component: Ja,
           beforeEnter: (e, t, n) => {
             Fa("Layout", "v-347cfa33").then(n);
+          }
+        },
+        {
+          name: "v-51bb4d65",
+          path: "/api/Layers/videolayer.html",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-51bb4d65").then(n);
           }
         },
         {
@@ -6496,40 +6496,8 @@
       Ya = {
         title: "Mapir Vue Component",
         description: "Bring Map.ir to your vuejs app",
-        base: "/docs/",
+        base: "/mapir-vue/",
         pages: [
-          {
-            title: "Home",
-            frontmatter: {
-              home: !0,
-              heroImage: "/logo.svg",
-              actionText: "Get Started →",
-              actionLink: "/guide/",
-              features: [
-                {
-                  title: "Declarative style",
-                  details:
-                    "You can use map elements like layers, markers, popups as Vue components and control them via synchronized props"
-                },
-                {
-                  title: "Vuefied",
-                  details:
-                    "Map elements declared as components respect Vue lifecycle, emit map events like Vue events and can be used in OOP-style"
-                },
-                {
-                  title: "Promisified async actions",
-                  details:
-                    "You can do async map operations and get results in Promise without messing with map events and figuring out what action cause it"
-                }
-              ],
-              footer: "MIT Licensed"
-            },
-            regularPath: "/",
-            relativePath: "README.md",
-            key: "v-3c4078b6",
-            path: "/",
-            headers: [{ level: 2, title: "Quick Start", slug: "quick-start" }]
-          },
           {
             title: "Layers common",
             frontmatter: {},
@@ -6642,6 +6610,38 @@
             ]
           },
           {
+            title: "Home",
+            frontmatter: {
+              home: !0,
+              heroImage: "/logo.svg",
+              actionText: "Get Started →",
+              actionLink: "/guide/",
+              features: [
+                {
+                  title: "Declarative style",
+                  details:
+                    "You can use map elements like layers, markers, popups as Vue components and control them via synchronized props"
+                },
+                {
+                  title: "Vuefied",
+                  details:
+                    "Map elements declared as components respect Vue lifecycle, emit map events like Vue events and can be used in OOP-style"
+                },
+                {
+                  title: "Promisified async actions",
+                  details:
+                    "You can do async map operations and get results in Promise without messing with map events and figuring out what action cause it"
+                }
+              ],
+              footer: "MIT Licensed"
+            },
+            regularPath: "/",
+            relativePath: "README.md",
+            key: "v-3c4078b6",
+            path: "/",
+            headers: [{ level: 2, title: "Quick Start", slug: "quick-start" }]
+          },
+          {
             title: "ImageLayer",
             frontmatter: {},
             regularPath: "/api/Layers/imagelayer.html",
@@ -6700,20 +6700,6 @@
                 slug: "getfeaturestate-featureid"
               },
               { level: 2, title: "Events", slug: "events" }
-            ]
-          },
-          {
-            title: "CanvasLayer",
-            frontmatter: {},
-            regularPath: "/api/Layers/videolayer.html",
-            relativePath: "api/Layers/videolayer.md",
-            key: "v-51bb4d65",
-            path: "/api/Layers/videolayer.html",
-            headers: [
-              { level: 2, title: "Props", slug: "props" },
-              { level: 3, title: "source", slug: "source" },
-              { level: 2, title: "Computed getters", slug: "computed-getters" },
-              { level: 3, title: "video", slug: "video" }
             ]
           },
           {
@@ -6938,6 +6924,20 @@
               { level: 3, title: "@click", slug: "click" },
               { level: 3, title: "@mouseenter", slug: "mouseenter" },
               { level: 3, title: "@mouseleave", slug: "mouseleave" }
+            ]
+          },
+          {
+            title: "CanvasLayer",
+            frontmatter: {},
+            regularPath: "/api/Layers/videolayer.html",
+            relativePath: "api/Layers/videolayer.md",
+            key: "v-51bb4d65",
+            path: "/api/Layers/videolayer.html",
+            headers: [
+              { level: 2, title: "Props", slug: "props" },
+              { level: 3, title: "source", slug: "source" },
+              { level: 2, title: "Computed getters", slug: "computed-getters" },
+              { level: 3, title: "video", slug: "video" }
             ]
           },
           {
@@ -7513,7 +7513,7 @@
         router: n
       };
     })(!1);
-    (window.__VUEPRESS__ = { version: "1.2.0", hash: "e31b137" }),
+    (window.__VUEPRESS__ = { version: "1.2.0", hash: "bceaa06" }),
       ps.onReady(() => {
         cs.$mount("#app");
       });
