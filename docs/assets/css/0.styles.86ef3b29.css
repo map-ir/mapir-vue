@@ -223,7 +223,7 @@
   outline: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background: #fff url(/docs/assets/img/search.83621669.svg) 0.6rem 0.5rem
+  background: #fff url(/mapir-vue/assets/img/search.83621669.svg) 0.6rem 0.5rem
     no-repeat;
   background-size: 1rem;
 }
@@ -1516,16 +1516,16 @@ th {
 }
 .map-marker,
 .map-marker.blue {
-  background-image: url(/docs/assets/img/marker-default-blue.772953dc.svg);
+  background-image: url(/mapir-vue/assets/img/marker-default-blue.772953dc.svg);
 }
 .map-marker.red {
-  background-image: url(/docs/assets/img/marker-default-red.70f87938.svg);
+  background-image: url(/mapir-vue/assets/img/marker-default-red.70f87938.svg);
 }
 .map-marker.green {
-  background-image: url(/docs/assets/img/marker-default-green.5f337504.svg);
+  background-image: url(/mapir-vue/assets/img/marker-default-green.5f337504.svg);
 }
 .map-marker.circle {
-  background-image: url(/docs/assets/img/marker-circle-white.f8f64e50.svg);
+  background-image: url(/mapir-vue/assets/img/marker-circle-white.f8f64e50.svg);
 }
 .badge[data-v-c13ee5b0] {
   display: inline-block;

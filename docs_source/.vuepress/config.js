@@ -3,7 +3,7 @@ module.exports = {
   description: "Bring Map.ir to your vuejs app",
   dest: "docs",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
-  base: "/docs/",
+  base: "/mapir-vue/",
 
   theme: undefined,
 
