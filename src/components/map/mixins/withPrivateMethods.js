@@ -43,6 +43,17 @@ export default {
     },
 
     $_loadMap() {
+      // send map.ir load event
+      fetch(`http://map.ir/vector/load?x-api-key=${this.apiKey}`, {
+        method: "POST"
+      }).then(_ => {
+        console.log(
+          "%c Map.ir %c load Event ",
+          "background-color: #ff5252; color: white;",
+          "background-color: black; color: white;"
+        );
+      });
+
       return this.mapboxPromise.then(mapbox => {
         this.mapbox = mapbox.default ? mapbox.default : mapbox;
         return new Promise(resolve => {
