@@ -200,18 +200,18 @@
               if (0 === m.length) return null === c(y, m) ? [m] : [];
               for (var O = 0, j = 0, x = []; j < m.length; ) {
                 y.lastIndex = f ? j : 0;
-                var P,
-                  w = c(y, f ? m : m.slice(j));
+                var w,
+                  P = c(y, f ? m : m.slice(j));
                 if (
-                  null === w ||
-                  (P = p(s(y.lastIndex + (f ? 0 : j)), m.length)) === O
+                  null === P ||
+                  (w = p(s(y.lastIndex + (f ? 0 : j)), m.length)) === O
                 )
                   j = a(m, j, v);
                 else {
                   if ((x.push(m.slice(O, j)), x.length === b)) return x;
-                  for (var S = 1; S <= w.length - 1; S++)
-                    if ((x.push(w[S]), x.length === b)) return x;
-                  j = O = P;
+                  for (var S = 1; S <= P.length - 1; S++)
+                    if ((x.push(P[S]), x.length === b)) return x;
+                  j = O = w;
                 }
               }
               return x.push(m.slice(O)), x;
@@ -973,61 +973,73 @@
             },
             $_loadMap: function() {
               var e = this;
-              return this.mapboxPromise.then(function(t) {
-                return (
-                  (e.mapbox = t.default ? t.default : t),
-                  new Promise(function(t) {
-                    e.mapboxAccessToken &&
-                      (e.mapbox.accessToken = e.mapboxAccessToken);
-                    var n = "".concat(e.mapStyle),
-                      r = new e.mapbox.Map(
-                        (function(e) {
-                          for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {};
-                            t % 2
-                              ? h(Object(n), !0).forEach(function(t) {
-                                  i(e, t, n[t]);
-                                })
-                              : Object.getOwnPropertyDescriptors
-                              ? Object.defineProperties(
-                                  e,
-                                  Object.getOwnPropertyDescriptors(n)
-                                )
-                              : h(Object(n)).forEach(function(t) {
-                                  Object.defineProperty(
+              return (
+                fetch(
+                  "http://map.ir/vector/load?x-api-key=".concat(this.apiKey),
+                  { method: "POST" }
+                ).then(function(e) {
+                  console.log(
+                    "%c Map.ir %c load Event ",
+                    "background-color: #ff5252; color: white;",
+                    "background-color: black; color: white;"
+                  );
+                }),
+                this.mapboxPromise.then(function(t) {
+                  return (
+                    (e.mapbox = t.default ? t.default : t),
+                    new Promise(function(t) {
+                      e.mapboxAccessToken &&
+                        (e.mapbox.accessToken = e.mapboxAccessToken);
+                      var n = "".concat(e.mapStyle),
+                        r = new e.mapbox.Map(
+                          (function(e) {
+                            for (var t = 1; t < arguments.length; t++) {
+                              var n = null != arguments[t] ? arguments[t] : {};
+                              t % 2
+                                ? h(Object(n), !0).forEach(function(t) {
+                                    i(e, t, n[t]);
+                                  })
+                                : Object.getOwnPropertyDescriptors
+                                ? Object.defineProperties(
                                     e,
-                                    t,
-                                    Object.getOwnPropertyDescriptor(n, t)
-                                  );
-                                });
-                          }
-                          return e;
-                        })({}, e._props, {
-                          container: e.$refs.container,
-                          style: n,
-                          transformRequest: function(t, n) {
-                            return {
-                              url: t,
-                              headers: {
-                                "x-api-key": e.apiKey,
-                                "Mapir-SDK": "vue/"
-                                  .concat(e.vueVersion, "-map/")
-                                  .concat(e.componentVersion)
-                              }
-                            };
-                          }
-                        })
-                      ).addControl(
-                        new e.mapbox.AttributionControl({
-                          customAttribution: "© Map © Openstreetmap"
-                        })
-                      );
-                    r.on("load", function() {
-                      return t(r);
-                    });
-                  })
-                );
-              });
+                                    Object.getOwnPropertyDescriptors(n)
+                                  )
+                                : h(Object(n)).forEach(function(t) {
+                                    Object.defineProperty(
+                                      e,
+                                      t,
+                                      Object.getOwnPropertyDescriptor(n, t)
+                                    );
+                                  });
+                            }
+                            return e;
+                          })({}, e._props, {
+                            container: e.$refs.container,
+                            style: n,
+                            transformRequest: function(t, n) {
+                              return {
+                                url: t,
+                                headers: {
+                                  "x-api-key": e.apiKey,
+                                  "Mapir-SDK": "vue/"
+                                    .concat(e.vueVersion, "-map/")
+                                    .concat(e.componentVersion)
+                                }
+                              };
+                            }
+                          })
+                        ).addControl(
+                          new e.mapbox.AttributionControl({
+                            customAttribution: "© Map © Openstreetmap"
+                          })
+                        );
+                      r.on("load", function() {
+                        return t(r);
+                      });
+                    })
+                  );
+                })
+              );
             },
             $_RTLTextPluginError: function(e) {
               this.$emit("rtl-plugin-error", { map: this.map, error: e });
@@ -1121,7 +1133,7 @@
         }
         return n;
       }
-      var P = {
+      var w = {
           name: "Map",
           mixins: [d, O, v, c],
           props: (function(e) {
@@ -1249,9 +1261,9 @@
             });
           }
         },
-        w = (n(212), n(0)),
-        S = Object(w.a)(
-          P,
+        P = (n(212), n(0)),
+        S = Object(P.a)(
+          w,
           function() {
             var e = this.$createElement;
             return (this._self._c || e)(
@@ -1561,7 +1573,7 @@
         },
         N =
           (n(214),
-          Object(w.a)(
+          Object(P.a)(
             z,
             function() {
               var e = this.$createElement;
@@ -1686,7 +1698,7 @@
             }
           }
         },
-        Z = Object(w.a)(
+        Z = Object(P.a)(
           R,
           function() {
             var e = this.$createElement;
@@ -1927,7 +1939,7 @@
         }
         return e;
       }
-      var H = {
+      var K = {
         name: "GeojsonLayer",
         mixins: [q],
         computed: {
@@ -2077,7 +2089,7 @@
         }
       };
       n.d(t, "g", function() {
-        return K;
+        return H;
       }),
         n.d(t, "d", function() {
           return J;
@@ -2097,11 +2109,11 @@
         n.d(t, "e", function() {
           return ee;
         });
-      var K = S,
+      var H = S,
         J = I,
         W = L,
         X = B,
-        Y = H,
+        Y = K,
         Q = N,
         ee = Z;
     },
