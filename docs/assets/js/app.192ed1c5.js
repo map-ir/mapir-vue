@@ -54,8 +54,8 @@
               "." +
               {
                 1: "d2303d8d",
-                2: "96996965",
-                4: "1ce42401",
+                2: "7e86a171",
+                4: "2d18436d",
                 5: "b17a634c",
                 6: "97d39e0f",
                 7: "17101878",
@@ -67,17 +67,17 @@
                 13: "21778efe",
                 14: "d76388bc",
                 15: "e1370cd6",
-                16: "e0f4941c",
-                17: "e0d92981",
-                18: "69f5ab4a",
+                16: "ff565eb4",
+                17: "eb1c3b3b",
+                18: "dda5d3de",
                 19: "e29ebdd3",
                 20: "d251ffdf",
                 21: "ddb46c7f",
                 22: "bd88bdce",
-                23: "08c29f91",
-                24: "98bcf439",
-                25: "129a25f9",
-                26: "72cc1abe",
+                23: "cc598fc2",
+                24: "4430e5cc",
+                25: "f924f2e2",
+                26: "27cce37b",
                 27: "2d50b366",
                 28: "b4e19964",
                 29: "80aa80fe",
@@ -6083,26 +6083,26 @@
           Promise.all([n.e(0), n.e(1), n.e(4)]).then(n.bind(null, 217))
       },
       ka = {
-        "v-175487c6": () => n.e(17).then(n.bind(null, 228)),
-        "v-cde0a2e2": () => n.e(18).then(n.bind(null, 229)),
-        "v-e4db00b6": () => n.e(19).then(n.bind(null, 230)),
-        "v-3c4078b6": () => n.e(16).then(n.bind(null, 231)),
-        "v-2750ed36": () => n.e(20).then(n.bind(null, 232)),
-        "v-2e1e13ce": () => n.e(21).then(n.bind(null, 233)),
-        "v-9daaf9b6": () => n.e(22).then(n.bind(null, 234)),
-        "v-35e0d8a0": () => n.e(24).then(n.bind(null, 235)),
-        "v-073f63fb": () => n.e(25).then(n.bind(null, 236)),
-        "v-347cfa33": () => n.e(26).then(n.bind(null, 237)),
-        "v-51bb4d65": () => n.e(23).then(n.bind(null, 238)),
-        "v-12f1c0c5": () => n.e(27).then(n.bind(null, 239)),
-        "v-7a72e51c": () => n.e(28).then(n.bind(null, 240)),
-        "v-a58487b6": () => n.e(29).then(n.bind(null, 241)),
-        "v-76037076": () => n.e(30).then(n.bind(null, 242)),
-        "v-58a4fb02": () => n.e(31).then(n.bind(null, 243)),
-        "v-0e6c7b03": () => n.e(32).then(n.bind(null, 244)),
-        "v-1bad1483": () => n.e(33).then(n.bind(null, 245)),
-        "v-16cc1fd0": () => n.e(34).then(n.bind(null, 246)),
-        "v-8f9f0976": () => n.e(35).then(n.bind(null, 247))
+        "v-5279fc40": () => n.e(16).then(n.bind(null, 228)),
+        "v-89051520": () => n.e(17).then(n.bind(null, 229)),
+        "v-f2905a8a": () => n.e(19).then(n.bind(null, 230)),
+        "v-7f0a61b6": () => n.e(18).then(n.bind(null, 231)),
+        "v-27c4510a": () => n.e(20).then(n.bind(null, 232)),
+        "v-105c16af": () => n.e(21).then(n.bind(null, 233)),
+        "v-4ed4b88a": () => n.e(22).then(n.bind(null, 234)),
+        "v-51819b7b": () => n.e(23).then(n.bind(null, 235)),
+        "v-210497ca": () => n.e(24).then(n.bind(null, 236)),
+        "v-2f97a8de": () => n.e(25).then(n.bind(null, 237)),
+        "v-59fe066e": () => n.e(26).then(n.bind(null, 238)),
+        "v-42bd1e4a": () => n.e(27).then(n.bind(null, 239)),
+        "v-bc220174": () => n.e(28).then(n.bind(null, 240)),
+        "v-241ef63b": () => n.e(29).then(n.bind(null, 241)),
+        "v-09e70bdb": () => n.e(30).then(n.bind(null, 242)),
+        "v-17288f15": () => n.e(31).then(n.bind(null, 243)),
+        "v-530952ce": () => n.e(32).then(n.bind(null, 244)),
+        "v-38881fce": () => n.e(33).then(n.bind(null, 245)),
+        "v-2206dbfa": () => n.e(34).then(n.bind(null, 246)),
+        "v-f3d1eb4a": () => n.e(35).then(n.bind(null, 247))
       };
     function $a(e) {
       const t = Object.create(null);
@@ -6324,159 +6324,159 @@
     })(Ja, "mixins", Ga);
     const Qa = [
         {
-          name: "v-175487c6",
-          path: "/api/Layers/",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-175487c6").then(n);
-          }
-        },
-        { path: "/api/Layers/index.html", redirect: "/api/Layers/" },
-        {
-          name: "v-cde0a2e2",
-          path: "/api/Layers/canvaslayer.html",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-cde0a2e2").then(n);
-          }
-        },
-        {
-          name: "v-e4db00b6",
-          path: "/api/Layers/geojsonlayer.html",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-e4db00b6").then(n);
-          }
-        },
-        {
-          name: "v-3c4078b6",
+          name: "v-5279fc40",
           path: "/",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-3c4078b6").then(n);
+            Fa("Layout", "v-5279fc40").then(n);
           }
         },
         { path: "/index.html", redirect: "/" },
         {
-          name: "v-2750ed36",
+          name: "v-89051520",
+          path: "/api/Layers/",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-89051520").then(n);
+          }
+        },
+        { path: "/api/Layers/index.html", redirect: "/api/Layers/" },
+        {
+          name: "v-f2905a8a",
+          path: "/api/Layers/geojsonlayer.html",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-f2905a8a").then(n);
+          }
+        },
+        {
+          name: "v-7f0a61b6",
+          path: "/api/Layers/canvaslayer.html",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-7f0a61b6").then(n);
+          }
+        },
+        {
+          name: "v-27c4510a",
           path: "/api/Layers/imagelayer.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-2750ed36").then(n);
+            Fa("Layout", "v-27c4510a").then(n);
           }
         },
         {
-          name: "v-2e1e13ce",
+          name: "v-105c16af",
           path: "/api/Layers/rasterlayer.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-2e1e13ce").then(n);
+            Fa("Layout", "v-105c16af").then(n);
           }
         },
         {
-          name: "v-9daaf9b6",
+          name: "v-4ed4b88a",
           path: "/api/Layers/vectorlayer.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-9daaf9b6").then(n);
+            Fa("Layout", "v-4ed4b88a").then(n);
           }
         },
         {
-          name: "v-35e0d8a0",
+          name: "v-51819b7b",
+          path: "/api/Layers/videolayer.html",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-51819b7b").then(n);
+          }
+        },
+        {
+          name: "v-210497ca",
           path: "/api/",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-35e0d8a0").then(n);
+            Fa("Layout", "v-210497ca").then(n);
           }
         },
         { path: "/api/index.html", redirect: "/api/" },
         {
-          name: "v-073f63fb",
+          name: "v-2f97a8de",
           path: "/api/controls.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-073f63fb").then(n);
+            Fa("Layout", "v-2f97a8de").then(n);
           }
         },
         {
-          name: "v-347cfa33",
+          name: "v-59fe066e",
           path: "/api/marker.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-347cfa33").then(n);
+            Fa("Layout", "v-59fe066e").then(n);
           }
         },
         {
-          name: "v-51bb4d65",
-          path: "/api/Layers/videolayer.html",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-51bb4d65").then(n);
-          }
-        },
-        {
-          name: "v-12f1c0c5",
+          name: "v-42bd1e4a",
           path: "/api/popup.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-12f1c0c5").then(n);
+            Fa("Layout", "v-42bd1e4a").then(n);
           }
         },
         {
-          name: "v-7a72e51c",
+          name: "v-bc220174",
           path: "/guide/",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-7a72e51c").then(n);
+            Fa("Layout", "v-bc220174").then(n);
           }
         },
         { path: "/guide/index.html", redirect: "/guide/" },
         {
-          name: "v-a58487b6",
+          name: "v-241ef63b",
           path: "/guide/basemap.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-a58487b6").then(n);
+            Fa("Layout", "v-241ef63b").then(n);
           }
         },
         {
-          name: "v-76037076",
+          name: "v-09e70bdb",
           path: "/guide/composition.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-76037076").then(n);
+            Fa("Layout", "v-09e70bdb").then(n);
           }
         },
         {
-          name: "v-58a4fb02",
+          name: "v-17288f15",
           path: "/guide/controls.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-58a4fb02").then(n);
+            Fa("Layout", "v-17288f15").then(n);
           }
         },
         {
-          name: "v-0e6c7b03",
+          name: "v-530952ce",
           path: "/guide/layers&sources.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-0e6c7b03").then(n);
+            Fa("Layout", "v-530952ce").then(n);
           }
         },
         {
-          name: "v-1bad1483",
+          name: "v-38881fce",
           path: "/guide/markers&popups.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-1bad1483").then(n);
+            Fa("Layout", "v-38881fce").then(n);
           }
         },
         {
-          name: "v-16cc1fd0",
+          name: "v-2206dbfa",
           path: "/plugin_components/",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-16cc1fd0").then(n);
+            Fa("Layout", "v-2206dbfa").then(n);
           }
         },
         {
@@ -6484,11 +6484,11 @@
           redirect: "/plugin_components/"
         },
         {
-          name: "v-8f9f0976",
+          name: "v-f3d1eb4a",
           path: "/plugin_components/plugin_components_development.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-8f9f0976").then(n);
+            Fa("Layout", "v-f3d1eb4a").then(n);
           }
         },
         { path: "*", component: Ja }
@@ -6499,11 +6499,43 @@
         base: "/mapir-vue/",
         pages: [
           {
+            title: "Home",
+            frontmatter: {
+              home: !0,
+              heroImage: "/logo.svg",
+              actionText: "Get Started →",
+              actionLink: "/guide/",
+              features: [
+                {
+                  title: "Declarative style",
+                  details:
+                    "You can use map elements like layers, markers, popups as Vue components and control them via synchronized props"
+                },
+                {
+                  title: "Vuefied",
+                  details:
+                    "Map elements declared as components respect Vue lifecycle, emit map events like Vue events and can be used in OOP-style"
+                },
+                {
+                  title: "Promisified async actions",
+                  details:
+                    "You can do async map operations and get results in Promise without messing with map events and figuring out what action cause it"
+                }
+              ],
+              footer: "MIT Licensed"
+            },
+            regularPath: "/",
+            relativePath: "README.md",
+            key: "v-5279fc40",
+            path: "/",
+            headers: [{ level: 2, title: "Quick Start", slug: "quick-start" }]
+          },
+          {
             title: "Layers common",
             frontmatter: {},
             regularPath: "/api/Layers/",
             relativePath: "api/Layers/README.md",
-            key: "v-175487c6",
+            key: "v-89051520",
             path: "/api/Layers/",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6543,23 +6575,11 @@
             ]
           },
           {
-            title: "CanvasLayer",
-            frontmatter: {},
-            regularPath: "/api/Layers/canvaslayer.html",
-            relativePath: "api/Layers/canvaslayer.md",
-            key: "v-cde0a2e2",
-            path: "/api/Layers/canvaslayer.html",
-            headers: [
-              { level: 2, title: "Props", slug: "props" },
-              { level: 2, title: "Events", slug: "events" }
-            ]
-          },
-          {
             title: "GeojsonLayer",
             frontmatter: {},
             regularPath: "/api/Layers/geojsonlayer.html",
             relativePath: "api/Layers/geojsonlayer.md",
-            key: "v-e4db00b6",
+            key: "v-f2905a8a",
             path: "/api/Layers/geojsonlayer.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6610,43 +6630,23 @@
             ]
           },
           {
-            title: "Home",
-            frontmatter: {
-              home: !0,
-              heroImage: "/logo.svg",
-              actionText: "Get Started →",
-              actionLink: "/guide/",
-              features: [
-                {
-                  title: "Declarative style",
-                  details:
-                    "You can use map elements like layers, markers, popups as Vue components and control them via synchronized props"
-                },
-                {
-                  title: "Vuefied",
-                  details:
-                    "Map elements declared as components respect Vue lifecycle, emit map events like Vue events and can be used in OOP-style"
-                },
-                {
-                  title: "Promisified async actions",
-                  details:
-                    "You can do async map operations and get results in Promise without messing with map events and figuring out what action cause it"
-                }
-              ],
-              footer: "MIT Licensed"
-            },
-            regularPath: "/",
-            relativePath: "README.md",
-            key: "v-3c4078b6",
-            path: "/",
-            headers: [{ level: 2, title: "Quick Start", slug: "quick-start" }]
+            title: "CanvasLayer",
+            frontmatter: {},
+            regularPath: "/api/Layers/canvaslayer.html",
+            relativePath: "api/Layers/canvaslayer.md",
+            key: "v-7f0a61b6",
+            path: "/api/Layers/canvaslayer.html",
+            headers: [
+              { level: 2, title: "Props", slug: "props" },
+              { level: 2, title: "Events", slug: "events" }
+            ]
           },
           {
             title: "ImageLayer",
             frontmatter: {},
             regularPath: "/api/Layers/imagelayer.html",
             relativePath: "api/Layers/imagelayer.md",
-            key: "v-2750ed36",
+            key: "v-27c4510a",
             path: "/api/Layers/imagelayer.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6659,7 +6659,7 @@
             frontmatter: {},
             regularPath: "/api/Layers/rasterlayer.html",
             relativePath: "api/Layers/rasterlayer.md",
-            key: "v-2e1e13ce",
+            key: "v-105c16af",
             path: "/api/Layers/rasterlayer.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6672,7 +6672,7 @@
             frontmatter: {},
             regularPath: "/api/Layers/vectorlayer.html",
             relativePath: "api/Layers/vectorlayer.md",
-            key: "v-9daaf9b6",
+            key: "v-4ed4b88a",
             path: "/api/Layers/vectorlayer.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6703,11 +6703,25 @@
             ]
           },
           {
+            title: "CanvasLayer",
+            frontmatter: {},
+            regularPath: "/api/Layers/videolayer.html",
+            relativePath: "api/Layers/videolayer.md",
+            key: "v-51819b7b",
+            path: "/api/Layers/videolayer.html",
+            headers: [
+              { level: 2, title: "Props", slug: "props" },
+              { level: 3, title: "source", slug: "source" },
+              { level: 2, title: "Computed getters", slug: "computed-getters" },
+              { level: 3, title: "video", slug: "video" }
+            ]
+          },
+          {
             title: "Map",
             frontmatter: {},
             regularPath: "/api/",
             relativePath: "api/README.md",
-            key: "v-35e0d8a0",
+            key: "v-210497ca",
             path: "/api/",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6847,7 +6861,7 @@
             frontmatter: {},
             regularPath: "/api/controls.html",
             relativePath: "api/controls.md",
-            key: "v-073f63fb",
+            key: "v-2f97a8de",
             path: "/api/controls.html",
             headers: [
               {
@@ -6900,7 +6914,7 @@
             frontmatter: {},
             regularPath: "/api/marker.html",
             relativePath: "api/marker.md",
-            key: "v-347cfa33",
+            key: "v-59fe066e",
             path: "/api/marker.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6927,25 +6941,11 @@
             ]
           },
           {
-            title: "CanvasLayer",
-            frontmatter: {},
-            regularPath: "/api/Layers/videolayer.html",
-            relativePath: "api/Layers/videolayer.md",
-            key: "v-51bb4d65",
-            path: "/api/Layers/videolayer.html",
-            headers: [
-              { level: 2, title: "Props", slug: "props" },
-              { level: 3, title: "source", slug: "source" },
-              { level: 2, title: "Computed getters", slug: "computed-getters" },
-              { level: 3, title: "video", slug: "video" }
-            ]
-          },
-          {
             title: "Popup",
             frontmatter: {},
             regularPath: "/api/popup.html",
             relativePath: "api/popup.md",
-            key: "v-12f1c0c5",
+            key: "v-42bd1e4a",
             path: "/api/popup.html",
             headers: [
               { level: 2, title: "Props", slug: "props" },
@@ -6970,7 +6970,7 @@
             frontmatter: {},
             regularPath: "/guide/",
             relativePath: "guide/README.md",
-            key: "v-7a72e51c",
+            key: "v-bc220174",
             path: "/guide/",
             headers: [
               {
@@ -6989,7 +6989,7 @@
             frontmatter: {},
             regularPath: "/guide/basemap.html",
             relativePath: "guide/basemap.md",
-            key: "v-a58487b6",
+            key: "v-241ef63b",
             path: "/guide/basemap.html",
             headers: [
               { level: 2, title: "prerequisit", slug: "prerequisit" },
@@ -7031,7 +7031,7 @@
             frontmatter: {},
             regularPath: "/guide/composition.html",
             relativePath: "guide/composition.md",
-            key: "v-76037076",
+            key: "v-09e70bdb",
             path: "/guide/composition.html",
             headers: [
               { level: 2, title: "Examples", slug: "examples" },
@@ -7044,7 +7044,7 @@
             frontmatter: {},
             regularPath: "/guide/controls.html",
             relativePath: "guide/controls.md",
-            key: "v-58a4fb02",
+            key: "v-17288f15",
             path: "/guide/controls.html",
             headers: [{ level: 2, title: "Overview", slug: "overview" }]
           },
@@ -7053,7 +7053,7 @@
             frontmatter: {},
             regularPath: "/guide/layers&sources.html",
             relativePath: "guide/layers&sources.md",
-            key: "v-0e6c7b03",
+            key: "v-530952ce",
             path: "/guide/layers&sources.html",
             headers: [
               { level: 2, title: "Adding layers", slug: "adding-layers" },
@@ -7068,7 +7068,7 @@
             frontmatter: {},
             regularPath: "/guide/markers&popups.html",
             relativePath: "guide/markers&popups.md",
-            key: "v-1bad1483",
+            key: "v-38881fce",
             path: "/guide/markers&popups.html",
             headers: [
               { level: 2, title: "Marker", slug: "marker" },
@@ -7089,7 +7089,7 @@
             frontmatter: {},
             regularPath: "/plugin_components/",
             relativePath: "plugin_components/README.md",
-            key: "v-16cc1fd0",
+            key: "v-2206dbfa",
             path: "/plugin_components/",
             headers: [
               {
@@ -7110,7 +7110,7 @@
             regularPath:
               "/plugin_components/plugin_components_development.html",
             relativePath: "plugin_components/plugin_components_development.md",
-            key: "v-8f9f0976",
+            key: "v-f3d1eb4a",
             path: "/plugin_components/plugin_components_development.html",
             headers: [
               { level: 2, title: "Overview", slug: "overview" },
@@ -7513,7 +7513,7 @@
         router: n
       };
     })(!1);
-    (window.__VUEPRESS__ = { version: "1.2.0", hash: "bceaa06" }),
+    (window.__VUEPRESS__ = { version: "1.2.0", hash: "ef5606d" }),
       ps.onReady(() => {
         cs.$mount("#app");
       });
