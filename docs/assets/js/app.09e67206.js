@@ -70,8 +70,8 @@
                 16: "3e82ce02",
                 17: "157e407d",
                 18: "dda5d3de",
-                19: "7e509654",
-                20: "c2bcee78",
+                19: "63486739",
+                20: "d251ffdf",
                 21: "c5b52f4e",
                 22: "03cbc20c",
                 23: "e41d3f62",
@@ -6086,8 +6086,8 @@
         "v-73561cd6": () => n.e(16).then(n.bind(null, 229)),
         "v-09190136": () => n.e(17).then(n.bind(null, 230)),
         "v-b05fff60": () => n.e(18).then(n.bind(null, 231)),
-        "v-24f535b4": () => n.e(19).then(n.bind(null, 232)),
-        "v-aa595134": () => n.e(20).then(n.bind(null, 233)),
+        "v-aa595134": () => n.e(20).then(n.bind(null, 232)),
+        "v-24f535b4": () => n.e(19).then(n.bind(null, 233)),
         "v-109d704c": () => n.e(21).then(n.bind(null, 234)),
         "v-802a5634": () => n.e(22).then(n.bind(null, 235)),
         "v-10371b66": () => n.e(23).then(n.bind(null, 236)),
@@ -6350,19 +6350,19 @@
           }
         },
         {
-          name: "v-24f535b4",
-          path: "/api/Layers/geojsonlayer.html",
-          component: Ja,
-          beforeEnter: (e, t, n) => {
-            Fa("Layout", "v-24f535b4").then(n);
-          }
-        },
-        {
           name: "v-aa595134",
           path: "/api/Layers/imagelayer.html",
           component: Ja,
           beforeEnter: (e, t, n) => {
             Fa("Layout", "v-aa595134").then(n);
+          }
+        },
+        {
+          name: "v-24f535b4",
+          path: "/api/Layers/geojsonlayer.html",
+          component: Ja,
+          beforeEnter: (e, t, n) => {
+            Fa("Layout", "v-24f535b4").then(n);
           }
         },
         {
@@ -6587,6 +6587,19 @@
             ]
           },
           {
+            title: "ImageLayer",
+            frontmatter: {},
+            regularPath: "/api/Layers/imagelayer.html",
+            relativePath: "api/Layers/imagelayer.md",
+            key: "v-aa595134",
+            path: "/api/Layers/imagelayer.html",
+            headers: [
+              { level: 2, title: "Props", slug: "props" },
+              { level: 3, title: "source", slug: "source" },
+              { level: 2, title: "Events", slug: "events" }
+            ]
+          },
+          {
             title: "GeojsonLayer",
             frontmatter: {},
             regularPath: "/api/Layers/geojsonlayer.html",
@@ -6638,19 +6651,6 @@
                 title: "removeFeatureState(featureId?, sourceLayer?, key?)",
                 slug: "removefeaturestate-featureid-sourcelayer-key"
               },
-              { level: 2, title: "Events", slug: "events" }
-            ]
-          },
-          {
-            title: "ImageLayer",
-            frontmatter: {},
-            regularPath: "/api/Layers/imagelayer.html",
-            relativePath: "api/Layers/imagelayer.md",
-            key: "v-aa595134",
-            path: "/api/Layers/imagelayer.html",
-            headers: [
-              { level: 2, title: "Props", slug: "props" },
-              { level: 3, title: "source", slug: "source" },
               { level: 2, title: "Events", slug: "events" }
             ]
           },
@@ -7513,7 +7513,7 @@
         router: n
       };
     })(!1);
-    (window.__VUEPRESS__ = { version: "1.2.0", hash: "ef5606d" }),
+    (window.__VUEPRESS__ = { version: "1.2.0", hash: "72a76e5" }),
       ps.onReady(() => {
         cs.$mount("#app");
       });
